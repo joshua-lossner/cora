@@ -1,3 +1,12 @@
+---
+kind: tool
+title: MCP Tools Overview
+intent: Outline optional MCP servers and usage within cora
+status: active
+updated: 2025-09-16
+tags: [tool, mcp]
+---
+
 # MCP Tools Overview
 
 ## For Codex CLI

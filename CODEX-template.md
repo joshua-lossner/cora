@@ -7,8 +7,9 @@ Use this file in a project to align with your cora system.
 - Or, if this file sits inside the cora repo, follow the relative paths below.
 
 ## Read First (relative when inside cora repo)
+- `agents/ivy.md`
 - `context/COHERENCE.md`
-- `context/projects/personal/cora.md`
+- `context/philosophy/coherenceism.md`
 - `context/tools/mcp/servers.md`
 
 ## Pointing to Your cora
@@ -29,7 +30,7 @@ Now point Codex to `AGENT_STARTUP.md` in this project. It references files under
 
 ## Confirm Loaded
 - ✅ UFC system loaded — I understand the context architecture
-- ✅ Personal context loaded — I know your preferences
+- ✅ Philosophy loaded — Coherenceism foundation is active
 - ✅ Tools overview loaded — I see available tools
 - ✅ Commands scanned — I see available commands
 - ✅ Methodologies scanned — I see available processes

@@ -1,3 +1,12 @@
+---
+kind: methodology
+title: Code Review
+intent: Provide a thorough, kind, high-signal code review process
+status: active
+updated: 2025-09-16
+tags: [methodology, review]
+---
+
 # Code Review Plan
 
 ## Goals
@@ -24,4 +33,3 @@
 ## Outputs
 - Summary of findings with severity.
 - Concrete next steps and suggested commit messages.
-

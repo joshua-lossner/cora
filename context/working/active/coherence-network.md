@@ -1,3 +1,12 @@
+---
+kind: working
+title: Active — Coherence Network
+intent: Track current focus and next steps for the Coherence Network
+status: active
+updated: 2025-09-16
+tags: [working, project]
+---
+
 # Active Project: Coherence Network
 
 - Context: `context/projects/coherence-network.md`
@@ -14,4 +23,3 @@
 - Confirm domain/TLDs are correct
 - Add color palette hex tokens to project context
 - Create project task tracker under `todos/` or `context/working/active/`
-

@@ -21,7 +21,7 @@ cd /Users/joshua/Projects/cora
 
 ```bash
 # Edit your personal information
-nano context/projects/personal/cora.md
+nano context/philosophy/coherenceism.md
 ```
 
 ### 3. Use with Codex CLI

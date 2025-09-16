@@ -2,6 +2,7 @@
 name: load-cora-context
 intent: Manually load cora context and verify readiness
 steps:
+  - Read agent persona
   - Read UFC docs
   - Read personal context
   - Read tools/MCP overview
@@ -27,8 +28,9 @@ When an agent isn't following cora protocols, use this command to force context 
 5. Confirms successful loading
 
 ## Files to Read (relative paths)
+- `agents/ivy.md` - Primary agent persona
 - `context/COHERENCE.md` - Core cora system
-- `context/projects/personal/cora.md` - Personal context
+- `context/philosophy/coherenceism.md` - Coherenceism foundation
 - `context/tools/mcp/servers.md` - Tools overview and MCP configuration (optional)
 - List `commands/` - Available commands
 - List `context/methodologies/` - Available methodologies
@@ -36,7 +38,8 @@ When an agent isn't following cora protocols, use this command to force context 
 
 ## Expected Confirmation
 ✅ UFC system loaded - I understand the context architecture
-✅ Personal context loaded - I know your preferences
+✅ Persona loaded - Ivy persona is active
+✅ Philosophy loaded - Coherenceism foundation is active
 ✅ Tools overview loaded - I see available tools
 ✅ Commands directory scanned - I see available commands
 ✅ Methodologies scanned - I see available processes

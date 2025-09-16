@@ -1,3 +1,12 @@
+---
+kind: tool
+title: Filesystem MCP Server
+intent: Provide direct read access to the cora context for clients
+status: active
+updated: 2025-09-16
+tags: [tool, mcp]
+---
+
 # Filesystem MCP Server
 
 ## Purpose

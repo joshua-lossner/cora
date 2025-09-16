@@ -1,3 +1,12 @@
+---
+kind: project
+title: Coherence Network
+intent: Privacy-first network of interconnected sites manifesting Coherenceism
+status: active
+updated: 2025-09-16
+tags: [project, coherenceism]
+---
+
 # Coherence Network
 
 ## Overview
@@ -49,4 +58,3 @@ Build a privacy-first, philosophically coherent network of interconnected websit
 ## Notes
 - Domain/TLD confirmations: input formatting suggested possible mismatches for MEDIA/SOCIAL/NETWORK; above reflects intended TLDs. Please confirm.
 - Color system is canonical across properties; consider documenting palette tokens when ready.
-

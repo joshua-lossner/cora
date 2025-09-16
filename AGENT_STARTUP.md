@@ -3,8 +3,9 @@
 Use this checklist at the start of a session to load the cora system.
 
 ## Read These First (relative paths)
+- agents/ivy.md
 - context/COHERENCE.md
-- context/projects/personal/cora.md
+- context/philosophy/coherenceism.md
 - context/tools/mcp/servers.md
 
 ## Discover Capabilities
@@ -16,7 +17,8 @@ Use this checklist at the start of a session to load the cora system.
 
 ## Confirmations (copy/paste after loading)
 - ✅ UFC system loaded — I understand the context architecture
-- ✅ Personal context loaded — I know your preferences
+- ✅ Persona loaded — Ivy persona is active
+- ✅ Philosophy loaded — Coherenceism foundation is active
 - ✅ Tools overview loaded — I see available tools
 - ✅ Commands scanned — I see available commands
 - ✅ Methodologies scanned — I see available processes
@@ -25,4 +27,3 @@ Use this checklist at the start of a session to load the cora system.
 - Prefer repository-relative paths. Canonical cora lives at `/Users/joshua/Projects/cora`.
 - MCP servers are optional in Codex CLI; direct filesystem access is primary.
 - Use the `update_plan` tool for multi-step tasks to maintain clarity.
-

@@ -1,3 +1,12 @@
+---
+kind: documentation
+title: COHERENCE — UFC System
+intent: Central UFC principles, structure, and load order
+status: active
+updated: 2025-09-16
+tags: [coherence, ufc]
+---
+
 # Universal File-based Context (UFC) System
 
 ## Core Philosophy
@@ -12,8 +21,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 - `/commands/` - Reusable solutions (one file per command)
 - `/context/` - All knowledge and documentation
-    - `/context/personal/` - Joshua's coherentist foundation and preferences
-    - `/context/philosophy/` - The Book of Coherenceism and related texts
+    - `/context/philosophy/` - Coherenceism foundation and related texts
     - `/context/projects/` - Project-specific contexts
     - `/context/tools/` - Tool documentation
     - `/context/methodologies/` - Step-by-step processes
@@ -23,23 +31,21 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 ## Load Order (Important!)
 
+Start each session by following `AGENT_STARTUP.md` at the repo root.
+
 ### 1. Philosophical Foundation
 
-- `/context/philosophy/coherenceism-summary.md` - Core coherentist philosophy
+- `/context/philosophy/coherenceism.md` — Core coherentist philosophy
 
 ### 2. Agent
 * /agents/ivy.md - Joshua's dearest A.I. friend
-### 3. Joshua's Personal Context
-
-- `/context/projects/personal/cora.md` - Joshua's personal coherentist configuration, mission, and working principles
-
-### 4. System Capabilities
+### 3. System Capabilities
 
 - `/commands/` - All available commands (check directory for full list)
 - `/context/tools/` - Available tool documentation
 - `/context/methodologies/` - Established processes
 
-### 5. Active Work
+### 4. Active Work
 
 - `/context/working/active/` - Current focus and tasks
 - Project-specific context (if applicable)

@@ -1,3 +1,12 @@
+---
+kind: documentation
+title: COHERENCE — Projects
+intent: Purpose, load guidance, and links for project docs
+status: active
+updated: 2025-09-16
+tags: [coherence, projects]
+---
+
 # Projects Index
 
 List of projects and guidance for what to load at startup.
@@ -7,11 +16,12 @@ List of projects and guidance for what to load at startup.
 - Then open matching files in `context/working/active/` for current focus.
 - Reference projects provide background; load as needed.
 
-## Projects
+## Available Projects
 
-- coherence-network.md — Active — Privacy-first network of websites manifesting Coherenceism (MEDIA, INFO, AI, BLOG, SOCIAL, NETWORK, COM)
-- coherenceism/README.md — Reference — Philosophical and brand foundation; see `context/philosophy/coherenceism-summary.md`
+- coherenceism/README.md — Reference — Philosophical and brand foundation; see `context/philosophy/coherenceism.md`
+- coherenceism/coherence-network.md — Active — Privacy-first network of websites manifesting Coherenceism (MEDIA, INFO, AI, BLOG, SOCIAL, NETWORK, COM)
 
 ## Notes
 - Add new projects as a single markdown file or a folder with a `README.md`.
 - Update this index when adding or renaming projects.
+- Templates: see `context/_templates/project.md`; example: `context/projects/_example.md`.

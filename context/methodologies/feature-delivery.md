@@ -1,3 +1,12 @@
+---
+kind: methodology
+title: Feature Delivery
+intent: Deliver user-visible value in small, high-quality slices with docs and observability
+status: active
+updated: 2025-09-16
+tags: [methodology, delivery]
+---
+
 # Feature Delivery Plan
 
 ## Goals
@@ -23,4 +32,3 @@
 
 ## Outputs
 - Linked spec, PRs, release notes, and owner for follow-up.
-

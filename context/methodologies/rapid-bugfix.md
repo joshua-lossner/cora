@@ -1,3 +1,12 @@
+---
+kind: methodology
+title: Rapid Bugfix
+intent: Reproduce, isolate, fix minimally with guardrails, and ship safely
+status: active
+updated: 2025-09-16
+tags: [methodology, bugfix]
+---
+
 # Rapid Bugfix Plan
 
 ## Goals
@@ -24,4 +33,3 @@
 ## Outputs
 - Linked issue with repro, fix description, and test refs.
 - Follow-up tasks to harden against recurrence.
-

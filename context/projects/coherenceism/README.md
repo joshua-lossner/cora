@@ -1,3 +1,12 @@
+---
+kind: project
+title: Coherenceism (Project)
+intent: Steward the philosophical foundation, brand, and references for downstream work
+status: reference
+updated: 2025-09-16
+tags: [project, coherenceism]
+---
+
 # Coherenceism (Project)
 
 ## Overview
@@ -9,7 +18,7 @@ Coherenceism is the philosophical foundation for this cora: a framework for buil
 - Provide reference material for downstream projects (e.g., Coherence Network)
 
 ## Key References
-- Philosophy summary: `context/philosophy/coherenceism-summary.md`
+- Philosophy foundation: `context/philosophy/coherenceism.md`
 - Related project: `context/projects/coherence-network.md`
 
 ## Deliverables (living)

@@ -1,1 +1,19 @@
 .obsidian/
+# Secrets/env
+.env
+secrets/
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Caches and envs
+__pycache__/
+.venv/
+venv/
+node_modules/
+.cache/
+*.log

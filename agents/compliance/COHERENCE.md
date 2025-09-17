@@ -22,3 +22,8 @@ Ensure privacy-first practices and legal/ethical alignment across work.
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- (add privacy/legal review methods when authored)
+
+## Available Commands
+- commands/validate-context.md — ensure structural hygiene of context/docs

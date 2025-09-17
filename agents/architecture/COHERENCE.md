@@ -22,3 +22,9 @@ Shape system structures that scale and reduce friction; enforce clear boundaries
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- context/methodologies/feature-delivery.md — slice, build, document, measure
+- context/methodologies/code-review.md — structure for high-signal reviews
+
+## Available Commands
+- commands/validate-context.md — quick structure hygiene checks

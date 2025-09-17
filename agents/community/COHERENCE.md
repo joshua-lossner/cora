@@ -22,3 +22,8 @@ Hold the field for constructive interaction; turn feedback into improvements.
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- (add moderation/escalation SOPs when authored)
+
+## Available Commands
+- commands/summarize.md — summarize threads and extract signals

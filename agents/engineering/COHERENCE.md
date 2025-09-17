@@ -22,3 +22,11 @@ Build and maintain software artifacts aligned to architecture and principles.
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- context/methodologies/rapid-bugfix.md — reproduce, isolate, fix with tests
+- context/methodologies/feature-delivery.md — incremental delivery with quality
+- context/methodologies/code-review.md — actionable, kind reviews
+
+## Available Commands
+- commands/git-review.md — show status/diff and suggest commit message
+- commands/validate-context.md — hygiene checks for context structure

@@ -22,3 +22,8 @@ Communicate clearly with consistent voice; keep docs concise and link-rich.
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- (add editorial workflow when authored)
+
+## Available Commands
+- commands/summarize.md — draft or tighten copy and docs

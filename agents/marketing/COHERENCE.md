@@ -22,3 +22,8 @@ Amplify coherent messages through appropriate channels; measure impact responsib
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- (add campaign planning method when authored)
+
+## Available Commands
+- commands/summarize.md — condense research into messaging

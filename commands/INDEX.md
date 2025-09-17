@@ -8,6 +8,7 @@ List of available commands and summaries.
  - new-project.md — Scaffold a new project with cora as submodule
  - update-cora-submodule.md — Pull latest cora into this project
  - validate-context.md — Validate cora context structure and frontmatter
+ - validate-agents.md — Validate agent departments, metadata, and SOP coverage
 
 Notes:
 - New commands should include the recommended frontmatter in `AGENTS.md`.

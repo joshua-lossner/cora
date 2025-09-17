@@ -36,3 +36,5 @@ Organize agents into purpose-led departments with clear charters, interfaces, an
 - Keep COHERENCE.md brief; put actionable detail in SOPs.
 - Link to `context/methodologies/*` and `commands/*` where relevant.
 
+## Validation
+- See `commands/validate-agents.md` to check structure and metadata.

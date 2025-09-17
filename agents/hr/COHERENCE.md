@@ -35,3 +35,8 @@ Create and sustain a coherent organization: clear roles, aligned recruiting, eff
 ## KPIs
 - Time-to-role-clarity, onboarding success rates (30/60/90), retention signals, cultural health indicators
 
+## Available Methods
+- (use department SOPs below; add HR methodologies if needed)
+
+## Available Commands
+- commands/summarize.md — create concise role briefs and interview kits

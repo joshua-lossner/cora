@@ -17,8 +17,13 @@ Maintain clarity and integrity of core principles; inform decisions and reviews.
 - Outputs: guidance, reviews, and principle references
 
 ## SOPs
-- Link relevant guidance when created
+- sops/principles-review.md — review proposals/changes for alignment
 
 ## Available Agents
-- (add as needed)
+- principles-reviewer.md — reviews changes for alignment with Coherenceism
 
+## Available Methods
+- (link methodologies when authored)
+
+## Available Commands
+- commands/summarize.md — condense proposals and surface key claims

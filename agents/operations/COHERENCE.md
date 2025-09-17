@@ -22,3 +22,9 @@ Keep systems running smoothly; reduce toil; enable fast, safe changes.
 ## Available Agents
 - (add as needed)
 
+## Available Methods
+- context/methodologies/rapid-bugfix.md — diagnose and remediate incidents fast
+
+## Available Commands
+- commands/update-cora-submodule.md — sync embedded cora in downstream repos
+- commands/validate-context.md — quick structure checks

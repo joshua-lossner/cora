@@ -3,8 +3,8 @@
 This repository implements a Personal AI Infrastructure (cora) using the Universal File-based Context (UFC) pattern. These instructions apply to any agent working within this repo, with a focus on Codex CLI.
 
 ## Load Order
-- Philosophy: `context/philosophy/coherenceism.md`
 - Agent persona: `agents/ivy.md`
+- Philosophy: `context/philosophy/coherenceism.md`
 - Agent departments: `agents/COHERENCE.md`
 - Capabilities: `commands/`, `context/tools/`, `context/methodologies/`
 - Active work: `context/working/`

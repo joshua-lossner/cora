@@ -1,0 +1,3 @@
+[submodule "vendors/mcp/web-browser-mcp-server"]
+	path = vendors/mcp/web-browser-mcp-server
+	url = https://github.com/blazickjp/web-browser-mcp-server.git

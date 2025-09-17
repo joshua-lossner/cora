@@ -19,10 +19,10 @@ Reusable capabilities with minimal frontmatter and human-readable usage.
   - `git/` — git hygiene and workflows
   - `project/` — project scaffolding and submodule utilities
   - `writing/` — summarization and editorial helpers
+  - `research/` — signal scanning and pattern extraction
 - Templates: `commands/_templates/`
 
 ## Notes
 - Keep command names kebab-case and action-oriented.
 - Prefer tags and categories in frontmatter for discoverability.
 - Cross-link commands that often chain.
-

@@ -18,9 +18,10 @@ Communicate clearly with consistent voice; keep docs concise and link-rich.
 
 ## SOPs
 - Add style guide and editorial workflow SOPs
+ - sops/editorial-outline-draft-edit.md — outline, draft, edit, review
 
 ## Available Agents
-- (add as needed)
+ - writer.md — turns signals into outlines/drafts; edits for clarity
 
 ## Available Methods
 - (add editorial workflow when authored)

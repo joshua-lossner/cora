@@ -18,6 +18,10 @@ List of available commands grouped by category.
 ## writing
 - writing/summarize.md — Generate concise summaries of content
 
+## research
+- research/daily-scan.md — Produce categorized signals and prompts from daily sources
+- research/extract-signals.md — Extract patterns and prompts from raw notes
+
 Notes:
 - New commands should include the recommended frontmatter in `AGENTS.md`.
 - Keep this index updated when adding or renaming commands.

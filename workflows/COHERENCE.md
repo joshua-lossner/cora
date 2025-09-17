@@ -13,14 +13,14 @@ tags: [workflows, coherence]
 Define end-to-end workflows that chain agents, commands, and methodologies to produce consistent outcomes.
 
 ## Structure
-- Workflow files live in `workflows/` (one file per workflow) or subfolders if assets are needed.
+- Organize by project: `workflows/<project-name>/*.md`.
+- Root contains `COHERENCE.md` and `_templates/` only.
 - Template: `workflows/_templates/workflow.md`.
 - Keep workflows concise; link to agents, commands, and methods.
 
-## Available Workflows
-- blog-post.md — Research → Outline → Draft → Review → Edit → Publish
+## Available Workflows (by project)
+- coherenceism.blog/blog-post.md — Research → Outline → Draft → Review → Edit → Publish
 
 ## Notes
 - Use clear Actors, Inputs, Outputs, Steps, and Success Signals.
 - Prefer commands in `commands/core|git|project|writing` and methods in `context/methodologies/`.
-

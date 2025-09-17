@@ -25,6 +25,9 @@ tags: [workflow, content]
 - Commit with message and summary; published site build
 
 ## Steps
+0. Daily Signal Scan
+   - Run Research SOP: agents/research/sops/daily-signal-scan.md
+   - Use commands/research/daily-scan.md and/or commands/research/extract-signals.md
 1. Research Brief
    - Gather 3–5 high-signal sources; extract key claims
    - Use commands/writing/summarize.md to condense notes
@@ -54,4 +57,3 @@ tags: [workflow, content]
 ## Success Signals
 - Clear thesis; aligned with Coherenceism; actionable insights
 - No privacy issues; clean git review; successful publish
-

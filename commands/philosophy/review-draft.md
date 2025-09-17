@@ -1,12 +1,12 @@
 ---
 name: review-draft
 intent: Review a draft for alignment with Coherenceism
-inputs: [draft_path]
+inputs: [draft_path, project]
 steps:
   - Use principles review SOP
   - Identify tensions and misalignments
   - Propose concrete guidance or alternatives
-expected: Review notes saved alongside the draft (draft_path.review.md)
+expected: Review notes saved to context/working/reviews/<project>/YYYY-MM-DD-<slug>.md
 tags: [philosophy, review]
 ---
 
@@ -17,5 +17,4 @@ Evaluate a draft against Coherenceism using the principles review SOP.
 
 ## Usage
 - SOP: `agents/philosophy/sops/principles-review.md`.
-- Save notes at the same path with `.review.md` appended.
-
+- Save notes under `context/working/reviews/<project>/YYYY-MM-DD-<slug>.md`.

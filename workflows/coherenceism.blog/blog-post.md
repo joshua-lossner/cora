@@ -40,6 +40,7 @@ tags: [workflow, content]
    - Run commands/writing/summarize.md on sections to tighten
 4. Principles Review
    - Send draft to agents/philosophy/principles-reviewer.md using its SOP
+   - Save notes to `context/working/reviews/coherenceism.blog/`
    - Apply guidance; note any tensions/tradeoffs
 5. Edit
    - Clarify voice and structure; add headings and links

@@ -30,7 +30,7 @@ tags: [workflow, content, automation]
 2. Outline — commands/writing/outline-from-signals.md → save outline
 3. Draft — commands/writing/draft-from-outline.md → save draft
 4. Edit — commands/writing/edit-apply-sop.md
-5. Principles Review — commands/philosophy/review-draft.md → apply guidance
+5. Principles Review — commands/philosophy/review-draft.md → save notes to `context/working/reviews/coherenceism.blog/`
 6. Privacy Check (if needed) — commands/compliance/privacy-check.md → apply mitigations
 7. Validate — commands/core/validate-context.md (cora) + commands/git/git-review.md (blog)
 8. Stage Draft — commands/project/stage-blog-draft.md → ready for publish
@@ -39,4 +39,3 @@ tags: [workflow, content, automation]
 - Clear thesis; aligned with Coherenceism
 - Clean validation and review
 - Draft staged in blog repo
-

@@ -51,6 +51,7 @@ Follow with human-readable sections (Purpose, Usage, Notes). Older commands with
 - `commands/INDEX.md` summarizes available commands.
 - `context/methodologies/COHERENCE.md` lists available methodologies.
 - `agents/COHERENCE.md` lists available agent departments.
+- `workflows/COHERENCE.md` lists available workflows and templates.
 
 ## Compatibility
 - In older repos you may see `CLAUDE.md` as an entrypoint; in cora, use `COHERENCE.md` per subtree and `AGENT_STARTUP.md` as the canonical entry for Codex.

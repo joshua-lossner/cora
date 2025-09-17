@@ -34,4 +34,4 @@ Create a new project under `~/Projects` that’s pre-wired to your cora via a `c
 
 ## Notes
 - Requires git and network access to clone the cora submodule.
-- If you prefer a local symlink instead of a submodule, use: `ln -s /Users/joshua/Projects/cora cora` and add `cora` to `.gitignore`.
+- If you prefer a local symlink instead of a submodule, use: `ln -s "$CORA_ROOT" cora` (set `CORA_ROOT` in `.env`) and add `cora` to `.gitignore`.

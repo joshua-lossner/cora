@@ -15,6 +15,13 @@ tags: [project, blog]
 Place a completed draft into the blog repository’s content folder and stage it for commit.
 
 ## Usage
-- Adjust the blog repo path if different from `~/Projects/coherenceism.blog`.
-- Run git add and proceed with review/commit as usual.
-
+- Set `BLOG_ROOT` in your `.env` (defaults to your blog repo path).
+- Example (macOS):
+```
+BLOG_ROOT=${BLOG_ROOT:-$HOME/Projects/coherenceism.blog}
+DATE=YYYY-MM-DD
+SLUG=<slug>
+cp context/working/drafts/coherenceism.blog/draft-${DATE}-${SLUG}.md "$BLOG_ROOT/src/content/journal/${DATE}-${SLUG}.md"
+cd "$BLOG_ROOT" && git add "src/content/journal/${DATE}-${SLUG}.md"
+```
+- Proceed with review/commit as usual.

@@ -24,6 +24,6 @@ Use this checklist at the start of a session to load the cora system.
 - ✅ Methodologies scanned — I see available processes
 
 ## Notes for Agents
-- Prefer repository-relative paths. Canonical cora lives at `/Users/joshua/Projects/cora`.
+- Prefer repository-relative paths. Use `.env` to set local absolutes (e.g., `CORA_ROOT`, `BLOG_ROOT`).
 - MCP servers are optional in Codex CLI; direct filesystem access is primary.
 - Use the `update_plan` tool for multi-step tasks to maintain clarity.

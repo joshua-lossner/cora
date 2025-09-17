@@ -15,7 +15,7 @@ Use this file in a project to align with your cora system.
 ## Pointing to Your cora
 - If this file is in a different project, Codex needs a way to locate your cora repo.
 - Recommended (submodule): add your cora repo as a submodule at `cora/` and reference paths like `cora/context/...` in your local `AGENT_STARTUP.md`.
-- Alternative: keep a local cora at `/Users/joshua/Projects/cora` and reference absolute paths there (works if the agent session opens in that directory).
+- Alternative: set `CORA_ROOT` in a `.env` file to your local absolute path and reference via that variable in scripts/docs.
 - Optional: include a one-line note in this project’s `AGENT_STARTUP.md` that says where cora lives (e.g., `CORA_ROOT=./cora`).
 
 ### Submodule Setup (recommended)

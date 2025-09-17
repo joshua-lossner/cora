@@ -13,13 +13,13 @@ tags: [tool, mcp]
 
 - MCP is optional. Prefer direct filesystem access within this repository.
 - Use repository-relative paths (e.g., `context/...`, `commands/...`).
-- If running outside this repo, ensure the agent has access to this context (e.g., open Codex in `/Users/joshua/Projects/cora`, or include this repo as a submodule).
+- If running outside this repo, ensure the agent has access to this context (open Codex in this repo, or include this repo as a submodule).
 
 ## Example: Filesystem Server (Claude Desktop, optional)
 
 If you also use Claude Desktop with MCP:
 - Purpose: Direct access to cora context directory
-- Path: `/Users/joshua/Projects/cora/context/`
+- Path: `<CORA_ROOT>/context/` (set `CORA_ROOT` in `.env` if needed)
 - Package: `@modelcontextprotocol/server-filesystem`
 
 How to add MCP servers (Claude Desktop):

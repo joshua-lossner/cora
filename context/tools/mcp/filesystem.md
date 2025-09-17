@@ -13,7 +13,7 @@ tags: [tool, mcp]
 Direct access to the cora context directory structure, enabling Claude to search and read files without manual tool calls.
 
 ## What It Does
-- Provides direct file system access to `/Users/joshua/Projects/cora/context/`
+- Provides direct file system access to your cora `context/` directory
 - Allows searching for files by name or content
 - Enables reading multiple files efficiently
 - Works seamlessly with the UFC (Universal File-based Context) system
@@ -28,7 +28,7 @@ With the filesystem MCP, you can:
 Instead of manually using Read/Grep tools, the MCP server provides a more fluid interface for context retrieval, similar to how Daniel throws queries "over the wall" to Kai.
 
 ## Integration with cora
-This MCP server reads from the same `/context/` directory that your UFC system uses, maintaining coherence across all interactions.
+This MCP server reads from the same `context/` directory that your UFC system uses, maintaining coherence across all interactions.
 
 ## To Activate
 1. Restart Claude Desktop app

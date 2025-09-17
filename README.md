@@ -13,8 +13,9 @@ cora is a file system-based knowledge management system that gives your AI assis
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/joshua-lossner/cora.git /Users/joshua/Projects/cora
-cd /Users/joshua/Projects/cora
+git clone https://github.com/joshua-lossner/cora.git cora
+cd cora
+# optional: cp .env.example .env && edit CORA_ROOT/BLOG_ROOT
 ```
 
 ### 2. Set up your personal context
@@ -28,7 +29,7 @@ nano context/philosophy/coherenceism.md
 
 ```bash
 # Option A: Work inside this repo (recommended for Codex)
-# Open Codex CLI in /Users/joshua/Projects/cora and use the cora system directly.
+# Open Codex CLI in this repo and use the cora system directly.
 
 # Option B: Embed in another project as a submodule (recommended)
 cd ~/your-project
@@ -87,7 +88,7 @@ Your file system IS your AI's brain. Knowledge is organized in directories that 
 Every problem you solve becomes a permanent capability:
 
 ```markdown
-# Example: /Users/joshua/Projects/cora/commands/analyze-logs.md
+# Example: commands/analyze-logs.md
 
 ## Purpose
 Analyze system logs for errors and patterns
@@ -254,7 +255,7 @@ Each command can chain with others, creating infinite combinations.
 
 ```bash
 # Backup your brain
-cd /Users/joshua/Projects/cora
+cd cora
 git add .
 git commit -m "Update: added new commands"
 git push
@@ -323,7 +324,7 @@ cat > commands/daily-standup.md << 'EOF'
 4. Format for Slack
 
 ## Reads From
-- /Users/joshua/Projects/cora/context/working/active/
+- context/working/active/
 - Calendar events
 - Git commits
 
@@ -403,7 +404,7 @@ This cora implementation is based on **Daniel Miessler's** Universal File-based 
 
 ## Using cora as a Submodule in Projects
 
-Recommended when you keep your canonical cora at `/Users/joshua/Projects/cora` (or a remote repo) and want each project to load it on startup:
+Recommended when you keep your canonical cora in a separate repo and want each project to load it on startup:
 
 ### Add to a project
 ```bash
@@ -422,8 +423,8 @@ git add cora && git commit -m "chore(cora): update submodule"
 ```
 
 ### Prefer a global local copy instead?
-- Create a symlink: `ln -s /Users/joshua/Projects/cora cora` (then add `cora` to `.gitignore`).
-- Edits in `/Users/joshua/Projects/cora` appear instantly in all projects.
+- Create a symlink: `ln -s /absolute/path/to/cora cora` (then add `cora` to `.gitignore`).
+- Edits in your canonical cora appear instantly in all projects.
 - Tradeoff: less portable; not suitable for collaborators.
 
 ## License

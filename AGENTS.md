@@ -16,7 +16,7 @@ This repository implements a Personal AI Infrastructure (cora) using the Univers
 3. Read `context/tools/mcp/servers.md` (tools; MCP optional)
 4. List `commands/` and read `commands/INDEX.md`
 5. List `context/methodologies/` and read `context/methodologies/COHERENCE.md`
-6. Confirm loaded using the confirmations in `AGENT_STARTUP.md`
+6. Confirm loaded (see Confirmations below)
 
 ## Confirmations
 - ✅ UFC system loaded — I understand the context architecture

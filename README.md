@@ -35,9 +35,9 @@ nano context/philosophy/coherenceism.md
 cd ~/your-project
 git init                                      # if not already a repo
 git submodule add https://github.com/joshua-lossner/cora.git cora
-cp cora/CODEX-template.md AGENT_STARTUP.md     # startup instructions that reference cora/
-echo "CORA_ROOT=./cora" >> AGENT_STARTUP.md     # optional human hint
-echo "# Refer to ./cora for cora context and commands." >> AGENT_STARTUP.md
+cp cora/AGENTS-template.md AGENTS.md          # startup instructions that reference cora/
+echo "CORA_ROOT=./cora" >> .env                 # optional human hint
+echo "# Refer to ./cora for cora context and commands." >> AGENTS.md
 ```
 
 ## How It Works
@@ -50,7 +50,7 @@ echo "# Refer to ./cora for cora context and commands." >> AGENT_STARTUP.md
 
 ### Daily Workflow
 
-1. **Start a project** → Add `AGENT_STARTUP.md` (or `COHERENCE.md`) pointing to the `cora/` submodule
+1. **Start a project** → Add `AGENTS.md` (or `COHERENCE.md`) pointing to the `cora/` submodule
 2. **Solve a problem** → Save solution as a command
 3. **Learn something** → Add to context
 4. **Everything compounds** → All future work benefits
@@ -59,22 +59,44 @@ echo "# Refer to ./cora for cora context and commands." >> AGENT_STARTUP.md
 
 ```
 repo root
-├── commands/           # Reusable solutions (one file per command)
-│   ├── INDEX.md        # Command list and summaries
-│   └── _template.md    # Command frontmatter template
-├── context/            # Central knowledge base
-│   ├── projects/       # Project-specific contexts
-│   │   └── personal/   # Your goals, preferences, information
-│   ├── tools/          # Documentation for all tools
-│   ├── methodologies/  # Step-by-step processes
-│   │   └── INDEX.md    # Methodology list
-│   └── working/        # Active tasks and archive
-├── agents/             # Specialized AI personalities
-├── AGENTS.md           # Agent conventions for this repo
-├── AGENT_STARTUP.md    # Codex-friendly startup checklist
-├── CODEX-template.md   # Template for embedding in projects
-├── secrets/            # Git-ignored sensitive data
-└── .env                # API keys and secrets (never committed)
+├── agents/                      # Departments, agents, SOPs
+│   ├── COHERENCE.md             # Purpose, conventions, departments
+│   ├── _templates/              # agent.md, department-COHERENCE.md
+│   └── <department>/            # hr/, philosophy/, engineering/, …
+│       ├── COHERENCE.md
+│       ├── <agent>.md
+│       └── sops/*.md
+├── commands/                    # Reusable commands (by category)
+│   ├── COHERENCE.md             # Structure and conventions
+│   ├── INDEX.md                 # Grouped catalog
+│   ├── core/                    # load/validate/run-workflow, etc.
+│   ├── git/                     # git-review, …
+│   ├── project/                 # new-project, update-cora-submodule, …
+│   ├── writing/                 # summarize, outline-from-signals, …
+│   ├── research/                # daily-scan, extract-signals, …
+│   ├── philosophy/              # review-draft, …
+│   ├── compliance/              # privacy-check, …
+│   └── _templates/command.md
+├── context/                     # Central knowledge base
+│   ├── COHERENCE.md
+│   ├── _templates/              # project/methodology/personal/etc.
+│   ├── philosophy/coherenceism.md
+│   ├── architecture/coherence-rails.md
+│   ├── methodologies/
+│   ├── tools/
+│   └── working/                 # Active artifacts
+│       ├── active/
+│       ├── signals/<project>/   # YYYY-MM-DD.md daily signals logs
+│       ├── drafts/<project>/    # outline-/draft-*.md
+│       └── reviews/<project>/   # review notes
+├── workflows/                   # Chained processes (by project)
+│   ├── COHERENCE.md
+│   ├── _templates/workflow.md
+│   └── <project>/*.md           # e.g., coherenceism.blog/blog-post.md
+├── AGENTS.md                    # Canonical startup for Codex
+├── AGENTS-template.md           # Template to embed in other projects
+├── .env.example                 # Example env vars (CORA_ROOT, BLOG_ROOT)
+└── .env                         # Local env (git-ignored)
 ```
 
 ## Core Concepts
@@ -87,22 +109,7 @@ Your file system IS your AI's brain. Knowledge is organized in directories that 
 
 Every problem you solve becomes a permanent capability:
 
-```markdown
-# Example: commands/analyze-logs.md
-
-## Purpose
-Analyze system logs for errors and patterns
-
-## Process
-1. Extract error messages
-2. Group by frequency
-3. Identify root causes
-4. Generate report
-
-## Usage
-"Analyze these logs"
-"Find errors in log file"
-```
+See `commands/INDEX.md` for grouped examples and usage.
 
 ### 3. Context Inheritance
 
@@ -338,7 +345,7 @@ EOF
 
 ### AI not loading context?
 
-- Check `AGENT_STARTUP.md` or `COHERENCE.md` exists in project
+- Check `AGENTS.md` or `COHERENCE.md` exists in project
 - Verify paths are correct (use `cora/` if using a submodule)
 - Ensure files are readable
 - If using submodules, ensure they are initialized: `git submodule update --init --recursive`
@@ -379,7 +386,7 @@ This isn't just about automation - it's about building a second brain that grows
 ### Sharing with others
 
 - Commands can be shared individually
-- Keep personal context private
+- Keep personal/private secrets in `.env` and `secrets/`
 - Consider open-sourcing useful commands
 
 ## Credits
@@ -411,8 +418,8 @@ Recommended when you keep your canonical cora in a separate repo and want each p
 cd ~/Projects/my-new-app
 git init
 git submodule add https://github.com/joshua-lossner/cora.git cora
-cp cora/CODEX-template.md AGENT_STARTUP.md
-echo "CORA_ROOT=./cora" >> AGENT_STARTUP.md  # optional
+cp cora/AGENTS-template.md AGENTS.md
+echo "CORA_ROOT=./cora" >> .env  # optional
 ```
 
 ### Keep cora current in a project

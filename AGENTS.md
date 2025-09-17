@@ -18,6 +18,14 @@ This repository implements a Personal AI Infrastructure (cora) using the Univers
 5. List `context/methodologies/` and read `context/methodologies/COHERENCE.md`
 6. Confirm loaded using the confirmations in `AGENT_STARTUP.md`
 
+## Confirmations
+- ✅ UFC system loaded — I understand the context architecture
+- ✅ Persona loaded — Ivy persona is active
+- ✅ Philosophy loaded — Coherenceism foundation is active
+- ✅ Tools overview loaded — I see available tools
+- ✅ Commands scanned — I see available commands
+- ✅ Methodologies scanned — I see available processes
+
 ## Conventions for Agents
 - Prefer repository-relative paths (avoid hard-coded absolute paths).
 - Use `rg` for search and `sed -n` to read files in <=250 line chunks.

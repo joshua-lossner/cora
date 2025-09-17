@@ -17,10 +17,10 @@ Ensure privacy-first practices and legal/ethical alignment across work.
 - Outputs: reviews, approvals, mitigations
 
 ## SOPs
-- Add privacy review and policy builder SOPs
+ - sops/privacy-review.md — evaluate features/data flows for privacy alignment
 
 ## Available Agents
-- (add as needed)
+ - privacy-reviewer.md — reviews features for privacy-first alignment
 
 ## Available Methods
 - (add privacy/legal review methods when authored)

@@ -20,7 +20,7 @@ Build and maintain software artifacts aligned to architecture and principles.
 - Link delivery, review, and release SOPs as created
 
 ## Available Agents
-- (add as needed)
+- delivery-lead.md — orchestrates coherent feature delivery and quality gates
 
 ## Available Methods
 - context/methodologies/rapid-bugfix.md — reproduce, isolate, fix with tests

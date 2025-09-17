@@ -31,7 +31,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 ## Load Order (Important!)
 
-Start each session by following `AGENT_STARTUP.md` at the repo root.
+Start each session by following `AGENTS.md` at the repo root.
 
 ### 1. Philosophical Foundation
 

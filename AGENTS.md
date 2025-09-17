@@ -62,4 +62,4 @@ Follow with human-readable sections (Purpose, Usage, Notes). Older commands with
 - `workflows/COHERENCE.md` lists available workflows and templates.
 
 ## Compatibility
-- In older repos you may see `CLAUDE.md` as an entrypoint; in cora, use `COHERENCE.md` per subtree and `AGENT_STARTUP.md` as the canonical entry for Codex.
+- In older repos you may see `CLAUDE.md` as an entrypoint; in cora, use `COHERENCE.md` per subtree and `AGENTS.md` as the canonical entry for Codex.

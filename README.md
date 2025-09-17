@@ -45,7 +45,7 @@ echo "# Refer to ./cora for cora context and commands." >> AGENTS.md
 ### The Three-Layer Architecture
 
 1. **Central Brain** (`context/`) - All your knowledge lives here
-2. **Project Pointers** (`AGENT_STARTUP.md` or `COHERENCE.md`) - Simple files that point to the central brain (relative when embedded)
+2. **Project Pointers** (`AGENTS.md` or `COHERENCE.md`) - Simple files that point to the central brain (relative when embedded)
 3. **Growing Capabilities** (`commands/`) - Every solution becomes a reusable command
 
 ### Daily Workflow
@@ -209,7 +209,7 @@ EOF
 
 ### Project Integration
 
-For each project, create an `AGENT_STARTUP.md` or `COHERENCE.md`:
+For each project, create an `AGENTS.md` or `COHERENCE.md`:
 
 ```markdown
 # Project: My App

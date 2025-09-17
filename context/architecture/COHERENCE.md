@@ -18,3 +18,6 @@ Load on demand; not part of default startup.
 ## Notes
 Keep files small and link from higher-level COHERENCE docs.
 Templates: see `context/_templates/architecture.md`; example: `context/architecture/_example.md`.
+
+## Available Docs
+- coherence-rails.md — KPIs, APIs, and patterns to preserve coherence under load

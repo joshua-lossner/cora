@@ -4,7 +4,8 @@ This repository implements a Personal AI Infrastructure (cora) using the Univers
 
 ## Load Order
 - Philosophy: `context/philosophy/coherenceism.md`
-- Agent persona: `agents/` (if applicable)
+- Agent persona: `agents/ivy.md`
+- Agent departments: `agents/COHERENCE.md`
 - Capabilities: `commands/`, `context/tools/`, `context/methodologies/`
 - Active work: `context/working/`
 
@@ -49,6 +50,7 @@ Follow with human-readable sections (Purpose, Usage, Notes). Older commands with
 ## Indexes
 - `commands/INDEX.md` summarizes available commands.
 - `context/methodologies/COHERENCE.md` lists available methodologies.
+- `agents/COHERENCE.md` lists available agent departments.
 
 ## Compatibility
 - In older repos you may see `CLAUDE.md` as an entrypoint; in cora, use `COHERENCE.md` per subtree and `AGENT_STARTUP.md` as the canonical entry for Codex.

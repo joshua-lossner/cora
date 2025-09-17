@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [role-architecture, recruiting, onboarding, policy-stewardship]
 methods: [context/methodologies/feature-delivery.md]
-commands: [commands/summarize.md]
+commands: [commands/writing/summarize.md]
 inputs: [org-strategy, department-needs, hiring-plan]
 outputs: [role-charters, interview-kits, onboarding-plans, policy-drafts]
 escalation: [department-leads, compliance]
@@ -27,11 +27,10 @@ tags: [agent, hr]
 - Use concise SOPs and checklists; link to department needs and KPIs
 
 ## Tools & Commands
-- `commands/summarize.md` for concise briefings
+- `commands/writing/summarize.md` for concise briefings
 
 ## Interfaces & Escalation
 - Collaborate with department leads; escalate policy questions to compliance
 
 ## KPIs
 - Decreasing time-to-role-clarity; successful 30/60/90 onboarding outcomes
-

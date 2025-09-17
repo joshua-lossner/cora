@@ -26,4 +26,4 @@ Hold the field for constructive interaction; turn feedback into improvements.
 - (add moderation/escalation SOPs when authored)
 
 ## Available Commands
-- commands/summarize.md — summarize threads and extract signals
+- commands/writing/summarize.md — summarize threads and extract signals

@@ -26,4 +26,4 @@ Produce high-signal syntheses and references to inform decisions and content.
 - (add research synthesis methods when authored)
 
 ## Available Commands
-- commands/summarize.md — produce concise, structured syntheses
+- commands/writing/summarize.md — produce concise, structured syntheses

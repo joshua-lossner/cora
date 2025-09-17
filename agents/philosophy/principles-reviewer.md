@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [principles-guardrails, change-review, guidance]
 methods: []
-commands: [commands/summarize.md]
+commands: [commands/writing/summarize.md]
 inputs: [proposal, diff, rationale, constraints]
 outputs: [review-notes, guidance, alignment-signals]
 escalation: [architecture, compliance]
@@ -22,11 +22,10 @@ tags: [agent, philosophy]
 - Provide clear, actionable guidance rather than abstract critique
 
 ## Tools & Commands
-- `commands/summarize.md` to condense proposals and surface key claims
+- `commands/writing/summarize.md` to condense proposals and surface key claims
 
 ## Interfaces & Escalation
 - Collaborate with architecture and compliance for boundary and privacy concerns
 
 ## KPIs
 - Reduction in incoherent patterns; faster convergence to aligned solutions
-

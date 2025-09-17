@@ -26,4 +26,4 @@ Ensure privacy-first practices and legal/ethical alignment across work.
 - (add privacy/legal review methods when authored)
 
 ## Available Commands
-- commands/validate-context.md — ensure structural hygiene of context/docs
+- commands/core/validate-context.md — ensure structural hygiene of context/docs

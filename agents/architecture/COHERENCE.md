@@ -27,4 +27,4 @@ Shape system structures that scale and reduce friction; enforce clear boundaries
 - context/methodologies/code-review.md — structure for high-signal reviews
 
 ## Available Commands
-- commands/validate-context.md — quick structure hygiene checks
+- commands/core/validate-context.md — quick structure hygiene checks

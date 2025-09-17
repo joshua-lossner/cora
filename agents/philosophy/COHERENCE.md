@@ -26,4 +26,4 @@ Maintain clarity and integrity of core principles; inform decisions and reviews.
 - (link methodologies when authored)
 
 ## Available Commands
-- commands/summarize.md — condense proposals and surface key claims
+- commands/writing/summarize.md — condense proposals and surface key claims

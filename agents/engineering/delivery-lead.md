@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [planning, coordination, quality-gates, observability]
 methods: [context/methodologies/feature-delivery.md, context/methodologies/code-review.md]
-commands: [commands/git-review.md, commands/validate-context.md]
+commands: [commands/git/git-review.md, commands/core/validate-context.md]
 inputs: [priorities, designs, constraints, acceptance-criteria]
 outputs: [release-notes, test-coverage-summary, rollout-plan]
 escalation: [architecture, operations]
@@ -26,11 +26,10 @@ tags: [agent, engineering]
 - Feature Delivery, Code Review (see methods above)
 
 ## Tools & Commands
-- `commands/git-review.md`, `commands/validate-context.md`
+- `commands/git/git-review.md`, `commands/core/validate-context.md`
 
 ## Interfaces & Escalation
 - Collaborate with architecture for boundary questions; operations for release/incident readiness
 
 ## KPIs
 - Shorter cycle time; lower change failure rate; faster, higher-quality reviews
-

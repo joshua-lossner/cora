@@ -7,6 +7,7 @@ List of available commands grouped by category.
 - core/validate-context.md — Validate cora context structure and frontmatter
 - core/validate-agents.md — Validate agent departments, metadata, and SOP coverage
 - core/validate-workflows.md — Validate workflow files and references
+- core/prepare-signal-log.md — Scaffold today’s signal log for a project
 
 ## git
 - git/git-review.md — Quick guidelines for reviewing git changes

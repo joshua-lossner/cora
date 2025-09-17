@@ -15,13 +15,23 @@ List of available commands grouped by category.
 ## project
 - project/new-project.md — Scaffold a new project with cora as submodule
 - project/update-cora-submodule.md — Pull latest cora into this project
+- project/stage-blog-draft.md — Move a draft into the blog repo and stage it
 
 ## writing
 - writing/summarize.md — Generate concise summaries of content
+- writing/outline-from-signals.md — Generate an outline from a signals log
+- writing/draft-from-outline.md — Generate a first draft from an outline
+- writing/edit-apply-sop.md — Apply editorial SOP to improve clarity
 
 ## research
 - research/daily-scan.md — Produce categorized signals and prompts from daily sources
 - research/extract-signals.md — Extract patterns and prompts from raw notes
+
+## philosophy
+- philosophy/review-draft.md — Review a draft for alignment with Coherenceism
+
+## compliance
+- compliance/privacy-check.md — Review a draft for privacy-first alignment
 
 Notes:
 - New commands should include the recommended frontmatter in `AGENTS.md`.

@@ -20,6 +20,8 @@ Reusable capabilities with minimal frontmatter and human-readable usage.
   - `project/` — project scaffolding and submodule utilities
   - `writing/` — summarization and editorial helpers
   - `research/` — signal scanning and pattern extraction
+  - `philosophy/` — alignment checks and reviews
+  - `compliance/` — privacy/ethics reviews
 - Templates: `commands/_templates/`
 
 ## Notes

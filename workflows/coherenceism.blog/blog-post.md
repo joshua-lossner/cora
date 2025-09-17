@@ -28,6 +28,7 @@ tags: [workflow, content]
 0. Daily Signal Scan
    - Run Research SOP: agents/research/sops/daily-signal-scan.md
    - Use commands/research/daily-scan.md and/or commands/research/extract-signals.md
+   - Save to `context/working/signals/coherenceism.blog/YYYY-MM-DD.md` (template: context/_templates/signal-log.md)
 1. Research Brief
    - Gather 3–5 high-signal sources; extract key claims
    - Use commands/writing/summarize.md to condense notes

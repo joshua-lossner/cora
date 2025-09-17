@@ -19,5 +19,9 @@ At startup: open files in context/working/active/. Do not auto-load archive.
 Limit active to a few files for clarity.
 Templates: see `context/_templates/working-active.md`; examples: `context/working/_example.md`, `context/working/active/_example.md`.
 
+## Signals & Prompts (Inspiration Artifacts)
+- Save daily signals under `context/working/signals/<project>/YYYY-MM-DD.md`.
+- Template: `context/_templates/signal-log.md`.
+
 ## Available Active Items
 - active/coherence-network.md — Current focus for the Coherence Network

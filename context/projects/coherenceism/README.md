@@ -19,7 +19,8 @@ Coherenceism is the philosophical foundation for this cora: a framework for buil
 
 ## Key References
 - Philosophy foundation: `context/philosophy/coherenceism.md`
-- Related project: `context/projects/coherence-network.md`
+- Related project: `context/projects/coherenceism/coherence-network.md`
+- Canonical cross-site content: `content/`
 
 ## Deliverables (living)
 - Essays and summaries (short/long forms)

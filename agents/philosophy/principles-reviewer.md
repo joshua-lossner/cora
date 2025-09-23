@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [principles-guardrails, change-review, guidance]
 methods: []
-commands: [commands/writing/summarize.md]
+procedures: [procedures/writing/summarize.md]
 inputs: [proposal, diff, rationale, constraints]
 outputs: [review-notes, guidance, alignment-signals]
 escalation: [architecture, compliance]
@@ -21,8 +21,8 @@ tags: [agent, philosophy]
 - Guard alignment with Coherenceism across proposals and changes
 - Provide clear, actionable guidance rather than abstract critique
 
-## Tools & Commands
-- `commands/writing/summarize.md` to condense proposals and surface key claims
+## Tools & Procedures
+- `procedures/writing/summarize.md` to condense proposals and surface key claims
 
 ## Interfaces & Escalation
 - Collaborate with architecture and compliance for boundary and privacy concerns

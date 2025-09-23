@@ -27,6 +27,6 @@ Build and maintain software artifacts aligned to architecture and principles.
 - context/methodologies/feature-delivery.md — incremental delivery with quality
 - context/methodologies/code-review.md — actionable, kind reviews
 
-## Available Commands
-- commands/git/git-review.md — show status/diff and suggest commit message
-- commands/core/validate-context.md — hygiene checks for context structure
+## Available Procedures
+- procedures/git/git-review.md — show status/diff and suggest commit message
+- procedures/core/validate-context.md — hygiene checks for context structure

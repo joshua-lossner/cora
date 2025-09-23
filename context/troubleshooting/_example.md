@@ -10,7 +10,6 @@ tags: [troubleshooting]
 # example-troubleshooting
 
 Symptom: describe the issue.
-Checks: quick commands or files to inspect.
+Checks: quick CLI invocations or files to inspect.
 Root Causes: shortlist.
 Fix: minimal steps to resolve.
-

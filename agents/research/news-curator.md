@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [signal-scan, prompt-generation, synthesis]
 methods: []
-commands: []
+procedures: []
 inputs: [trusted-sources, timebox]
 outputs: [signals.md, prompts.md]
 escalation: [content]
@@ -27,4 +27,3 @@ tags: [agent, research]
 
 ## KPIs
 - Fewer generic topics; more distinctive, pattern-led posts
-

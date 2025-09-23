@@ -27,17 +27,17 @@ tags: [workflow, content]
 ## Steps
 0. Daily Signal Scan
    - Run Research SOP: agents/research/sops/daily-signal-scan.md
-   - Use commands/research/daily-scan.md and/or commands/research/extract-signals.md
+   - Use procedures/research/daily-scan.md and/or procedures/research/extract-signals.md (procedures)
    - Save to `context/working/signals/coherenceism.blog/YYYY-MM-DD.md` (template: context/_templates/signal-log.md)
 1. Research Brief
    - Gather 3–5 high-signal sources; extract key claims
-   - Use commands/writing/summarize.md to condense notes
+   - Use procedures/writing/summarize.md to condense notes (procedure)
 2. Outline
    - Draft an outline: problem, key points, implications, conclusion
    - Sanity-check against context/philosophy/coherenceism.md
 3. Draft
    - Write a concise first draft; keep paragraphs short; link where useful
-   - Run commands/writing/summarize.md on sections to tighten
+   - Run procedures/writing/summarize.md on sections to tighten (procedure)
 4. Principles Review
    - Send draft to agents/philosophy/principles-reviewer.md using its SOP
    - Save notes to `context/working/reviews/coherenceism.blog/`
@@ -47,14 +47,14 @@ tags: [workflow, content]
 6. Privacy Check (if applicable)
    - If collecting data or referencing sensitive info, run compliance SOP
 7. Commit & Review
-   - Run commands/core/validate-context.md; then commands/git/git-review.md
+   - Run procedures/core/validate-context.md; then procedures/git/git-review.md (procedures)
    - Adjust based on findings; craft clear commit message
 8. Publish
    - Merge and deploy; verify build and page
    - Postmortem small notes: what to reuse next time
 
-## Chain (Commands)
-- commands/writing/summarize.md → commands/core/validate-context.md → commands/git/git-review.md
+## Chain (Procedures)
+- procedures/writing/summarize.md → procedures/core/validate-context.md → procedures/git/git-review.md (procedures)
 
 ## Success Signals
 - Clear thesis; aligned with Coherenceism; actionable insights

@@ -21,7 +21,7 @@ Direct access to the cora context directory structure, enabling Claude to search
 ## Usage Examples
 With the filesystem MCP, you can:
 - "Find my notes about coherentism"
-- "What commands do I have for git workflows?"
+- "What procedures do I have for git workflows?"
 - "Show me the philosophy context files"
 
 ## Usage Pattern

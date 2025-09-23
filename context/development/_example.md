@@ -12,5 +12,4 @@ tags: [development]
 Environment: languages, versions, setup.
 Workflow: branch strategy, testing, review.
 Conventions: style, lint, commit format.
-Tooling: commands and helpers.
-
+Tooling: procedures and helpers.

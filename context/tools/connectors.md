@@ -28,5 +28,4 @@ Describe integration patterns to reach external systems from AI workflows. Vendo
 
 ## Status
 - Use MCP for local file context when on Claude Desktop
-- Prefer repo-grounded context and commands in cora where possible
-
+- Prefer repo-grounded context and procedures in cora where possible

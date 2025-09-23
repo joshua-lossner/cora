@@ -38,5 +38,5 @@ Create and sustain a coherent organization: clear roles, aligned recruiting, eff
 ## Available Methods
 - (use department SOPs below; add HR methodologies if needed)
 
-## Available Commands
-- commands/writing/summarize.md — create concise role briefs and interview kits
+## Available Procedures
+- procedures/writing/summarize.md — create concise role briefs and interview kits (procedure)

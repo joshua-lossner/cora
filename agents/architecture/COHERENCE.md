@@ -26,5 +26,5 @@ Shape system structures that scale and reduce friction; enforce clear boundaries
 - context/methodologies/feature-delivery.md — slice, build, document, measure
 - context/methodologies/code-review.md — structure for high-signal reviews
 
-## Available Commands
-- commands/core/validate-context.md — quick structure hygiene checks
+## Available Procedures
+- procedures/core/validate-context.md — quick structure hygiene checks

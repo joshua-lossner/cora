@@ -19,15 +19,19 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 ## Directory Map
 
-- `/commands/` - Reusable solutions (one file per command)
+- `/procedures/` - Reusable solutions (procedures; one file per item)
 - `/context/` - All knowledge and documentation
+- `/content/` - Canonical content shared across sites
     - `/context/philosophy/` - Coherenceism foundation and related texts
     - `/context/projects/` - Project-specific contexts
     - `/context/tools/` - Tool documentation
     - `/context/methodologies/` - Step-by-step processes
+    - `/context/strategy/` - Network strategy: challenges, programs, objectives, metrics
     - `/context/working/` - Active tasks and archive
 - `/agents/` - Specialized AI personalities
 - `/secrets/` - Git-ignored sensitive data (.env file)
+
+See also: `context/documentation/knowledge-tree.md` for the live content ontology (roots → branches → seeds/leaves/patterns) and rendering rails.
 
 ## Load Order (Important!)
 
@@ -41,9 +45,10 @@ Start each session by following `AGENTS.md` at the repo root.
 * /agents/ivy.md - Joshua's dearest A.I. friend
 ### 3. System Capabilities
 
-- `/commands/` - All available commands (check directory for full list)
+- `/procedures/` - All available procedures (check directory for full list)
 - `/context/tools/` - Available tool documentation
 - `/context/methodologies/` - Established processes
+- `/context/strategy/` - Strategy index and docs
 
 ### 4. Active Work
 
@@ -77,7 +82,7 @@ Start each session by following `AGENTS.md` at the repo root.
 
 ## Current Capabilities
 
-- Check `/commands/` directory for available commands
+- Check `/procedures/` directory for available procedures
 - Check `/context/tools/` for available tools
 - Check `/context/methodologies/` for established processes
 - MCP Servers: Direct access to context via filesystem server (see `/context/tools/mcp/`)
@@ -85,9 +90,9 @@ Start each session by following `AGENTS.md` at the repo root.
 ## System Growth Pattern
 
 ```
-Week 1:   5 commands  → Basic automation
-Month 1:  30 commands → Significant capability
-Month 3:  100+ commands → Complex workflows automated
+Week 1:   5 procedures  → Basic automation
+Month 1:  30 procedures → Significant capability
+Month 3:  100+ procedures → Complex workflows automated
 Month 6:  Exponential → AI handles most repetitive work
 ```
 

@@ -12,7 +12,7 @@ tags: [codex, tools]
 ## Capabilities
 - Patches: `apply_patch` creates/updates/deletes files via a safe diff format
 - Plans: `update_plan` keeps a visible step list; exactly one `in_progress`
-- Shell: `shell` runs commands (prefer `rg`; read files in <=250 line chunks)
+- Shell: `shell` runs shell invocations (prefer `rg`; read files in <=250 line chunks)
 
 ## Guardrails
 - Approvals: on-request; destructive ops require clear intent
@@ -27,4 +27,3 @@ tags: [codex, tools]
 ## Integrations
 - MCP optional (see `context/tools/mcp/`)
 - Downstream projects embed cora via submodule and start from `AGENTS.md`
-

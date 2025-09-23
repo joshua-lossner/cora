@@ -4,7 +4,7 @@
 
 ## What is cora?
 
-cora is a file system-based knowledge management system that gives your AI assistants (including Codex CLI) persistent memory and growing capabilities across your projects. Instead of starting fresh with each conversation, your AI assistant loads your accumulated knowledge, tools, and workflows.
+cora is a file system-based knowledge management system that gives your AI assistants (including Codex CLI) persistent memory and growing capabilities across the Coherenceism network of projects. Instead of starting fresh with each conversation, your AI assistant loads the network’s accumulated knowledge, tools, strategy, and workflows.
 
 **Core Philosophy**: Solve each problem once, then it becomes a permanent capability.
 
@@ -18,11 +18,12 @@ cd cora
 # optional: cp .env.example .env && edit CORA_ROOT/BLOG_ROOT
 ```
 
-### 2. Set up your personal context
+### 2. Load core philosophy and strategy
 
 ```bash
-# Edit your personal information
+# Review core philosophy and strategy
 nano context/philosophy/coherenceism.md
+nano context/strategy/COHERENCE.md
 ```
 
 ### 3. Use with Codex CLI
@@ -37,7 +38,7 @@ git init                                      # if not already a repo
 git submodule add https://github.com/joshua-lossner/cora.git cora
 cp cora/AGENTS-template.md AGENTS.md          # startup instructions that reference cora/
 echo "CORA_ROOT=./cora" >> .env                 # optional human hint
-echo "# Refer to ./cora for cora context and commands." >> AGENTS.md
+echo "# Refer to ./cora for cora context and procedures." >> AGENTS.md
 ```
 
 ## How It Works
@@ -46,12 +47,12 @@ echo "# Refer to ./cora for cora context and commands." >> AGENTS.md
 
 1. **Central Brain** (`context/`) - All your knowledge lives here
 2. **Project Pointers** (`AGENTS.md` or `COHERENCE.md`) - Simple files that point to the central brain (relative when embedded)
-3. **Growing Capabilities** (`commands/`) - Every solution becomes a reusable command
+3. **Growing Capabilities** (`procedures/`) - Every solution becomes a reusable procedure
 
 ### Daily Workflow
 
 1. **Start a project** → Add `AGENTS.md` (or `COHERENCE.md`) pointing to the `cora/` submodule
-2. **Solve a problem** → Save solution as a command
+2. **Solve a problem** → Save solution as a procedure
 3. **Learn something** → Add to context
 4. **Everything compounds** → All future work benefits
 
@@ -66,7 +67,7 @@ repo root
 │       ├── COHERENCE.md
 │       ├── <agent>.md
 │       └── sops/*.md
-├── commands/                    # Reusable commands (by category)
+├── procedures/                 # Reusable procedures (by category)
 │   ├── COHERENCE.md             # Structure and conventions
 │   ├── INDEX.md                 # Grouped catalog
 │   ├── core/                    # load/validate/run-workflow, etc.
@@ -79,8 +80,9 @@ repo root
 │   └── _templates/command.md
 ├── context/                     # Central knowledge base
 │   ├── COHERENCE.md
-│   ├── _templates/              # project/methodology/personal/etc.
+│   ├── _templates/              # project/methodology/etc.
 │   ├── philosophy/coherenceism.md
+│   ├── strategy/                # challenges/programs/objectives/metrics
 │   ├── architecture/coherence-rails.md
 │   ├── methodologies/
 │   ├── tools/
@@ -89,6 +91,14 @@ repo root
 │       ├── signals/<project>/   # YYYY-MM-DD.md daily signals logs
 │       ├── drafts/<project>/    # outline-/draft-*.md
 │       └── reviews/<project>/   # review notes
+├── content/                     # Canonical cross-site content
+│   ├── COHERENCE.md             # Purpose, structure, allowed site keys
+│   ├── REGISTRY.md              # Optional human-readable index
+│   ├── _templates/content-item.md
+│   ├── shared/                  # Primers and canonical texts
+│   ├── articles/                # Essays, long-form
+│   ├── notes/                   # Short-form
+│   └── media/                   # Descriptors for audio/video
 ├── workflows/                   # Chained processes (by project)
 │   ├── COHERENCE.md
 │   ├── _templates/workflow.md
@@ -105,11 +115,11 @@ repo root
 
 Your file system IS your AI's brain. Knowledge is organized in directories that get loaded when needed.
 
-### 2. Commands: Solve Once, Reuse Forever
+### 2. Procedures: Solve Once, Reuse Forever
 
 Every problem you solve becomes a permanent capability:
 
-See `commands/INDEX.md` for grouped examples and usage.
+See `procedures/INDEX.md` for grouped examples and usage.
 
 ### 3. Context Inheritance
 
@@ -117,18 +127,18 @@ Projects inherit all central knowledge plus their own context:
 
 - Central context (always loaded)
 - Project-specific context (when in that project)
-- Commands (available everywhere)
+- Procedures (available everywhere)
 
 ## Building Your System
 
-### Creating Commands
+### Creating Procedures
 
 When you solve a problem, save it:
 
 ```bash
-# Create a new command
-cat > commands/your-solution.md << 'EOF'
-# Command Name
+# Create a new procedure
+cat > procedures/your-solution.md << 'EOF'
+# Procedure Name
 
 ## Purpose
 What this solves
@@ -222,39 +232,39 @@ For each project, create an `AGENTS.md` or `COHERENCE.md`:
 ## Project-Specific Info
 This is a Next.js app for tracking expenses...
 
-## Relevant Commands
-- `commands/nextjs-setup.md`
-- `commands/deploy-vercel.md`
+## Relevant Procedures
+- `procedures/nextjs-setup.md`
+- `procedures/deploy-vercel.md`
 ```
 
 ## Growth Pattern
 
 ```
-Week 1:   5 commands  → Basic automation
-Month 1:  30 commands → Significant capability
-Month 3:  100+ commands → Complex workflows automated
+Week 1:   5 procedures  → Basic automation
+Month 1:  30 procedures → Significant capability
+Month 3:  100+ procedures → Complex workflows automated
 Month 6:  Exponential → AI handles most repetitive work
 ```
 
-Each command can chain with others, creating infinite combinations.
+Each procedure can chain with others, creating infinite combinations.
 
 ## Best Practices
 
 ### 1. Start Small
 
 - Don't over-plan
-- Add commands as you work
+- Add procedures as you work
 - Let the system grow organically
 
 ### 2. Be Specific
 
-- Clear command descriptions
+- Clear procedure descriptions
 - Explicit process steps
 - Example usage phrases
 
 ### 3. Stay Organized
 
-- One command per file
+- One procedure per file
 - Descriptive filenames
 - Logical context hierarchy
 
@@ -264,7 +274,7 @@ Each command can chain with others, creating infinite combinations.
 # Backup your brain
 cd cora
 git add .
-git commit -m "Update: added new commands"
+git commit -m "Update: added new procedures"
 git push
 ```
 
@@ -280,7 +290,7 @@ git push
 
 ```bash
 # Create command
-cat > commands/write-blog.md << 'EOF'
+cat > procedures/write-blog.md << 'EOF'
 # Write Blog Post
 
 ## Process
@@ -301,7 +311,7 @@ EOF
 
 ```bash
 # Create command
-cat > commands/review-pr.md << 'EOF'
+cat > procedures/review-pr.md << 'EOF'
 # Review Pull Request
 
 ## Process
@@ -321,7 +331,7 @@ EOF
 
 ```bash
 # Create command  
-cat > commands/daily-standup.md << 'EOF'
+cat > procedures/daily-standup.md << 'EOF'
 # Generate Daily Standup
 
 ## Process
@@ -350,9 +360,9 @@ EOF
 - Ensure files are readable
 - If using submodules, ensure they are initialized: `git submodule update --init --recursive`
 
-### Commands not working?
+### Procedures not working?
 
-- Check command file exists
+- Check procedure file exists
 - Verify markdown formatting
 - Test process steps manually
 
@@ -373,21 +383,21 @@ Every day you use cora:
 
 This isn't just about automation - it's about building a second brain that grows with you.
 
-## Contributing to Your cora
+## Contributing to cora
 
 ### Adding a new capability
 
 1. Solve the problem manually
 2. Document the solution
-3. Save as command
+3. Save as procedure
 4. Commit to git
 5. Available forever
 
 ### Sharing with others
 
-- Commands can be shared individually
-- Keep personal/private secrets in `.env` and `secrets/`
-- Consider open-sourcing useful commands
+- Procedures can be shared individually
+- Keep secrets in `.env` and `secrets/`
+- Consider open-sourcing useful procedures
 
 ## Credits
 
@@ -436,10 +446,10 @@ git add cora && git commit -m "chore(cora): update submodule"
 
 ## License
 
-Your cora is personal - license as you see fit. Consider:
+License as you see fit. Consider:
 
-- Keep personal context private
-- Share useful commands publicly
+- Keep secrets private
+- Share useful procedures publicly
 - Contribute improvements back
 
 ---

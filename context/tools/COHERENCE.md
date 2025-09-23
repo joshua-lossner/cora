@@ -20,5 +20,11 @@ See context/tools/mcp/ for optional servers.
 Templates: see `context/_templates/tool-mcp-server.md`; examples: `context/tools/mcp/_example.md`, `context/tools/_example.md`.
 
 ## Available Tools
+- connectors.md — Integration patterns for APIs, files, and events
+- codex/COHERENCE.md — Codex CLI tooling map and quick links
+- codex/codex-cli.md — Codex CLI configuration, aliases, and tips
 - mcp/servers.md — Overview of MCP servers used with cora
 - mcp/filesystem.md — Filesystem MCP server details
+- mcp/web-browser.md — Web navigation MCP setup and safety notes
+- openai/platform.md — OpenAI platform usage, limits, and configuration
+- openai/mcp-connectors.md — OpenAI MCP connector references

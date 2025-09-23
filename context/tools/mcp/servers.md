@@ -12,7 +12,7 @@ tags: [tool, mcp]
 ## For Codex CLI
 
 - MCP is optional. Prefer direct filesystem access within this repository.
-- Use repository-relative paths (e.g., `context/...`, `commands/...`).
+- Use repository-relative paths (e.g., `context/...`, `procedures/...`).
 - If running outside this repo, ensure the agent has access to this context (open Codex in this repo, or include this repo as a submodule).
 
 ## Example: Filesystem Server (Claude Desktop, optional)

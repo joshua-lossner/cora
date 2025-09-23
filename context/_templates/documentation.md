@@ -25,4 +25,4 @@ Style, naming, links, and cross-references.
 ---
 Example
 
-Short, link-rich guide aligned with directory `COHERENCE.md` (context) or `commands/INDEX.md` (commands).
+Short, link-rich guide aligned with directory `COHERENCE.md` (context) or `procedures/INDEX.md` (procedures).

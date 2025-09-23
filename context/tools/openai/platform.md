@@ -24,10 +24,9 @@ High-level concepts relevant to cora; specifics evolve. Confirm against official
 
 ## Patterns We Use
 - Grounding with repo context (cora) over network calls
-- Clean separation between content (context/) and capabilities (commands/)
+- Clean separation between content (context/) and capabilities (procedures in procedures/)
 - Environment via `.env` for local paths/secrets; never commit secrets
 
 ## Notes
 - This is a living summary; update as platform features change
 - For Claude/MCP, see `context/tools/mcp/` (separate protocol)
-

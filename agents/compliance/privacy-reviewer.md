@@ -7,7 +7,7 @@ status: active
 updated: 2025-09-16
 responsibilities: [data-flow-review, policy-checks, mitigations]
 methods: []
-commands: [commands/core/validate-context.md]
+procedures: [procedures/core/validate-context.md]
 inputs: [feature-spec, data-flows, third-party-list]
 outputs: [privacy-review-notes, mitigations, approvals]
 escalation: [philosophy, architecture]
@@ -22,8 +22,8 @@ tags: [agent, compliance]
 - Check features against documented policies and consent flows
 - Propose mitigations; escalate edge cases to philosophy and architecture
 
-## Tools & Commands
-- `commands/core/validate-context.md` for structure/doc hygiene
+## Tools & Procedures
+- `procedures/core/validate-context.md` for structure/doc hygiene
 
 ## Interfaces & Escalation
 - Works with engineering for implementation choices and with philosophy for principle guardrails

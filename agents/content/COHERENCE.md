@@ -26,5 +26,5 @@ Communicate clearly with consistent voice; keep docs concise and link-rich.
 ## Available Methods
 - (add editorial workflow when authored)
 
-## Available Commands
-- commands/writing/summarize.md — draft or tighten copy and docs
+## Available Procedures
+- procedures/writing/summarize.md — draft or tighten copy and docs (procedure)

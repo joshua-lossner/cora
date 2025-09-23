@@ -19,12 +19,11 @@ tags: [workflow]
 - Expected artifacts and where they go
 
 ## Steps
-1. Step name — what to do; commands/methods to use
+1. Step name — what to do; procedures/methods to use
 2. Step name — handoffs and review
 
-## Chain (Commands)
-- commands/writing/summarize.md → commands/git/git-review.md → commands/core/validate-context.md
+## Chain (Procedures)
+- procedures/writing/summarize.md → procedures/git/git-review.md → procedures/core/validate-context.md
 
 ## Success Signals
 - Concrete checks that indicate a good outcome
-

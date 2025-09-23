@@ -25,5 +25,5 @@ Amplify coherent messages through appropriate channels; measure impact responsib
 ## Available Methods
 - (add campaign planning method when authored)
 
-## Available Commands
-- commands/writing/summarize.md — condense research into messaging
+## Available Procedures
+- procedures/writing/summarize.md — condense research into messaging (procedure)

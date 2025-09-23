@@ -25,6 +25,6 @@ Keep systems running smoothly; reduce toil; enable fast, safe changes.
 ## Available Methods
 - context/methodologies/rapid-bugfix.md — diagnose and remediate incidents fast
 
-## Available Commands
-- commands/project/update-cora-submodule.md — sync embedded cora in downstream repos
-- commands/core/validate-context.md — quick structure checks
+## Available Procedures
+- procedures/project/update-cora-submodule.md — sync embedded cora in downstream repos (procedure)
+- procedures/core/validate-context.md — quick structure checks (procedure)

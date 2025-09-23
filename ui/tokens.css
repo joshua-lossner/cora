@@ -1,0 +1,30 @@
+/* Shared design tokens for Coherenceism sites (INFO, BLOG)
+   Import this file in site CSS to align core variables. */
+
+:root {
+  /* Surfaces */
+  --bg-primary: #0B1012;
+  --bg-secondary: #0D1417;
+  --bg-elevated: #11181C;
+
+  /* Layout */
+  --sidebar-w: clamp(220px, 20vw, 300px);
+  --container-max: 72rem;
+
+  /* Typography */
+  --font-ui: "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --font-body: "Source Sans 3", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+  /* Text */
+  --text-primary: #E6E7EB;
+  --text-secondary: #A4ADB5;
+
+  /* Accent + River palette */
+  --accent: #8FD694;
+  --river-rest: #8FD694;
+  --river-humanai: #A3DFFF;
+  --river-history: #C1B4F5;
+  --river-agency: #A3E1B9;
+  --river-awakening: #E9D7A1;
+}
+

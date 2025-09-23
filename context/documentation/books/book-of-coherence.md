@@ -238,7 +238,7 @@ Change is not the enemy of coherence. It’s the method by which coherence renew
 ---
 
 <!-- CHAPTER: 03-coherence-as-alignment.md -->
-# Chapter 3 - Coherence as Alignment
+# Chapter Three - Coherence as Alignment
 
 ### *Tuning the Instrument You Live In*
 

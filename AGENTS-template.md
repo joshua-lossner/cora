@@ -32,11 +32,11 @@ Now point Codex to `AGENTS.md` in this project. It references files under `cora/
 - ✅ UFC system loaded — I understand the context architecture
 - ✅ Philosophy loaded — Coherenceism foundation is active
 - ✅ Tools overview loaded — I see available tools
-- ✅ Commands scanned — I see available commands
+- ✅ Procedures scanned — I see available procedures
 - ✅ Methodologies scanned — I see available processes
 
 ## Project Context
 - Describe the project’s goals, constraints, and links.
 
-## Relevant Commands
-- List commands in `commands/` that apply here.
+## Relevant Procedures
+- List procedures in `procedures/` that apply here.

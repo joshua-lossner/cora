@@ -12,6 +12,12 @@ tags: [project, coherenceism]
 ## Overview
 Build a privacy-first, philosophically coherent network of interconnected websites that manifest Coherenceism principles.
 
+## Strategy Overview
+- Single philosophy, many surfaces: each property expresses Coherenceism for its medium and audience while sharing core identity and ethics.
+- Central strategy: challenges → programs → objectives → metrics (see `context/strategy/COHERENCE.md`).
+- Shared primitives: design tokens, navigation patterns, privacy baseline, and content taxonomy.
+- Content architecture: centralize canonical texts and cross-site metadata; allow per-site overlays where needed.
+
 ## Components
 
 1. COHERENCEISM.MEDIA — Music streaming platform

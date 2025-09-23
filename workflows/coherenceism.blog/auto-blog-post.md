@@ -1,7 +1,7 @@
 ---
 kind: workflow
 title: Blog Post — Autopilot (Agents Only)
-intent: Produce a blog post from signals to final draft using agents and commands
+intent: Produce a blog post from signals to final draft using agents and procedures
 status: active
 updated: 2025-09-17
 tags: [workflow, content, automation]
@@ -24,16 +24,16 @@ tags: [workflow, content, automation]
 - Draft at context/working/drafts/<project>/draft-YYYY-MM-DD-<slug>.md
 - Final staged at ~/Projects/coherenceism.blog/src/content/journal/YYYY-MM-DD-<slug>.md
 
-## Steps (Agents + Commands)
-0. Prepare Signal Log — commands/core/prepare-signal-log.md
-1. Daily Scan — commands/research/daily-scan.md (or commands/research/extract-signals.md)
-2. Outline — commands/writing/outline-from-signals.md → save outline
-3. Draft — commands/writing/draft-from-outline.md → save draft
-4. Edit — commands/writing/edit-apply-sop.md
-5. Principles Review — commands/philosophy/review-draft.md → save notes to `context/working/reviews/coherenceism.blog/`
-6. Privacy Check (if needed) — commands/compliance/privacy-check.md → apply mitigations
-7. Validate — commands/core/validate-context.md (cora) + commands/git/git-review.md (blog)
-8. Stage Draft — commands/project/stage-blog-draft.md → ready for publish
+## Steps (Agents + Procedures)
+0. Prepare Signal Log — procedures/core/prepare-signal-log.md (procedure)
+1. Daily Scan — procedures/research/daily-scan.md (or procedures/research/extract-signals.md) (procedure)
+2. Outline — procedures/writing/outline-from-signals.md → save outline (procedure)
+3. Draft — procedures/writing/draft-from-outline.md → save draft (procedure)
+4. Edit — procedures/writing/edit-apply-sop.md (procedure)
+5. Principles Review — procedures/philosophy/review-draft.md → save notes to `context/working/reviews/coherenceism.blog/` (procedure)
+6. Privacy Check (if needed) — procedures/compliance/privacy-check.md → apply mitigations (procedure)
+7. Validate — procedures/core/validate-context.md (cora) + procedures/git/git-review.md (blog) (procedures)
+8. Stage Draft — procedures/project/stage-blog-draft.md → ready for publish (procedure)
 
 ## Success Signals
 - Clear thesis; aligned with Coherenceism

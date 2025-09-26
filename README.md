@@ -2,13 +2,18 @@
 
 > **Based on Daniel Miessler's UFC System** - This implementation is inspired by [Daniel Miessler's Personal AI Infrastructure](https://danielmiessler.com/blog/personal-ai-infrastructure/) that he built for his AI assistant "Kai". Full credit to Daniel for pioneering this approach and openly sharing it with the community.
 
-## What is cora?
+## Why cora exists
 
-cora is a file system-based knowledge management system that gives your AI assistants (including Codex CLI) persistent memory and growing capabilities across the Coherenceism network of projects. Instead of starting fresh with each conversation, your AI assistant loads the network’s accumulated knowledge, tools, strategy, and workflows.
+cora is the canonical trunk for the Coherenceism network. It keeps philosophy, ontology, and reusable procedures in one place so any AI assistant (including Codex CLI) can load coherent context instantly. Today there are no downstream trees in production — this repo is the seedbed that future sites, apps, and experiences will grow from.
 
-**Core Philosophy**: Solve each problem once, then it becomes a permanent capability.
+**Core philosophy:** solve each problem once, then keep the solution as a reusable capability.
 
-## Quick Start
+### Primary use cases
+1. **Maintain the trunk.** Steward the canonical Coherenceism philosophy, knowledge tree, and procedures in a clean, UI-free repo.
+2. **Fork for your own worldview.** Swap the philosophy layer, rewrite the knowledge tree, and you have a ready-made UFC scaffold for any belief system or project.
+3. **Plant downstream trees.** Lift seeds from `content/seeds/`, register new trees in `context/forest/`, and let external repos render them.
+
+## Getting started
 
 ### 1. Clone this repository
 
@@ -26,14 +31,14 @@ nano context/philosophy/coherenceism.md
 nano context/strategy/COHERENCE.md
 ```
 
-### 3. Use with Codex CLI
+### 3. Use with Codex CLI (trunk only)
 
 ```bash
 # Option A: Work inside this repo (recommended for Codex)
 # Open Codex CLI in this repo and use the cora system directly.
 
-# Option B: Embed in another project as a submodule (recommended)
-cd ~/your-project
+# Option B: Embed in another tree as a submodule (recommended)
+cd ~/your-tree
 git init                                      # if not already a repo
 git submodule add https://github.com/joshua-lossner/cora.git cora
 cp cora/AGENTS-template.md AGENTS.md          # startup instructions that reference cora/
@@ -41,95 +46,47 @@ echo "CORA_ROOT=./cora" >> .env                 # optional human hint
 echo "# Refer to ./cora for cora context and procedures." >> AGENTS.md
 ```
 
-## How It Works
+## How the trunk works (and why trees matter later)
 
 ### The Three-Layer Architecture
 
-1. **Central Brain** (`context/`) - All your knowledge lives here
-2. **Project Pointers** (`AGENTS.md` or `COHERENCE.md`) - Simple files that point to the central brain (relative when embedded)
-3. **Growing Capabilities** (`procedures/`) - Every solution becomes a reusable procedure
+1. **Trunk (CORA)** — canonical philosophy and content; no UI
+2. **Forest Pointers** — downstream repos include CORA as submodule and point to it
+3. **Growing Capabilities** — procedures and methods accrue in both trunk and trees
 
-### Daily Workflow
+### Daily workflow in the trunk
 
-1. **Start a project** → Add `AGENTS.md` (or `COHERENCE.md`) pointing to the `cora/` submodule
-2. **Solve a problem** → Save solution as a procedure
-3. **Learn something** → Add to context
-4. **Everything compounds** → All future work benefits
+1. Start or resume work → load the context listed in `AGENTS.md`.
+2. Solve a problem → capture it as a procedure or methodology.
+3. Update seeds/leaves → keep `spawned_systems` accurate even if the tree is just an idea.
+4. Record active focus → maintain `context/working/active/` so the field stays legible.
 
-## Directory Structure
+## Repository layout
 
 ```
 repo root
-├── agents/                      # Departments, agents, SOPs
-│   ├── COHERENCE.md             # Purpose, conventions, departments
-│   ├── _templates/              # agent.md, department-COHERENCE.md
-│   └── <department>/            # hr/, philosophy/, engineering/, …
-│       ├── COHERENCE.md
-│       ├── <agent>.md
-│       └── sops/*.md
-├── procedures/                 # Reusable procedures (by category)
-│   ├── COHERENCE.md             # Structure and conventions
-│   ├── INDEX.md                 # Grouped catalog
-│   ├── core/                    # load/validate/run-workflow, etc.
-│   ├── git/                     # git-review, …
-│   ├── project/                 # new-project, update-cora-submodule, …
-│   ├── writing/                 # summarize, outline-from-signals, …
-│   ├── research/                # daily-scan, extract-signals, …
-│   ├── philosophy/              # review-draft, …
-│   ├── compliance/              # privacy-check, …
-│   └── _templates/command.md
-├── context/                     # Central knowledge base
-│   ├── COHERENCE.md
-│   ├── _templates/              # project/methodology/etc.
-│   ├── philosophy/coherenceism.md
-│   ├── strategy/                # challenges/programs/objectives/metrics
-│   ├── architecture/coherence-rails.md
-│   ├── methodologies/
-│   ├── tools/
-│   └── working/                 # Active artifacts
-│       ├── active/
-│       ├── signals/<project>/   # YYYY-MM-DD.md daily signals logs
-│       ├── drafts/<project>/    # outline-/draft-*.md
-│       └── reviews/<project>/   # review notes
-├── content/                     # Canonical cross-site content
-│   ├── COHERENCE.md             # Purpose, structure, allowed site keys
-│   ├── REGISTRY.md              # Optional human-readable index
-│   ├── _templates/content-item.md
-│   ├── shared/                  # Primers and canonical texts
-│   ├── articles/                # Essays, long-form
-│   ├── notes/                   # Short-form
-│   └── media/                   # Descriptors for audio/video
-├── workflows/                   # Chained processes (by project)
-│   ├── COHERENCE.md
-│   ├── _templates/workflow.md
-│   └── <project>/*.md           # e.g., coherenceism.blog/blog-post.md
-├── AGENTS.md                    # Canonical startup for Codex
-├── AGENTS-template.md           # Template to embed in other projects
-├── .env.example                 # Example env vars (CORA_ROOT, BLOG_ROOT)
-└── .env                         # Local env (git-ignored)
+├── agents/                      # Persona + departments (minimal)
+├── procedures/                  # Reusable procedures (core, forest, writing, research, …)
+├── context/                     # Canon + strategy + tools + working
+├── content/                     # Roots, branches, seeds, leaves
+├── workflows/                   # Shapes/templates (no site-specific flows)
+├── AGENTS.md                    # Startup for Codex
+├── AGENTS-template.md           # To copy into downstream trees
+└── .env.example                 # Optional hints (CORA_ROOT)
 ```
 
-## Core Concepts
+## Core concepts
 
-### 1. Universal File-based Context (UFC)
+### Universal File-based Context (UFC)
+Your filesystem is the knowledge base. Directories map to context slices that agents load explicitly.
 
-Your file system IS your AI's brain. Knowledge is organized in directories that get loaded when needed.
+### Procedures as permanent capabilities
+Once a problem is solved, capture it under `procedures/` so every agent can reuse it. Check `procedures/INDEX.md` for the catalog.
 
-### 2. Procedures: Solve Once, Reuse Forever
+### Forest registry
+Seeds that can spawn external systems declare `spawned_systems`. Register prospective trees in `context/forest/`; it keeps the ecosystem legible even before anything ships.
 
-Every problem you solve becomes a permanent capability:
-
-See `procedures/INDEX.md` for grouped examples and usage.
-
-### 3. Context Inheritance
-
-Projects inherit all central knowledge plus their own context:
-
-- Central context (always loaded)
-- Project-specific context (when in that project)
-- Procedures (available everywhere)
-
-## Building Your System
+## Building on CORA
 
 ### Creating Procedures
 
@@ -153,23 +110,23 @@ What this solves
 EOF
 ```
 
-### Adding Context
+### Adding or customizing context
 
-Organize knowledge by topic:
+Organize knowledge by topic and keep references to templates close by:
 
 ```bash
 # Add methodology
 nano context/methodologies/code-review.md
 
-# Add project context  
-mkdir -p context/projects/my-app
-nano context/projects/my-app/cora.md
+# Add forest tree context  
+mkdir -p context/forest/my-tree
+nano context/forest/my-tree.md
 
 # Add tool documentation
 nano context/tools/my-tool.md
 ```
 
-### Managing Secrets
+### Managing secrets
 
 Never commit secrets. Use environment variables:
 
@@ -181,7 +138,28 @@ echo "OPENAI_API_KEY=sk-..." >> .env
 echo "OPENAI_API_KEY=" >> .env.example
 ```
 
-## Advanced Usage
+## Adapting CORA to your philosophy
+
+Want a trunk for a different worldview or product?
+
+1. **Fork this repo.** Rename the project and update `AGENTS.md` to describe your philosophy.
+2. **Rewrite the roots.** Update `context/philosophy/…`, `content/roots/`, and adjust the branches/seeds to fit your ontology.
+3. **Revise procedures.** Keep or replace items under `procedures/` so they reflect your practices.
+4. **Update documentation.** Tailor the Knowledge Tree definitions and README to explain your version.
+
+This pattern works for teams that want their own UFC system with a different intent.
+
+## Planting downstream trees from seeds
+
+Even though the current forest is aspirational, the workflow is ready:
+
+1. Choose a seed in `content/seeds/` that you want to grow.
+2. Ensure it lists the tree slug in `spawned_systems` (add it if missing).
+3. Create a forest entry via `context/_templates/forest-tree.md` and document purpose, repo URL, and next change.
+4. In the new tree repo, follow `procedures/forest/grow-from-seed.md` to scaffold with the CORA submodule.
+5. Keep the registry updated as the tree progresses from idea to active.
+
+## Advanced usage
 
 ### Agents
 
@@ -217,25 +195,8 @@ cat > context/methodologies/security-audit.md << 'EOF'
 EOF
 ```
 
-### Project Integration
-
-For each project, create an `AGENTS.md` or `COHERENCE.md`:
-
-```markdown
-# Project: My App
-
-**Load cora System:**
-- If embedded as submodule `cora/`:
-  - `cora/context/COHERENCE.md`
-  - `cora/context/projects/my-app/cora.md`
-
-## Project-Specific Info
-This is a Next.js app for tracking expenses...
-
-## Relevant Procedures
-- `procedures/nextjs-setup.md`
-- `procedures/deploy-vercel.md`
-```
+### Grow From Seed (Downstream)
+See `context/documentation/grow-from-seed.md` for creating a new tree that consumes CORA. Downstream repos render content and keep their own agents/context/procedures/workflows.
 
 ## Growth Pattern
 
@@ -286,28 +247,7 @@ git push
 
 ## Practical Examples
 
-### Example 1: Blog Writing Workflow
-
-```bash
-# Create command
-cat > procedures/write-blog.md << 'EOF'
-# Write Blog Post
-
-## Process
-1. Research topic
-2. Create outline
-3. Write draft
-4. Add examples
-5. Format in markdown
-
-## Chains With
-- `summarize.md` - Research papers
-- `create-image.md` - Header images
-- `social-media.md` - Promotion posts
-EOF
-```
-
-### Example 2: Code Review Automation
+### Example: Code Review Automation
 
 ```bash
 # Create command
@@ -419,20 +359,20 @@ This cora implementation is based on **Daniel Miessler's** Universal File-based 
 - [Claude Code Documentation](https://claude.ai/docs)
 - Codex CLI: see your local Codex CLI docs/config
 
-## Using cora as a Submodule in Projects
+## Using cora as a Submodule in Trees
 
-Recommended when you keep your canonical cora in a separate repo and want each project to load it on startup:
+Recommended when you keep your canonical cora in a separate repo and want each downstream tree to load it on startup:
 
-### Add to a project
+### Add to a tree
 ```bash
-cd ~/Projects/my-new-app
+cd ~/Forest/my-new-tree
 git init
 git submodule add https://github.com/joshua-lossner/cora.git cora
 cp cora/AGENTS-template.md AGENTS.md
 echo "CORA_ROOT=./cora" >> .env  # optional
 ```
 
-### Keep cora current in a project
+### Keep cora current in a tree
 ```bash
 # Pull latest from the cora repo and update local submodule pointer
 git submodule update --remote --merge cora
@@ -441,7 +381,7 @@ git add cora && git commit -m "chore(cora): update submodule"
 
 ### Prefer a global local copy instead?
 - Create a symlink: `ln -s /absolute/path/to/cora cora` (then add `cora` to `.gitignore`).
-- Edits in your canonical cora appear instantly in all projects.
+- Edits in your canonical cora appear instantly in all trees.
 - Tradeoff: less portable; not suitable for collaborators.
 
 ## License

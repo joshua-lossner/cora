@@ -13,7 +13,7 @@ tags: [strategy, coherence]
 Provide a shared, non-personal strategic stack for the Coherenceism network: challenges we address, programs we run, objectives we target, and metrics we track.
 
 ## Load
-Open this index during planning, prioritization, and reviews. Link programs and objectives to active projects in `context/projects/` and current work in `context/working/active/`.
+Open this index during planning, prioritization, and reviews. Link programs and objectives to active trees in `context/forest/` and current work in `context/working/active/`.
 
 ## Structure
 - challenges.md — Strategic challenges (formerly TELOS problems)
@@ -24,4 +24,3 @@ Open this index during planning, prioritization, and reviews. Link programs and 
 ## Notes
 - This replaces personal TELOS framing with network-oriented strategy.
 - Keep sensitive data out of these files; link to private dashboards if needed.
-

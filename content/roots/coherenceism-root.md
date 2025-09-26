@@ -43,7 +43,7 @@ Coherence evolves. Instead of freezing ideas into a single manuscript, we keep a
 - Seeds — Practices and experiments
 - Patterns — Reusable solutions (name, problem, forces, solution, consequences)
 
-Each item declares type, parent, and sites for cross‑project publishing.
+Each item declares type, parent, and sites for cross-tree publishing.
 
 ---
 ### **The Tree (Current Branches)**

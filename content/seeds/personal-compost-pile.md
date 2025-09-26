@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, compost]
-sites: [info, blog, social, network]
+sites: [music]
+spawned_systems: [coherenceism-music]
 canonical_slug: personal-compost-pile
 parent: death-change-reality
 order: 1
@@ -25,3 +26,6 @@ This week, choose one belief, habit, or project that no longer serves you.
 
 Do this enough, and fear of endings becomes skill at transformation.
 
+## Planting Notes
+- Primary tree: coherenceism-music
+- Drop-in forms: lyric prompts, guided releases, workshop reflections

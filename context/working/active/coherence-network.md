@@ -1,43 +1,33 @@
 ---
 kind: working
-title: Active — Coherence Network
-intent: Live plan and status for the Coherenceism network (.info + .blog + content)
+title: Active — CORA Trunk Alignment
+intent: Align CORA to a trunk‑only, content‑first model
 status: active
-updated: 2025-09-21
-tags: [working, project]
+updated: 2025-09-23
+tags: [working, trunk]
 ---
 
-# Active Project: Coherence Network
+# Active Focus: CORA Trunk Alignment
 
-- Projects: `context/projects/coherenceism/coherence-network.md`
 - Strategy: `context/strategy/COHERENCE.md`
-- Content: `content/` (root/branches/seeds/patterns)
+- Content: `content/` (roots, branches, seeds, leaves)
 
 ## Direction
-- .info (coherenceism.info): canonical, non‑opinionated library that presents root/branches/seeds (and patterns later).
-- .blog (coherenceism.blog): field‑notes journal that links back to canon; avoids opinion takes.
-- cora/content: single source of truth; sites filter by `sites: [...]`.
-- Shared tokens/UI: consistent visual baseline across sites.
+- CORA ships no UI, templates, or vendor code.
+- Downstream sites import CORA read‑only and render content externally.
+- Content remains strictly philosophical and canonical.
 
 ## Tasks Index (Live)
-- CN‑01 Centralize canonical content in cora/content — done
-- CN‑02 Split book into branches + seeds — done
-- CN‑03 Define pattern shape + template — done
-- CN‑04 Plan coherenceism.info (Astro) — active
-- CN‑05 Extract shared design tokens for reuse — planned
-- CN‑06 Initialize cora in blog + add Related links — planned
-- CN‑07 Blog writing SOP (non‑opinion field notes) — planned
-- CN‑08 Content loader utilities (Astro) — planned
-- CN‑09 Patterns library seed (first 1–2 patterns) — planned
-- CN‑10 CI content validation in sites — planned
-
-Full details: `context/tasks/coherence-network.md`
+- T‑01 Remove UI overlay and design tokens — done
+- T‑02 Remove vendor MCP server code — done
+- T‑03 Prune site‑specific tasks/workflows/working items — done
+- T‑04 Simplify content types to roots/branches/seeds/leaves — done
+- T‑05 Update AGENTS + COHERENCE docs — in progress
+- T‑06 Add/maintain validation procedures for frontmatter integrity — planned
 
 ## Immediate Next Steps
-1. Scaffold coherenceism.info (Astro) with loader and root/branch routes
-2. Extract tokens into `cora/ui/tokens.css`
-3. Wire blog layout “Related” block and SOP draft
+1. Finalize documentation updates and validation checks.
+2. Tag a release for downstream consumers with a brief migration note.
 
 ## Notes
-- Keep content non‑opinionated; reference branches/seeds for concepts.
-- Use frontmatter `type`, `parent`, and `order` to drive navigation.
+- Use frontmatter `type`, `parent`, and `order` to drive navigation in downstream overlays.

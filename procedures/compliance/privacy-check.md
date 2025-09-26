@@ -16,6 +16,5 @@ tags: [compliance, privacy]
 Apply the privacy review SOP to drafts that include data collection or sensitive topics.
 
 ## Usage
-- SOP: `agents/compliance/sops/privacy-review.md`.
 - Save notes with `.privacy.md` appended.
-
+- If your downstream tree maintains a privacy SOP, reference it there.

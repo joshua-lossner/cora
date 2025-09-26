@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, action]
-sites: [info, blog, social, network]
+sites: [info]
+spawned_systems: [coherenceism-info]
 canonical_slug: first-pebble
 parent: living-coherence
 order: 1
@@ -25,3 +26,6 @@ Before you close this, choose one small act:
 
 Make it small enough to do today. Make it real enough to matter.
 
+## Planting Notes
+- Primary tree: coherenceism-info
+- Drop-in forms: onboarding checklists, AI prompts, community kickoffs

@@ -21,7 +21,6 @@ tags: [strategy, programs]
 - Principle 3:
 
 ## Alignment
-- Related projects:
+- Related trees:
 - Key collaborators:
 - Risks / tensions:
-

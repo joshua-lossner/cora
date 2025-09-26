@@ -7,15 +7,15 @@ List of available procedures grouped by category.
 - core/validate-context.md — Validate cora context structure and frontmatter
 - core/validate-agents.md — Validate agent departments, metadata, and SOP coverage
 - core/validate-workflows.md — Validate workflow files and references
-- core/prepare-signal-log.md — Scaffold today’s signal log for a project
+- core/prepare-signal-log.md — Scaffold today’s signal log for a tree
 
 ## git
 - git/git-review.md — Quick guidelines for reviewing git changes
 
-## project
-- project/new-project.md — Scaffold a new project with cora as submodule
-- project/update-cora-submodule.md — Pull latest cora into this project
-- project/stage-blog-draft.md — Move a draft into the blog repo and stage it
+## forest
+- forest/new-tree.md — Scaffold a new tree with cora as submodule
+- forest/update-cora-submodule.md — Pull latest cora into this tree
+- forest/grow-from-seed.md — Initialize a downstream tree around CORA
 
 ## writing
 - writing/summarize.md — Generate concise summaries of content
@@ -39,4 +39,3 @@ List of available procedures grouped by category.
 Notes:
 - New procedures (in `procedures/`) should include the recommended frontmatter in `AGENTS.md`.
 - Keep this index updated when adding or renaming procedures.
-

@@ -11,5 +11,4 @@ tags: [working]
 
 Active: use `context/working/active/` with one file per focus.
 Archive: move completed items to an `archive/` folder.
-Link: from projects to active work items.
-
+Link: from forest trees to active work items.

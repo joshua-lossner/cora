@@ -22,6 +22,7 @@ Communicate clearly with consistent voice; keep docs concise and link-rich.
 
 ## Available Agents
  - writer.md — turns signals into outlines/drafts; edits for clarity
+ - release-steward.md — prepares release notes and migration guidance
 
 ## Available Methods
 - (add editorial workflow when authored)

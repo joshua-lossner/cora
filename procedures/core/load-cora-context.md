@@ -23,7 +23,7 @@ When an agent isn't following cora protocols, use this procedure to force contex
 ## What It Does
 1. Reads the complete UFC system documentation
 2. Loads the Knowledge Tree (content ontology)
-3. Loads strategy and projects context
+3. Loads strategy and forest context
 4. Identifies available tools (MCP optional in Codex)
 5. Scans procedures and methodologies
 6. Confirms successful loading
@@ -37,7 +37,7 @@ When an agent isn't following cora protocols, use this procedure to force contex
 - `content/COHERENCE.md` - Content system overview (frontmatter/types/sites)
 - List `procedures/` - Available procedures
 - List `context/methodologies/` - Available methodologies
-- Read `context/projects/COHERENCE.md` - Projects guidance
+- Read `context/forest/COHERENCE.md` - Forest registry guidance
 - Read `context/strategy/COHERENCE.md` - Strategy index
 
 ## Expected Confirmation

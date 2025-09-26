@@ -11,7 +11,7 @@ tags: [methodology, review]
 
 ## Goals
 - Ensure correctness, clarity, security, and performance.
-- Provide actionable, kind feedback aligned to project standards.
+- Provide actionable, kind feedback aligned to tree standards.
 
 ## Steps
 1. Scope & Setup

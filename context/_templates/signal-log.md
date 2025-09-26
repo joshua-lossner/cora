@@ -10,7 +10,7 @@ tags: [signals, prompts]
 # Daily Signals and Prompts — YYYY-MM-DD
 
 ## Meta
-- Project: coherenceism.blog
+- Tree: <tree>
 - Date: YYYY-MM-DD
 - Curator: news-curator
 - Sources: [source1], [source2], [source3]
@@ -41,4 +41,3 @@ tags: [signals, prompts]
 
 ## Cross-Connections
 - A → B: brief description of the pattern connection
-

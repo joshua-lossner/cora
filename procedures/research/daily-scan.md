@@ -20,16 +20,16 @@ Create a repeatable scan to inspire writing with distinct, pattern-led angles.
 ## Usage
 - Timebox 25–45 minutes; stop at strong signals.
 - Use the Daily Signal Scan SOP under `agents/research/sops/daily-signal-scan.md`.
-- Save outputs to `context/working/signals/<project>/YYYY-MM-DD.md` using the template.
+- Save outputs to `context/working/signals/<tree>/YYYY-MM-DD.md` using the template.
 
-### Snippet (scaffold today’s log for coherenceism.blog)
+### Snippet (scaffold today’s log for a tree)
 ```
+TREE=my-tree
 DATE=$(date +%F)
-mkdir -p context/working/signals/coherenceism.blog
-cp context/_templates/signal-log.md "context/working/signals/coherenceism.blog/${DATE}.md"
-sed -i '' "s/YYYY-MM-DD/${DATE}/g" "context/working/signals/coherenceism.blog/${DATE}.md"
+mkdir -p "context/working/signals/${TREE}"
+cp context/_templates/signal-log.md "context/working/signals/${TREE}/${DATE}.md"
+sed -i '' "s/YYYY-MM-DD/${DATE}/g" "context/working/signals/${TREE}/${DATE}.md"
 ```
 
 ## Outputs
-- Daily log file under `context/working/signals/<project>/YYYY-MM-DD.md` with signals, prompts, and cross-connections
-
+- Daily log file under `context/working/signals/<tree>/YYYY-MM-DD.md` with signals, prompts, and cross-connections

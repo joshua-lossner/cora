@@ -4,11 +4,11 @@ type: leaf
 title: Example Title
 summary: One-sentence abstract describing the piece
 status: draft
-updated: 2025-09-21
+updated: 2025-09-23
 tags: [coherence, example]
-sites: [media, info, ai, blog, social, network, com]
+sites: [info, blog, ai, tech]
 canonical_slug: example-title
-authors: [Core Team]
+authors: [Coherence Network]
 related: []
 ---
 

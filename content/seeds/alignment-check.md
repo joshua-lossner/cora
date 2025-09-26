@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, alignment]
-sites: [info, blog, social, network]
+sites: [info]
+spawned_systems: [coherenceism-info]
 canonical_slug: alignment-check
 parent: coherence-as-alignment
 order: 1
@@ -25,3 +26,6 @@ Before a meeting, conversation, or decision — pause and ask:
 
 Don’t overthink the answers — you’ll feel them.
 
+## Planting Notes
+- Primary tree: coherenceism-info
+- Drop-in forms: micro-practice cards, AI prompts, onboarding prompts

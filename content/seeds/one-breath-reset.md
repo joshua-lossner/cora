@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, presence]
-sites: [info, blog, social, network]
+sites: [info, blog]
+spawned_systems: [coherenceism-blog]
 canonical_slug: one-breath-reset
 parent: practice-of-presence
 order: 1
@@ -24,3 +25,6 @@ When you catch autopilot, stop.
 
 Repeat often until it becomes reflex.
 
+## Planting Notes
+- Primary tree: coherenceism-blog
+- Drop-in forms: micro-practice cards, AI prompts, workshop openers

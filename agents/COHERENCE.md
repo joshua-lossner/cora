@@ -19,22 +19,15 @@ Organize agents into purpose-led departments with clear charters, interfaces, an
 - SOPs: `agents/<department>/sops/*.md`
 - Templates: `agents/_templates/*`
 
-## Available Departments
-- hr — People ops, roles, onboarding, culture
-- philosophy — Steward principles and guardrails
-- research — Gather, synthesize, and cite
-- architecture — Patterns, boundaries, decisions
-- engineering — Delivery, QA, reliability
-- content — Docs, editorial, site copy
-- marketing — Messaging, channels, campaigns
-- community — Engagement, moderation, feedback loops
-- operations — Tooling, CI/CD, observability
-- compliance — Privacy, legal, ethics
+## Available Departments (Trunk Minimal)
+- philosophy — Principles, alignment, ontology stewardship
+- research — Signals, synthesis to inspire content
+- content — Seeds/leaves writing, editing, releases
 
 ## Notes
-- Start small; grow departments only when needed.
+- Trunk stays minimal. Add departments only when a persistent need emerges.
 - Keep COHERENCE.md brief; put actionable detail in SOPs.
-- Link to `context/methodologies/*` and procedures in `procedures/*` where relevant.
+- Link to `context/methodologies/*` and `procedures/*` where relevant.
 
 ## Validation
 - See `procedures/validate-agents.md` (procedure) to check structure and metadata.

@@ -17,7 +17,7 @@ Reusable capabilities with minimal frontmatter and human-readable usage.
 - Categories (subfolders):
   - `core/` — cora maintenance, validation, context loaders
   - `git/` — git hygiene and workflows
-  - `project/` — project scaffolding and submodule utilities
+  - `forest/` — tree scaffolding and submodule utilities
   - `writing/` — summarization and editorial helpers
   - `research/` — signal scanning and pattern extraction
   - `philosophy/` — alignment checks and reviews
@@ -28,4 +28,3 @@ Reusable capabilities with minimal frontmatter and human-readable usage.
 - Keep procedure filenames kebab-case and action-oriented.
 - Prefer tags and categories in frontmatter for discoverability.
 - Cross-link procedures that often chain.
-

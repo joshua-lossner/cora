@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, uncertainty]
-sites: [info, blog, social, network]
+sites: [music]
+spawned_systems: [coherenceism-music]
 canonical_slug: edge-of-knowing
 parent: mystery-of-being
 order: 1
@@ -21,3 +22,6 @@ Once this week, sit with something you don’t fully understand — a scientific
 
 Often, better questions are more valuable than quick answers.
 
+## Planting Notes
+- Primary tree: coherenceism-music
+- Drop-in forms: guided audio notes, setlist prompts, workshop reflections

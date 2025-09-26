@@ -20,7 +20,7 @@ Limit active to a few files for clarity.
 Templates: see `context/_templates/working-active.md`; examples: `context/working/_example.md`, `context/working/active/_example.md`.
 
 ## Signals & Prompts (Inspiration Artifacts)
-- Save daily signals under `context/working/signals/<project>/YYYY-MM-DD.md`.
+- Save daily signals under `context/working/signals/<tree>/YYYY-MM-DD.md`.
 - Template: `context/_templates/signal-log.md`.
 
 ## Available Active Items

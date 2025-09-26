@@ -13,14 +13,14 @@ tags: [workflows, coherence]
 Define end-to-end workflows that chain agents, procedures, and methodologies to produce consistent outcomes.
 
 ## Structure
-- Organize by project: `workflows/<project-name>/*.md`.
+- Organize by tree: `workflows/<tree-name>/*.md`.
 - Root contains `COHERENCE.md` and `_templates/` only.
 - Template: `workflows/_templates/workflow.md`.
 - Keep workflows concise; link to agents, procedures, and methods.
 
-## Available Workflows (by project)
-- coherenceism.blog/blog-post.md — Research → Outline → Draft → Review → Edit → Publish
+## Available Workflows
+Downstream consumers define their own workflows in their repos. CORA (trunk) does not track site- or tree-specific workflows.
 
 ## Notes
 - Use clear Actors, Inputs, Outputs, Steps, and Success Signals.
-- Prefer procedures in `procedures/core|git|project|writing` and methods in `context/methodologies/`.
+- Prefer procedures in `procedures/core|git|forest|writing` and methods in `context/methodologies/`.

@@ -7,7 +7,8 @@ status: draft
 updated: 2025-09-21
 version: 2025.09
 tags: [practice, ethics]
-sites: [info, blog, social, network]
+sites: [blog]
+spawned_systems: [coherenceism-blog]
 canonical_slug: resonance-check
 parent: ethics-and-action
 order: 1
@@ -25,3 +26,6 @@ When stuck between choices:
 
 Not the easiest choice — the coherent one.
 
+## Planting Notes
+- Primary tree: coherenceism-blog
+- Drop-in forms: editorial checklists, AI prompts, workshop openers

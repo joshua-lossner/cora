@@ -26,4 +26,4 @@ tags: [codex, tools]
 
 ## Integrations
 - MCP optional (see `context/tools/mcp/`)
-- Downstream projects embed cora via submodule and start from `AGENTS.md`
+- Downstream trees embed cora via submodule and start from `AGENTS.md`

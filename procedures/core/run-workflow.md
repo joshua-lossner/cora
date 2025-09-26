@@ -16,10 +16,10 @@ tags: [workflow, execution]
 Quickly render a given workflow into a checklist with its steps and referenced links.
 
 ## Usage
-Example to render the blog workflow:
+Example to render a workflow:
 
 ```
-FILE=workflows/coherenceism.blog/blog-post.md
+FILE=workflows/example/my-workflow.md
 echo "# $(rg -n '^title:' "$FILE" | sed 's/.*title:\\s*//')"
 echo
 echo "Actors:"; rg -n '^## Actors|^## Inputs|^## Steps' -n "$FILE" | sed -n '1,999p' >/dev/null # anchor
@@ -32,4 +32,3 @@ echo "Referenced agents:"; rg -o "agents/[A-Za-z0-9_\-/]+\\.md" -n "$FILE" | cut
 ```
 
 Adjust `FILE` to point to any workflow.
-

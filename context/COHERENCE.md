@@ -15,7 +15,7 @@ This cora system operates on **coherentist principles** - seeking resonance over
 
 ## Core Concept
 
-Your file system IS your AI's knowledge base. Each directory contains specific context that gets loaded when needed.
+Your file system IS your AI's knowledge base. Each directory contains specific context that gets loaded when needed. CORA is the trunk: canonical content and philosophy. It ships no UI or app code; downstream trees render and publish.
 
 ## Directory Map
 
@@ -23,7 +23,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 - `/context/` - All knowledge and documentation
 - `/content/` - Canonical content shared across sites
     - `/context/philosophy/` - Coherenceism foundation and related texts
-    - `/context/projects/` - Project-specific contexts
+    - `/context/forest/` - Registry of downstream trees seeded from CORA
     - `/context/tools/` - Tool documentation
     - `/context/methodologies/` - Step-by-step processes
     - `/context/strategy/` - Network strategy: challenges, programs, objectives, metrics
@@ -53,15 +53,16 @@ Start each session by following `AGENTS.md` at the repo root.
 ### 4. Active Work
 
 - `/context/working/active/` - Current focus and tasks
-- Project-specific context (if applicable)
+- Forest tree context (if applicable)
 
 ## How It Works
 
-1. Each project gets a simple COHERENCE.md that points here
+1. Each downstream tree gets a simple COHERENCE.md that points here
 2. AI loads this central knowledge + philosophical foundation
 3. Every problem you solve becomes a permanent command
 4. System grows smarter with each use
 5. All solutions align with coherentist principles
+6. Downstream trees consume CORA read‑only (git submodule) and grow their own agents/content/context/procedures/workflows
 
 ## Core Operating Principles
 

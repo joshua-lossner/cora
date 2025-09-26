@@ -10,7 +10,7 @@ steps:
   - Report missing or malformed items
 shell:
   - rg -n "^---$" context | wc -l | xargs echo "Frontmatter block delimiters:"
-  - rg -n "^kind:\s*(project|methodology|tool|philosophy|strategy|working|documentation)" context || true
+  - rg -n "^kind:\s*(forest-tree|project|methodology|tool|philosophy|strategy|working|documentation)" context || true
   - rg -n "^title:\s+" context || true
   - rg -n "^intent:\s+" context || true
   - rg -n "^status:\s+(draft|active|archived|reference)" context || true

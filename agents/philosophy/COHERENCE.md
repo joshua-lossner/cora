@@ -21,6 +21,7 @@ Maintain clarity and integrity of core principles; inform decisions and reviews.
 
 ## Available Agents
 - principles-reviewer.md — reviews changes for alignment with Coherenceism
+- ontology-steward.md — maintains Knowledge Tree and Content Contract
 
 ## Available Methods
 - (link methodologies when authored)

@@ -7,22 +7,25 @@ updated: 2025-09-21
 tags: [content, coherence, publishing]
 ---
 
-# COHERENCE — Content
+# COHERENCE — Content (Trunk)
 
 ## Purpose
-Maintain a single source of truth for canonical content (essays, notes, media descriptions, primers) used across the Coherenceism network. Sites select content via the `sites` field in frontmatter.
+Maintain a single source of truth for canonical philosophical content used across downstream sites. CORA ships no UI; consumers import this repo read‑only and render content in their own overlays. Sites may select content via the `sites` field in frontmatter.
+
+See also: `context/documentation/content-contract.md` for the formal content contract.
 
 ## Structure
 - `_templates/content-item.md` — recommended frontmatter + shape
-- `articles/` — essays, long-form
-- `notes/` — short-form ideas or references
-- `media/` — track/album/video descriptors
+- `roots/` — canon and orientation
+- `branches/` — stable themes
+- `seeds/` — small, actionable practices
+- `leaves/` — narrative surfaces
 - `shared/` — cross-site primers and canonical texts
-- `REGISTRY.md` — optional, human-readable index of items
+- `REGISTRY.md` — optional, human‑readable index of items
 
 ## Frontmatter Schema (recommended)
 - kind: `content`
-- type: `root|branch|leaf|seed|pattern`
+- type: `root|branch|leaf|seed`
 - title: string
 - summary: short abstract (optional, use first paragraph if omitted)
 - status: `draft|active|archived|deprecated`
@@ -36,20 +39,9 @@ Maintain a single source of truth for canonical content (essays, notes, media de
 - authors: `[ ... ]` (optional)
 - related: `[canonical_slug, ...]` (optional)
 
-### Patterns (type: pattern)
-- Use for reusable solutions that can be applied across contexts.
-- Recommended fields inside body:
-  - Name — short, precise
-  - Context — when this pattern applies
-  - Problem — the tension it addresses
-  - Forces — competing dynamics that shape the problem
-  - Solution — the core move; how to enact it
-  - Consequences — tradeoffs and follow‑on effects
-  - Examples — 2–3 concrete instances
-  - Anti‑Patterns — look‑alikes that fail
-  - Related — links to seeds/branches/patterns
+Note: Patterns are out of scope for the trunk. Use seeds + leaves to capture practices and narratives; downstream repos may define additional types.
 
-## Publish Map (filters)
+## Selection (filters)
 - Per-site selection: files with `sites` containing the site key.
 - Examples:
   - List blog items: `rg -l '^sites:.*\bblog\b' content`
@@ -57,105 +49,30 @@ Maintain a single source of truth for canonical content (essays, notes, media de
   - Show titles + slugs: `rg -n '^(title|canonical_slug):' content`
 
 ### Site Keys
-- media → coherenceism.media
-- info → coherenceism.info
-- ai → coherenceism.ai
-- blog → coherenceism.blog
-- social → coherenceism.social
-- network → coherenceism.network
-- com → coherenceism.com
-- tech → coherenceism.tech
+The `sites` array in frontmatter is an optional hint for downstream consumers (e.g., `info`, `blog`, `ai`, `tech`). CORA does not bind these to specific domains.
 
 ## Notes
 - Prefer canonical content here; use per-site overlays to adapt intros/CTAs.
 - Keep media binaries outside this repo; store descriptors here, files elsewhere.
 
-## Integration Examples
-
-### Node/TypeScript (Next.js, Astro, etc.)
-```ts
-import fs from 'node:fs';
-import path from 'node:path';
-import matter from 'gray-matter';
-
-type Item = {
-  title: string;
-  status: string;
-  updated: string;
-  tags?: string[];
-  sites: string[];
-  canonical_slug: string;
-  body: string;
-  file: string;
-};
-
-const roots = [
-  'content/shared',
-  'content/articles',
-  'content/notes',
-  'content/media',
-];
-
-export function loadContent(site: string): Item[] {
-  const files = roots.flatMap((r) =>
-    fs.existsSync(r)
-      ? fs
-          .readdirSync(r)
-          .filter((f) => f.endsWith('.md'))
-          .map((f) => path.join(r, f))
-      : []
-  );
-  return files
-    .map((file) => {
-      const raw = fs.readFileSync(file, 'utf8');
-      const { data, content } = matter(raw);
-      return { ...data, body: content, file } as Item;
-    })
-    .filter((it) => Array.isArray(it.sites) && it.sites.includes(site));
-}
-```
-
-### Hugo (Front matter params.sites)
-```go-html-template
-{{/* In a list template: select items with .Params.sites containing "blog" */}}
-{{ $items := where .Site.RegularPages ":path" "^content/" }}
-{{ range $items }}
-  {{ if in .Params.sites "blog" }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  {{ end }}
-{{ end }}
-```
-
-### CLI filter (bash)
+## CLI Selection Examples
 ```bash
-# Files for blog
+# Files tagged for "blog"
 rg -l '^sites:.*\bblog\b' content
 
-# Titles for blog
+# Titles and slugs for those files
 rg -n '^(title|canonical_slug|sites):' $(rg -l '^sites:.*\bblog\b' content)
 ```
 
 ## Root Navigation
 
-To render a navigation for the living tree on coherenceism.info (or any site):
+To render a navigation for the living tree in a downstream site:
 
 - Select branches under the root: items with `type: branch` and `parent: coherenceism-root`.
 - Order by the `order` field (fallback to title if missing).
 
-Examples
-
-- Bash: list branch titles under the root
+Example — list branch titles under the root
 ```bash
 rg -n "^(type: branch|parent: coherenceism-root|title:)" content/branches \
   | awk '/^.*type: branch/{t=1} /^.*parent: coherenceism-root/{p=1} /^.*title:/{if(t&&p){print; t=p=0}}'
-```
-
-- TypeScript
-```ts
-type FM = { title: string; type: string; parent?: string; order?: number; canonical_slug: string };
-const items: FM[] = loadFrontmatterSomehow();
-const nav = items
-  .filter(i => i.type === 'branch' && i.parent === 'coherenceism-root')
-  .sort((a,b) => (a.order ?? 999) - (b.order ?? 999) || a.title.localeCompare(b.title))
-  .map(i => ({ title: i.title, slug: i.canonical_slug }));
 ```

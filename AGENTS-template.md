@@ -1,6 +1,6 @@
 # AGENTS.md Template (Codex + cora)
 
-Use this file in a project to align with your cora system.
+Use this file in a tree to align with your cora system.
 
 ## Load cora
 - Read: `AGENTS.md` (in your cora repo)
@@ -13,20 +13,20 @@ Use this file in a project to align with your cora system.
 - `context/tools/mcp/servers.md`
 
 ## Pointing to Your cora
-- If this file is in a different project, Codex needs a way to locate your cora repo.
+- If this file is in a different tree, Codex needs a way to locate your cora repo.
 - Recommended (submodule): add your cora repo as a submodule at `cora/` and reference paths like `cora/context/...` in your local `AGENTS.md`.
 - Alternative: set `CORA_ROOT` in a `.env` file to your local absolute path and reference via that variable in scripts/docs.
-- Optional: include a one-line note in this project’s `AGENTS.md` that says where cora lives (e.g., `CORA_ROOT=./cora`).
+- Optional: include a one-line note in this tree’s `AGENTS.md` that says where cora lives (e.g., `CORA_ROOT=./cora`).
 
 ### Submodule Setup (recommended)
 ```bash
-# inside your project
+# inside your tree
 git init                               # if not already a repo
 git submodule add https://github.com/joshua-lossner/cora.git cora
 cp cora/AGENTS-template.md AGENTS.md
 echo "CORA_ROOT=./cora" >> .env  # optional hint for humans
 ```
-Now point Codex to `AGENTS.md` in this project. It references files under `cora/`.
+Now point Codex to `AGENTS.md` in this tree. It references files under `cora/`.
 
 ## Confirm Loaded
 - ✅ UFC system loaded — I understand the context architecture
@@ -35,8 +35,8 @@ Now point Codex to `AGENTS.md` in this project. It references files under `cora/
 - ✅ Procedures scanned — I see available procedures
 - ✅ Methodologies scanned — I see available processes
 
-## Project Context
-- Describe the project’s goals, constraints, and links.
+## Tree Context
+- Describe the tree’s goals, constraints, and links.
 
 ## Relevant Procedures
 - List procedures in `procedures/` that apply here.

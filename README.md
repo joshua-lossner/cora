@@ -386,11 +386,7 @@ git add cora && git commit -m "chore(cora): update submodule"
 
 ## License
 
-License as you see fit. Consider:
-
-- Keep secrets private
-- Share useful procedures publicly
-- Contribute improvements back
+Released under the MIT License (`LICENSE.md`). Portions originate from Daniel Miessler’s Personal AI Infrastructure project and retain his attribution.
 
 ---
 

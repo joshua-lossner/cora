@@ -1,0 +1,105 @@
+---
+kind: procedure
+id: outline
+version: 0.4
+purpose: "Produce a minimal, testable outline from notes + intent, labeling claims as fact/inference/unknown."
+inputs:
+  required:
+    - notes.md
+    - intent.yml   # fields: thesis, audience, stance, length_minutes, (optional tone, sources[])
+  optional:
+    - context.refs[]
+outputs:
+  - outline.md
+  - claim_table.csv
+  - assumptions.md
+agents:
+  actor: s_vektor
+constraints:
+  - "Thesis must be a single sentence."
+  - "Every paragraph topic must map to a labeled claim (F/I/U)."
+  - "Prefer the smallest structure that can hold the argument."
+  - "Propose a concrete opening hook (image or micro-scene) and a forward-looking closing line."
+  - "Propose a relationships micro-scene (the knot or boundary voiced) to avoid thin treatment."
+eval_checks:
+  - "Outline has <= 7 top-level sections (incl. intro/outro)."
+  - "Each section ties to the thesis or removes itself."
+  - "Claim table present with columns: id, section, type(F/I/U), statement, evidence, risk."
+  - "Hook candidate present near the top; closing line suggests forward motion."
+  - "Relationships section includes a candidate image or micro-scene."
+failure_modes:
+  - code: NO_THESIS
+    remedy: "Derive a candidate from notes; present 1–3 options and request confirmation."
+  - code: OVERFIT
+    remedy: "Merge or drop sections that duplicate the same claim."
+  - code: THIN_EVIDENCE
+    remedy: "Flag as I/U; propose 3 discriminating sources or tests."
+method:
+  steps:
+    - id: extract_thesis
+      description: "From intent + notes, propose 1–3 candidate theses; pick one (or mark NO_THESIS)."
+      outputs: [thesis.txt]
+    - id: hook
+      description: "List 1–3 concrete opening images or micro-scenes that embody the thesis."
+      outputs: [hook.candidates.md]
+    - id: relationships_scene
+      description: "Draft a 1–2 sentence image or micro-scene for the Relationships section (the knot carried; boundary voiced)."
+      outputs: [relationships.candidates.md]
+    - id: section_map
+      description: "Create 4–6 body sections + intro/outro that trace the thesis."
+      outputs: [sections.yml]
+    - id: claims
+      description: "For each section, list 1–3 claims labeled F/I/U with notes on evidence."
+      outputs: [claim_table.csv]
+    - id: risks
+      description: "Identify the top 3 failure risks (logic, evidence, scope)."
+      outputs: [assumptions.md]
+    - id: render_outline
+      description: "Emit outline.md with headings, claim labels, and notes for examples/sources."
+      outputs: [outline.md]
+templates:
+  outline_md: |
+    # Title: {{ title or 'TBD' }}
+    **Thesis:** {{ thesis }}
+    **Audience:** {{ audience }}
+    **Stance:** {{ stance }}
+    **Tone:** {{ tone or 'neutral' }}
+
+    ### Hook Candidates (images/micro-scenes)
+    - Note 1–3 vivid openings that show the problem before we name it.
+
+    ### Relationships Micro-scene (avoid thin treatment)
+    - Draft 1–2 sentences (the knot carried; boundary voiced; breath returned).
+
+    ## Introduction
+    - Setup: why this matters now
+    - Preview: 3 moves you’ll make
+
+    {% for s in sections %}
+    ## {{ s.title }}
+    - Purpose: {{ s.purpose }}
+    - Claims:
+    {% for c in s.claims %}
+      - ({{ c.type }}) {{ c.statement }}
+        - Evidence: {{ c.evidence or 'TBD' }}
+        - Risk: {{ c.risk or 'low' }}
+    {% endfor %}
+    {% endfor %}
+
+    ## Conclusion
+    - Return to thesis; state what changes
+    - Forward-looking line (small, daily choice); Next actions / questions
+
+  claim_table_csv_headers: "id,section,type,statement,evidence,risk"
+provenance:
+  include:
+    - git_commit
+    - time_started
+    - time_finished
+    - inputs
+---
+# Notes (human/agent)
+
+- Keep the outline short; the essay will expand it.
+- If sections drift, ask for a tighter thesis or reduce scope.
+- Label boldly; ambiguity now is cheaper than revision later.

@@ -1,0 +1,12 @@
+# Intent fields
+thesis: "Coherence beats comfort in personal transformation."
+audience: "thoughtful general readers"
+stance: "argumentative"
+length_minutes: 6
+tone: "reflective, unsentimental"
+keywords: ["coherence", "comfort", "habits"]
+title_hint: "Comfort Delays Pain; Coherence Heals It"
+sources:
+  - context/philosophy/coherenceism.md
+  - https://danielmiessler.com/blog/personal-ai-infrastructure/
+# Optional extra metadata for content leaf generation later

@@ -10,7 +10,7 @@ Use this file in a tree to align with your cora system.
 - `agents/ivy.md`
 - `context/COHERENCE.md`
 - `context/philosophy/coherenceism.md`
-- `context/tools/mcp/servers.md`
+  (Optional) `context/tools/COHERENCE.md`
 
 ## Pointing to Your cora
 - If this file is in a different tree, Codex needs a way to locate your cora repo.

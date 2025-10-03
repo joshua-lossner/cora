@@ -1,0 +1,14 @@
+# provenance: workflow=essay_from_notes; step=outline; git_commit=71951c3; time_started=2025-10-02T20:35:55Z; time_finished=2025-10-02T20:35:55Z; agents=ivy@0.2,s_vektor@0.1; inputs=notes.example.md|intents/essay_from_notes.intent.example.yml
+id,section,type,statement,evidence,risk
+C1,Define Terms,I,"Comfort-seeking that avoids near-term discomfort often compounds problems later.",anecdote; needs sources,over-generalization
+C2,Define Terms,I,"Coherence = alignment of belief, word, and action; reduces friction over time.",coherenceism doc; conceptual,abstraction
+C3,Define Terms,U,"Need criteria to distinguish restorative comfort from avoidance.",TBD,false positives
+C4,Health,I,"Regular training and adequate sleep reduce friction in daily life.",broad literature; not cited,individual variance
+C5,Health,I,"Skipping training and late doomscrolling tax tomorrow despite comfort now.",anecdote; needs sources,moralizing
+C6,Money,I,"Minimum payments prolong debt and increase total cost.",interest arithmetic; cite,ignores shocks
+C7,Money,I,"Coherent budgeting reduces cognitive load and stress.",behavioral finance; not cited,discipline costs
+C8,Relationships,I,"Avoiding hard conversations grows resentment and complexity.",clinical guidance; not cited,context-sensitive
+C9,Relationships,I,"Clear boundaries increase trust and reduce maintenance costs.",practice reports; not cited,rigidity risk
+C10,Practical Moves,I,"Audit top 5 comfort loops that create later friction.",self-observation,shame spiral
+C11,Practical Moves,I,"Replace with smallest coherent habit that compounds.",habit literature,too-big swaps fail
+C12,Practical Moves,I,"Maintain weekly review to repair drift early.",productivity practice,process over substance

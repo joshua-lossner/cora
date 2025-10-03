@@ -1,0 +1,59 @@
+---
+kind: procedure
+id: prepare_essay_input
+version: 0.2
+purpose: "Accept a single markdown+frontmatter file (essay.md), validate required fields, derive slug, and emit intent.yml + notes.md for downstream procedures."
+inputs:
+  required:
+    - essay.md   # unified input with YAML frontmatter + notes body
+outputs:
+  - intent.yml
+  - notes.md
+  - title.txt
+  - slug.txt
+  - meta.json
+agents:
+  actor: s_vektor
+constraints:
+  - "Frontmatter must include: thesis, audience, stance, length_minutes."
+  - "Always derive a clean Title from thesis or title_hint (ignore provided title for generation); record any provided title in meta.json for provenance."
+  - "Slug derived from the derived Title; lower-kebab-case."
+  - "Preserve the exact input body as notes.md without rewriting."
+eval_checks:
+  - "All required fields present and typed correctly."
+  - "Slug is stable and filesystem-safe."
+  - "intent.yml mirrors frontmatter fields and is lossless (except formatting)."
+failure_modes:
+  - code: MISSING_FIELDS
+    remedy: "List missing keys; emit a minimal example frontmatter block."
+  - code: BAD_TYPES
+    remedy: "Coerce simple cases (strings, ints); otherwise report."
+  - code: EMPTY_NOTES
+    remedy: "Warn and continue; downstream may return INSUFFICIENT_INPUTS."
+method:
+  steps:
+    - id: parse_frontmatter
+      description: "Read YAML frontmatter; validate required keys; normalize keys."
+      outputs: [frontmatter.json]
+    - id: compute_title
+      description: "Derive a Title from thesis (or title_hint fallback); Title Case; write title.txt."
+      outputs: [title.txt]
+    - id: compute_slug
+      description: "Kebab-case of derived Title; write slug.txt."
+      outputs: [slug.txt]
+    - id: emit_intent
+      description: "Write intent.yml mirroring frontmatter intent fields (thesis, audience, stance, length_minutes, tone?, sources[]?, deadline?, keywords[]?)."
+      outputs: [intent.yml]
+    - id: emit_notes
+      description: "Extract markdown body to notes.md verbatim."
+      outputs: [notes.md]
+    - id: write_meta
+      description: "Record meta.json with input_path, provided_title?, derived_title, slug, hash."
+      outputs: [meta.json]
+provenance:
+  include: [time_started, time_finished, inputs]
+---
+# Notes (human/agent)
+
+- This procedure exists to keep downstream writing/check procedures stable while adopting the unified input format.
+- Archive the original `essay.md` alongside outputs for auditability.

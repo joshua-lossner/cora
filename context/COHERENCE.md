@@ -81,12 +81,18 @@ Start each session by following `AGENTS.md` at the repo root.
 - **Living Documentation**: Let knowledge evolve while maintaining coherence
 - **Resonance Check**: Test if solutions feel aligned or forced
 
+## Tooling Policy (Trunk)
+
+- Trunk contains no code and no vendor or MCP setup. All guidance is plain Markdown.
+- Keep tool notes conceptual and vendor‑neutral. Implementation lives in downstream trees.
+- Downstream projects decide on toolchains (LLM features, connectors, MCP, etc.) and may link back to CORA content.
+- Rationale: preserve accessibility for non‑coders, avoid vendor lock‑in, and keep the canon durable over time.
+
 ## Current Capabilities
 
 - Check `/procedures/` directory for available procedures
-- Check `/context/tools/` for available tools
+- Check `/context/tools/` for optional, vendor-neutral guidance
 - Check `/context/methodologies/` for established processes
-- MCP Servers: Direct access to context via filesystem server (see `/context/tools/mcp/`)
 
 ## System Growth Pattern
 

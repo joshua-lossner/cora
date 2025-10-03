@@ -18,8 +18,8 @@ See also: `context/documentation/content-contract.md` for the formal content con
 - `_templates/content-item.md` — recommended frontmatter + shape
 - `roots/` — canon and orientation
 - `branches/` — stable themes
-- `seeds/` — small, actionable practices
-- `leaves/` — narrative surfaces
+- `seeds/` — project starters that can spawn downstream trees/systems
+- `leaves/` — narrative and practice surfaces
 - `shared/` — cross-site primers and canonical texts
 - `REGISTRY.md` — optional, human‑readable index of items
 

@@ -1,0 +1,73 @@
+---
+kind: procedure
+id: validate_content
+version: 0.1
+purpose: "Validate documents against the Knowledge Tree (roots/branches/leaves/seeds) and required front-matter; emit a clear report and fix suggestions."
+inputs:
+  required:
+    - paths[]           # glob(s) to scan, e.g., content/**/*
+    - knowledge_tree    # path to context/documentation/knowledge-tree.md
+  optional:
+    - frontmatter_schema.yml   # optional override schema
+outputs:
+  - validation_report.md
+  - invalid_files.csv
+  - fixes.suggestions.md
+agents:
+  actor: s_vektor
+constraints:
+  - "No in-place edits to source files; propose fixes as patch suggestions."
+  - "Treat missing or malformed front-matter as errors."
+  - "Every file must map to exactly one ontology node (root/branch/leaf/seed)."
+eval_checks:
+  - "All scanned files have valid front-matter block (title, type, tags[], ontology.node)."
+  - "Ontology mapping exists and is unique."
+  - "Broken internal links and missing referenced nodes are listed with line numbers."
+failure_modes:
+  - code: BAD_FRONTMATTER
+    remedy: "Emit corrective front-matter block in fixes.suggestions.md."
+  - code: NO_ONTOLOGY_NODE
+    remedy: "Propose nearest plausible node and update line."
+  - code: BROKEN_LINKS
+    remedy: "List each broken ref with candidate targets."
+method:
+  steps:
+    - id: load_ontology
+      description: "Parse knowledge-tree.md into nodes and allowed relationships."
+      outputs: [ontology.json]
+    - id: scan_files
+      description: "Enumerate files from paths[]; detect YAML front-matter; extract fields."
+      outputs: [scan.csv]
+    - id: validate_schema
+      description: "Check for required fields; type-specific rules."
+      outputs: [schema_violations.csv]
+    - id: validate_ontology
+      description: "Map each file to an ontology node; detect orphans and duplicates."
+      outputs: [mapping.csv]
+    - id: check_links
+      description: "Find unresolved internal links/refs; suggest fixes."
+      outputs: [link_issues.csv]
+    - id: render_report
+      description: "Write validation_report.md and fixes.suggestions.md (patch-style snippets)."
+      outputs: [validation_report.md, fixes.suggestions.md]
+templates:
+  report_md: |
+    # Content Validation Report
+    **Scanned:** {{ paths | join(', ') }}
+    **Ontology:** {{ knowledge_tree }}
+    ## Summary
+    - Files scanned: {{ totals.files }}
+    - OK: {{ totals.ok }}
+    - Errors: {{ totals.errors }}
+    - Warnings: {{ totals.warnings }}
+
+    ## Top Issues
+    {{ top_issues }}
+
+    ## Details
+    {{ details }}
+
+  invalid_csv_headers: "path,issue,detail,line"
+provenance:
+  include: [time_started, time_finished, git_commit, inputs]
+---

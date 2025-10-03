@@ -1,41 +1,16 @@
-# Procedures Index (folder: procedures/)
+# Procedures Index (CORA)
 
-List of available procedures grouped by category.
+This index lists reusable procedures available in the trunk. Each procedure includes inputs, outputs, constraints, eval checks, and failure modes.
 
-## core
-- core/load-cora-context.md — Manually load and verify cora context
-- core/validate-context.md — Validate cora context structure and frontmatter
-- core/validate-agents.md — Validate agent departments, metadata, and SOP coverage
-- core/validate-workflows.md — Validate workflow files and references
-- core/prepare-signal-log.md — Scaffold today’s signal log for a tree
+| id               | actor      | purpose                                                                    | inputs (required)                    | outputs                              |
+|------------------|------------|----------------------------------------------------------------------------|--------------------------------------|--------------------------------------|
+| outline          | s_vektor   | Produce a minimal, testable outline with labeled claims (F/I/U).          | notes.md, intent.yml                 | outline.md, claim_table.csv, assumptions.md |
+| refine_style     | ivy        | Tighten prose while preserving voice and claim labels.                    | draft.md                             | refined.md, edits.diff.md            |
+| fact_check       | s_vektor   | Verify claims, grade evidence (E1–E4), mark assumptions, build citations. | draft.md (+ optional sources[])      | draft_checked.md, citations.md, fact_check_report.md |
+| validate_content | s_vektor   | Validate content against Knowledge Tree + front-matter; propose fixes.    | paths[], knowledge_tree              | validation_report.md, invalid_files.csv, fixes.suggestions.md |
+| prepare_essay_input | s_vektor   | Parse unified essay input (markdown+frontmatter) into intent.yml, notes.md, derived title, and slug. | essay.md                            | intent.yml, notes.md, title.txt, slug.txt, meta.json |
 
-## git
-- git/git-review.md — Quick guidelines for reviewing git changes
-
-## forest
-- forest/new-tree.md — Scaffold a new tree with cora as submodule
-- forest/update-cora-submodule.md — Pull latest cora into this tree
-- forest/grow-from-seed.md — Initialize a downstream tree around CORA
-
-## writing
-- writing/summarize.md — Generate concise summaries of content
-- writing/outline-from-signals.md — Generate an outline from a signals log
-- writing/draft-from-outline.md — Generate a first draft from an outline
-- writing/edit-apply-sop.md — Apply editorial SOP to improve clarity
-
-## research
-- research/daily-scan.md — Produce categorized signals and prompts from daily sources
-- research/extract-signals.md — Extract patterns and prompts from raw notes
-
-## philosophy
-- philosophy/review-draft.md — Review a draft for alignment with Coherenceism
-
-## compliance
-- compliance/privacy-check.md — Review a draft for privacy-first alignment
-
-## content
-- content/validate-content.md — Validate centralized content frontmatter and mapping
-
-Notes:
-- New procedures (in `procedures/`) should include the recommended frontmatter in `AGENTS.md`.
-- Keep this index updated when adding or renaming procedures.
+**Conventions**  
+- Inputs are filesystem paths unless otherwise stated.  
+- F/I/U labels: Fact / Inference / Unknown.  
+- Evidence Grades: E1 (primary with methods+data) → E4 (anecdote).

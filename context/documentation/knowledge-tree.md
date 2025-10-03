@@ -16,8 +16,8 @@ Provide a clear, durable model for how Coherenceism content is structured, valid
 - Roots — Canon and orientation; anchors the tree (why/how).
 - Trunk — System rails: UFC load order, content graph, UI plumbing.
 - Branches — Stable themes that hold tone/scope; parents for seeds/leaves.
-- Seeds — Portable practices/patterns meant to germinate elsewhere; short, actionable, evergreen modules that can spawn downstream systems (sites, mediums, tools).
-- Leaves — Narrative surfaces that grow from branches/seeds (essays, explainers).
+- Seeds — Project starters: ideas intended to germinate downstream trees/systems. Track `spawned_systems` linking to `context/forest/` and capture the promise and scope of the new surface. Not for everyday practices.
+- Leaves — Narrative and practice surfaces that grow from branches (essays, explainers, actionable practices, how‑tos).
 - Mycelium — Orchestration layer (AI + procedures + tools) that routes attention.
 - Compost — Lifecycle path for archiving; endings feed future material.
 
@@ -28,6 +28,7 @@ Provide a clear, durable model for how Coherenceism content is structured, valid
 - Leaves: `content/…` (any subfolder) with `type: leaf`; template at `content/_templates/content-item.md`
 - Forest registry: `context/forest/…`
 - System rails and load order: `context/COHERENCE.md`, `context/architecture/…`
+ - Essays workflow I/O: inputs at `content/essays/in/` (markdown+frontmatter); outputs at `content/essays/out/YYYY-MM-DD/<slug>/` (finals carry `type: leaf`).
 - Tools/procedures: `context/tools/…`, `procedures/…`
 
 ## Forest Registry
@@ -45,7 +46,7 @@ Shared keys across all types:
 Type‑specific keys:
 - Root: `type: root`
 - Branch: `type: branch`, `parent: coherenceism-root`, `order`
-- Seed: `type: seed`, `parent: <branch-slug>`, optional `order`, `spawned_systems: []` to name downstream surfaces
+- Seed: `type: seed`, `parent: <branch-slug>`, optional `order`, required `spawned_systems: [tree-slug, ...]` to name downstream trees; recommended `seed_stage: idea|incubating|germinated|retired`
 - Leaf: `type: leaf`, `parent: <branch-slug>`, optional `seed_refs: []`
 
 ## Relationships and Integrity
@@ -58,8 +59,8 @@ Type‑specific keys:
 CORA ships no UI. Downstream sites render this content using their own frameworks. Recommended mapping:
 - Root: list branches and orientation.
 - Branch: render branch content and list its seeds/leaves.
-- Seed: render short, actionable practice with metadata pointing to the surfaces it can seed downstream and a Planting Notes section linking practice to format.
-- Leaf: render narrative surface linked to branch/seed.
+- Seed: render a concise project‑starter card with scope, `seed_stage`, and `spawned_systems`, linking into `context/forest/<tree>.md`.
+- Leaf: render narrative/practice surfaces linked to their branch; include calls to practice as needed.
 
 Conventions (recommended, not enforced by CORA):
 - Keep side nav to branches; highlight active.
@@ -80,7 +81,7 @@ Conventions (recommended, not enforced by CORA):
 - Required keys present (see above) and valid `parent` types.
 - `canonical_slug` uniqueness; no collisions.
 - Optional: check `seed_refs` in leaves resolve to existing seeds.
-- Optional: confirm `spawned_systems` exists on seeds that are meant to propagate into downstream surfaces.
+- Required (seeds): confirm `spawned_systems` exists and maps to `context/forest/` entries; recommended `seed_stage` in allowed set.
 Use `procedures/content/validate-content.md` as the enforcement scaffold.
 
 ## Example — Leaf Frontmatter

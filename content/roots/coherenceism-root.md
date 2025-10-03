@@ -40,7 +40,7 @@ Coherence evolves. Instead of freezing ideas into a single manuscript, we keep a
 - Roots — Anchors and orientation (this page)
 - Branches — Major themes (e.g., Universal Mind, Alignment, Presence)
 - Leaves — Essays and elaborations tied to branches
-- Seeds — Practices and experiments
+- Seeds — Project starters intended to grow downstream systems
 - Patterns — Reusable solutions (name, problem, forces, solution, consequences)
 
 Each item declares type, parent, and sites for cross-tree publishing.

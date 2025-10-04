@@ -1,5 +1,3 @@
-<!-- Plain-language PR template for CORA. Keep it scannable and link paths. -->
-
 ## Summary
 Explain what changed in simple terms and why it matters.
 
@@ -24,4 +22,3 @@ Explain what changed in simple terms and why it matters.
 
 ## Links
 - Project or task paths that track this work.
-

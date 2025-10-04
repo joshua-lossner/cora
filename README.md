@@ -1,8 +1,9 @@
 # CORA — Coherent Operating & Reasoning Architecture
 
-CORA is a filesystem-native way to store **intent** (prompts as structured entities) so that AI agents can hydrate themselves, reason with your context, and produce artifacts (text, tables, essays, slides, music, code) with minimal glue code.  
+CORA is a filesystem-native way to store **intent** (prompts as structured entities) so that AI agents can hydrate themselves, reason with your context, and produce artifacts (text, tables, essays, slides, music, code) with minimal glue code.
 
-**Core philosophy:** solve each problem once, capture it as a reusable capability, and make it legible across projects. Operate LLM-first: workflows and procedures are Markdown prompts anyone can run.
+**Core Philosophy**
+CORA puts coherence over complexity: keep work in plain files, take the next small visible step, and link everything so it stays clear. When we solve something once, we turn it into a small, reusable prompt that anyone can run and combine. The result is a human‑readable, vendor‑neutral system where people (not tools) stay in control while the AI helps reduce noise.
 
 ---
 

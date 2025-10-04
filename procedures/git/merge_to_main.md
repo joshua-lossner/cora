@@ -20,6 +20,14 @@ Steps
 2) Delete the branch on remote (and local when done).
 3) Pull latest `main` locally: `git checkout main && git pull --ff-only`.
 
+Post-merge
+- Update project PR log entry to Status: Merged with date.
+- Update related task frontmatter: `git_status: merged`; clear or keep `branch` and keep `pr_url` for record.
+
 Expected
 - Main updated with a clean, single commit; branch removed.
 
+Tools (optional)
+- GitHub CLI — `context/tools/github-cli.md:1`
+  - Merge (squash + delete branch): `gh pr merge <number> --squash --delete-branch`
+  - Ensure branch is up to date first (rebase/merge): see `procedures/git/update_branch_from_main.md:1`

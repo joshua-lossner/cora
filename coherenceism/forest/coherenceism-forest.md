@@ -6,7 +6,7 @@ summary: Grouping of downstream projects grown from the Coherenceism trunk.
 status: active
 updated: 2025-10-04
 tags: [forest, group]
-members: [cora, coherenceism-identity, coherenceism-ai, coherenceism-info, coherenceism-studio, coherenceism-blog, coherenceism-net, coherenceism-com, coherenceism-design, coherenceism-media, coherenceism-org]
+members: [cora, coherenceism-identity, coherenceism-ai, coherenceism-info, coherenceism-studio, coherenceism-blog, coherenceism-net, coherenceism-com, coherenceism-design, coherenceism-media, coherenceism-org, coherenceism-project]
 ---
 
 # The Coherenceism Forest — Group
@@ -30,3 +30,4 @@ Trees (current)
 - coherenceism-design — Shared design system (tokens, CSS, templates) for visual coherence across properties (downstream package)
 - coherenceism-media — Media hub for audio essays, conversations, and occasional video (downstream media)
 - coherenceism-org — Community documentation and governance templates (downstream docs/site)
+- coherenceism-project — UFC‑aware project/task/workflow visualizer and ops app (downstream app)

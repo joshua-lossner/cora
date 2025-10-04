@@ -24,6 +24,12 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - [ ] context/project-tasks/cora/create-suno-prompt-workflow.md:1
 - [ ] context/project-tasks/cora/create-suno-prompt-procedures.md:1
 - [ ] context/project-tasks/cora/open-session-branch-and-pr.md:1
+- [ ] context/project-tasks/cora/suno-procedure-propose-genre-concept.md:1
+- [ ] context/project-tasks/cora/suno-procedure-create-lyrics.md:1
+- [ ] context/project-tasks/cora/suno-procedure-create-style-prompt.md:1
+- [ ] context/project-tasks/cora/suno-procedure-create-persona.md:1
+- [ ] context/project-tasks/cora/suno-procedure-create-concept-album.md:1
+- [ ] context/project-tasks/cora/suno-procedure-iterate-and-compare.md:1
 
 ## PRs (Log)
 - 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1

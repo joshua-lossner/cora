@@ -45,7 +45,7 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - 2025-10-04 — feature/update-pr-logging-procedures — Clarify and enforce PR log updates (open/merge) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/6
   - Summary: Requires PR log + task updates on open; adds post‑merge logging step; new helper procedure.
 
-- 2025-10-04 — feature/suno-music-procedures — Add Suno workflows, docs, and procedures — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/10
+- 2025-10-04 — feature/suno-music-procedures — Add Suno workflows, docs, and procedures — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/10
   - Summary: Adds Suno style prompt and custom lyrics procedures; adds create-song and create-album workflows with content scaffolding; adds Suno guidance docs.
 
 ## Next Small Moves

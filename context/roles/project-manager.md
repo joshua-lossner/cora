@@ -25,6 +25,7 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
    - `procedures/project-management/triage_backlog.md:1`
    - `procedures/project-management/log_decision.md:1`
    - `procedures/project-management/handoff.md:1`
+   - `procedures/project-management/report_status.md:1`
 6) Rails/References — `context/documentation/cora/knowledge-tree.md:1`
 7) Git (shortlist)
    - `procedures/git/branching_strategy.md:1`

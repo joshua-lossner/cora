@@ -33,6 +33,10 @@ Tools (optional)
   - Add reviewers: `gh pr edit --add-reviewer <user>`
   - Edit an existing PR (e.g., add the plain-language body): `gh pr edit <number> --title "<title>" --body-file <path-to-body.md>`
 
+Notes
+- If the web UI pre-fills commit messages above the template, delete those lines and keep only the template sections (Summary, What Changed, Checks Run, Impact, Reviewers, Links).
+- For a clean body without commit messages, prefer `gh pr create --body-file .github/pull_request_template.md` instead of `--fill`.
+
 PR Template (copy-paste)
 Title
 - Short, plain-language summary (e.g., “Add roles and tidy forest index”)

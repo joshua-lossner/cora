@@ -2,8 +2,8 @@
 kind: task
 title: Add Project Status Report Procedure
 project: cora
-status: doing
-git_status: pr_open
+status: done
+git_status: merged
 branch: feature/project-status-report
 pr_url: https://github.com/joshua-lossner/cora/pull/2
 updated: 2025-10-04

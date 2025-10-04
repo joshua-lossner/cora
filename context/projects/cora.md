@@ -25,7 +25,7 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 ## PRs (Log)
 - 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1
   - Summary: Adds a full set of role manifests and supporting procedures; simplifies the forest to a single group manifest; seeds downstream projects; improves README/AGENTS onboarding; and links the validator and example session.
-- 2025-10-04 — feature/project-status-report — Add Project Status Report procedure; wire into PM role (terminal-only) — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/2
+- 2025-10-04 — feature/project-status-report — Add Project Status Report procedure; wire into PM role (terminal-only) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/2
   - Summary: Adds a read-only status report procedure to print projects and tasks in terminal; wired into PM role and tracked as a task.
 
 ## Next Small Moves

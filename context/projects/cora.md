@@ -42,8 +42,11 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
   - Summary: Adds a project page to track scope, dependencies, and tasks for the downstream UFC project viewer app.
  - 2025-10-04 — feature/coherenceism-project-and-suno-tasks — Add coherenceism.project tasks and CORA Suno prompt tasks — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/5
   - Summary: Adds project tasks for coherenceism.project (init, UFC adapter, UI scaffold, PR links/a11y) and CORA tasks for Suno prompting (workflow and procedures); updates project summaries.
- - 2025-10-04 — feature/update-pr-logging-procedures — Clarify and enforce PR log updates (open/merge) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/6
+- 2025-10-04 — feature/update-pr-logging-procedures — Clarify and enforce PR log updates (open/merge) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/6
   - Summary: Requires PR log + task updates on open; adds post‑merge logging step; new helper procedure.
+
+- 2025-10-04 — feature/suno-music-procedures — Add Suno workflows, docs, and procedures — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/10
+  - Summary: Adds Suno style prompt and custom lyrics procedures; adds create-song and create-album workflows with content scaffolding; adds Suno guidance docs.
 
 ## Next Small Moves
 - Open PR for current branch and log it above.

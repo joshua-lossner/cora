@@ -27,7 +27,7 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
   - Summary: Adds a full set of role manifests and supporting procedures; simplifies the forest to a single group manifest; seeds downstream projects; improves README/AGENTS onboarding; and links the validator and example session.
 - 2025-10-04 — feature/project-status-report — Add Project Status Report procedure; wire into PM role (terminal-only) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/2
   - Summary: Adds a read-only status report procedure to print projects and tasks in terminal; wired into PM role and tracked as a task.
-- 2025-10-04 — feature/coherenceism-project-seed — Add coherenceism.project seed (project/task/workflow visualizer) and update forest — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/3
+- 2025-10-04 — feature/coherenceism-project-seed — Add coherenceism.project seed (project/task/workflow visualizer) and update forest — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/3
   - Summary: Adds a seed for a UFC‑aware project viewer app and adds it to the forest group.
 
 ## Next Small Moves

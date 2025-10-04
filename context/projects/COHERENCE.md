@@ -21,6 +21,7 @@ Conventions
 Contents
 - `essay-series.md` — Multi‑essay series exploring Coherenceism in practice.
 - `cora.md` — Trunk evolution and operations (roles, procedures, rails)
+- `coherenceism-project.md` — UFC project/task/workflow visualizer app
 
 Notes
 - Archive by renaming `status: archived` when a project completes; keep the file for provenance.

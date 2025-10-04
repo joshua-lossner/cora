@@ -14,7 +14,7 @@ Purpose
 
 Examples
 - Editor/formatting conventions, file naming, metadata keys
+ - GitHub CLI — `context/tools/github-cli.md:1`
 
 Notes
 - Vendor-specific guides live under `context/documentation/` (e.g., `suno`, `elevenlabs`).
-

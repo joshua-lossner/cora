@@ -35,6 +35,8 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 
 ## PRs (Log)
 - Add entries here when opening PRs (date, branch, title, summary, status, link).
+- Add entries here when opening PRs (date, branch, title, summary, status, link).
+- 2025-10-04 — feature/write-through-api-tasks — Add write-through PR API tasks and procedures — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/8
 
 ## Notes
 - Downstream path: `~/Projects/coherenceism.project/` (code lives there; this file tracks intent/plan in CORA).

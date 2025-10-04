@@ -21,6 +21,7 @@ Commit & PR Conventions
 - Small, linked commits. Reference paths (and tasks if applicable).
 - PR title: brief imperative summary; body lists changed areas and links.
 - Prefer squash-merge to keep history tidy; use clear final messages.
+ - Update logs: on PR open, add to project “PRs (Log)” and set task git fields; on merge, mark the entry Merged and set task `git_status: merged` (doc-only follow-up branch is fine).
 
 Required Checks (before merge)
 - Content validation: `procedures/content/validate-content.md:1`.
@@ -30,4 +31,3 @@ Required Checks (before merge)
 Owners
 - Project Manager: starts branches; keeps scope small.
 - QA/Release Manager: opens PRs, runs checks, and merges.
-

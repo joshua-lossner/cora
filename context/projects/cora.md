@@ -34,6 +34,10 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
   - Summary: Adds a seed for a UFC‑aware project viewer app and adds it to the forest group.
 - 2025-10-04 — feature/coherenceism-project-projectfile — Add project file for coherenceism.project — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/4
   - Summary: Adds a project page to track scope, dependencies, and tasks for the downstream UFC project viewer app.
+ - 2025-10-04 — feature/coherenceism-project-and-suno-tasks — Add coherenceism.project tasks and CORA Suno prompt tasks — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/5
+  - Summary: Adds project tasks for coherenceism.project (init, UFC adapter, UI scaffold, PR links/a11y) and CORA tasks for Suno prompting (workflow and procedures); updates project summaries.
+ - 2025-10-04 — feature/update-pr-logging-procedures — Clarify and enforce PR log updates (open/merge) — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/6
+  - Summary: Requires PR log + task updates on open; adds post‑merge logging step; new helper procedure.
 
 ## Next Small Moves
 - Open PR for current branch and log it above.

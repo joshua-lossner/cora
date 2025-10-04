@@ -18,6 +18,7 @@ This guide shows how to run CORA using only Markdown. The LLM is the operating s
 
 ## Where to Start
 - Essays: `workflows/essay_from_notes.md`
+ - Example Session: `context/documentation/cora/example-session-essay-from-notes.md:1`
 
 ## File Locations (Essays)
 - Input: `content/essays/in/<file>.md` (frontmatter + notes)
@@ -32,4 +33,3 @@ This guide shows how to run CORA using only Markdown. The LLM is the operating s
 ## Why This Shape
 - Vendor-neutral, copy/paste friendly, and readable by anyone.
 - Every solved problem becomes a reusable page: captured once, used forever.
-

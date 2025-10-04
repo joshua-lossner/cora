@@ -48,11 +48,10 @@ Anchor all work to coherence-first principles. Keep the Universal File-based Con
 
 ## References
 - `context/philosophy/coherenceism.md`
-- `context/documentation/knowledge-tree.md`
-- `agents/COHERENCE.md`
+- `context/documentation/cora/knowledge-tree.md`
+- `personas/COHERENCE.md`
 
 ## Provenance
 - Created: 2025-10-02 by Codex (CORA agent)
 - Related: strategy seed to guide near-term build-out
 - Notes: Update status to `active` after first validation pass is in use
-

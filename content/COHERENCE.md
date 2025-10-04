@@ -12,16 +12,14 @@ tags: [content, coherence, publishing]
 ## Purpose
 Maintain a single source of truth for canonical philosophical content used across downstream sites. CORA ships no UI; consumers import this repo read‑only and render content in their own overlays. Sites may select content via the `sites` field in frontmatter.
 
-See also: `context/documentation/content-contract.md` for the formal content contract.
+See also: `context/documentation/cora/content-contract.md` for the formal content contract.
 
 ## Structure
 - `_templates/content-item.md` — recommended frontmatter + shape
-- `roots/` — canon and orientation
-- `branches/` — stable themes
-- `seeds/` — project starters that can spawn downstream trees/systems
-- `leaves/` — narrative and practice surfaces
-- `shared/` — cross-site primers and canonical texts
-- `REGISTRY.md` — optional, human‑readable index of items
+- `coherenceism/roots/` — canon and orientation
+- `coherenceism/branches/` — stable themes
+- `coherenceism/seeds/` — project starters that can spawn downstream trees/systems
+- `coherenceism/leaves/` — narrative and practice surfaces
 
 ## Frontmatter Schema (recommended)
 - kind: `content`
@@ -42,11 +40,11 @@ See also: `context/documentation/content-contract.md` for the formal content con
 Note: Patterns are out of scope for the trunk. Use seeds + leaves to capture practices and narratives; downstream repos may define additional types.
 
 ## Selection (filters)
-- Per-site selection: files with `sites` containing the site key.
+- Per-site selection: files with `sites` containing the site key within `coherenceism/`.
 - Examples:
-  - List blog items: `rg -l '^sites:.*\bblog\b' content`
-  - List media items: `rg -l '^sites:.*\bmedia\b' content`
-  - Show titles + slugs: `rg -n '^(title|canonical_slug):' content`
+  - List blog items: `rg -l '^sites:.*\bblog\b' coherenceism`
+  - List media items: `rg -l '^sites:.*\bmedia\b' coherenceism`
+  - Show titles + slugs: `rg -n '^(title|canonical_slug):' coherenceism`
 
 ### Site Keys
 The `sites` array in frontmatter is an optional hint for downstream consumers (e.g., `info`, `blog`, `ai`, `tech`). CORA does not bind these to specific domains.
@@ -58,10 +56,10 @@ The `sites` array in frontmatter is an optional hint for downstream consumers (e
 ## CLI Selection Examples
 ```bash
 # Files tagged for "blog"
-rg -l '^sites:.*\bblog\b' content
+rg -l '^sites:.*\bblog\b' coherenceism
 
 # Titles and slugs for those files
-rg -n '^(title|canonical_slug|sites):' $(rg -l '^sites:.*\bblog\b' content)
+rg -n '^(title|canonical_slug|sites):' $(rg -l '^sites:.*\bblog\b' coherenceism)
 ```
 
 ## Root Navigation
@@ -73,6 +71,6 @@ To render a navigation for the living tree in a downstream site:
 
 Example — list branch titles under the root
 ```bash
-rg -n "^(type: branch|parent: coherenceism-root|title:)" content/branches \
+rg -n "^(type: branch|parent: coherenceism-root|title:)" coherenceism/branches \
   | awk '/^.*type: branch/{t=1} /^.*parent: coherenceism-root/{p=1} /^.*title:/{if(t&&p){print; t=p=0}}'
 ```

@@ -1,0 +1,10 @@
+thesis: "Field stewardship reduces distortion and improves outcomes."
+audience: "community leaders and maintainers"
+stance: "explanatory"
+length_minutes: 6
+tone: "reflective, practical"
+keywords: ["field", "stewardship", "coherence"]
+title_hint: "Field Stewardship"
+sources:
+  - context/philosophy/coherenceism.md
+  - content/leaves/why-presence-beats-productivity.md

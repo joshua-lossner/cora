@@ -10,7 +10,7 @@ tags: [workflow]
 # Workflow — Example
 
 ## Actors
-- Departments/agents involved with links (e.g., agents/content, agents/philosophy/principles-reviewer.md)
+- Departments/personas involved with links (e.g., personas/content, personas/philosophy/principles-reviewer.md)
 
 ## Inputs
 - Required context, constraints, assets

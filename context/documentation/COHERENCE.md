@@ -10,14 +10,19 @@ tags: [coherence, documentation]
 # COHERENCE — Documentation
 
 ## Purpose
-This subtree contains documentation materials.
+Reference docs for procedures. These are short, practical guides an LLM can consult while executing a step (e.g., tool prompts, domain standards, style packs).
 
 ## Load
-Load on demand; not part of default startup.
+On demand. Link specific pages from procedures (Markdown) when relevant.
+
+## Examples (one-level structure)
+- cora/ — operator guides for CORA (LLM-first, quickstart)
+- suno/ — tips for music prompts (style and lyrics)
+- elevenlabs/ — tips for voice prompts (style, prosody)
+- writing/ — tone guides, citation style notes
+- research/ — evidence grading rubric, source hygiene
 
 ## Notes
-Keep files small and link from higher-level COHERENCE docs.
-Templates: see `context/_templates/documentation.md`; example: `context/documentation/_example.md`.
-
-## Available Documentation
-- _example.md — Shape for documentation pages in this subtree
+- Keep pages small and focused; link, don’t duplicate.
+- Canonical content (philosophy, essays) lives under `coherenceism/`.
+- System rails (ontology, content model) live here — see `knowledge-tree.md`.

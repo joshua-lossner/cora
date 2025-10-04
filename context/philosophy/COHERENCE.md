@@ -1,23 +1,20 @@
 ---
 kind: documentation
 title: COHERENCE — Philosophy
-intent: Purpose, load guidance, and links for philosophy docs
+intent: Index for philosophical foundations (Coherenceism and related texts)
 status: active
-updated: 2025-09-16
-tags: [coherence, philosophy]
+updated: 2025-10-04
+tags: [philosophy, coherence]
 ---
 
-# COHERENCE — Philosophy
+# Philosophy — Index
 
-## Purpose
-Core coherentist principles and references that guide the system.
+Purpose
+- Orient to foundational texts (Coherenceism) and related materials.
 
-## Load
-At startup: read `coherenceism.md` for foundation; load others on demand.
+Contents
+- coherenceism.md — core philosophy
 
-## Notes
-Primary reference: `context/philosophy/coherenceism.md`.
-Templates: see `context/_templates/philosophy.md`; example: `context/philosophy/_example.md`.
+Notes
+- Keep canonical content under `coherenceism/`; link as needed.
 
-## Available Philosophy Docs
-- coherenceism.md — Unified foundation, principles, practices, and agent guidance

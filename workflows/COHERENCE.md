@@ -16,7 +16,7 @@ Define end-to-end workflows that chain agents, procedures, and methodologies to 
 - Organize by tree: `workflows/<tree-name>/*.md`.
 - Root contains `COHERENCE.md` and `_templates/` only.
 - Template: `workflows/_templates/workflow.md`.
-- Keep workflows concise; link to agents, procedures, and methods.
+- Keep workflows concise; link to personas, procedures, and methods.
 
 ## Available Workflows
 Downstream consumers define their own workflows in their repos. CORA (trunk) does not track site- or tree-specific workflows.

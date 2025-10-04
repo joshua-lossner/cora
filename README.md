@@ -2,7 +2,7 @@
 
 CORA is a filesystem-native way to store **intent** (prompts as structured entities) so that AI agents can hydrate themselves, reason with your context, and produce artifacts (text, tables, essays, slides, music, code) with minimal glue code.  
 
-**Core philosophy:** solve each problem once, capture it as a reusable capability, and make it legible across projects.
+**Core philosophy:** solve each problem once, capture it as a reusable capability, and make it legible across projects. Operate LLM-first: workflows and procedures are Markdown prompts anyone can run.
 
 ---
 
@@ -16,9 +16,9 @@ This trunk is a **bridge**: today downstream trees may still need code (websites
 
 ## Core Entities
 
-- **Agents** — personas or departments that act within the system  
+- **Personas** — specialized voices or departments that act within the system  
 - **Context** — philosophy, ontology, strategy, active work  
-- **Content** — templates, styles, essays, seeds  
+- **Content (Coherenceism)** — canonical content tree (roots, branches, seeds, leaves)  
 - **Procedures** — reusable methods, captured once and kept permanent  
 - **Workflows** — compositions of procedures that turn intent into artifacts  
 - **Policies** — optional guardrails for sourcing, safety, licensing  
@@ -29,10 +29,11 @@ This trunk is a **bridge**: today downstream trees may still need code (websites
 
 ```
 repo root
-├── agents/                      # Personas + departments
-├── procedures/                  # Reusable procedures
+├── personas/                    # Personas + departments
+├── procedures/                  # Reusable procedures (Markdown)
 ├── context/                     # Philosophy, strategy, tools, working
-├── content/                     # Roots, branches, seeds, leaves
+├── coherenceism/                # Canonical Coherenceism content (roots/branches/seeds/leaves)
+├── content/                     # Templates and essay I/O (in/out/archive)
 ├── workflows/                   # Workflow templates
 ├── AGENTS.md                    # Startup guide for Codex/agents
 └── .env.example                 # Optional env hints
@@ -43,7 +44,7 @@ repo root
 ## Hydration Contract (How Agents Boot)
 
 1. Read `AGENTS.md` for load order.  
-2. Load selected agent personas (`agents/*`).  
+2. Load selected personas (`personas/*`).  
 3. Pull context (philosophy, ontology, strategy).  
 4. Validate intent against the chosen workflow schema.  
 5. Execute steps; write artifacts; log provenance.  

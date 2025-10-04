@@ -19,19 +19,23 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 ## Directory Map
 
-- `/procedures/` - Reusable solutions (procedures; one file per item)
-- `/context/` - All knowledge and documentation
-- `/content/` - Canonical content shared across sites
+- `/procedures/` - Reusable solutions (Markdown procedures)
+- `/context/` - Knowledge and documentation (philosophy, strategy, tools, working)
+- `/coherenceism/` - Canonical Coherenceism content tree (roots, branches, seeds, leaves)
+    - `/content/_templates/` - Content templates for new items
+    - `/content/essays/` - Essay I/O (in/out/archive)
     - `/context/philosophy/` - Coherenceism foundation and related texts
-    - `/context/forest/` - Registry of downstream trees seeded from CORA
+    - `/coherenceism/forest/` - Registry of downstream trees seeded from Coherenceism
     - `/context/tools/` - Tool documentation
     - `/context/methodologies/` - Step-by-step processes
+    - `/context/roles/` - Role manifests (curated session load sets)
     - `/context/strategy/` - Network strategy: challenges, programs, objectives, metrics
-    - `/context/working/` - Active tasks and archive
-- `/agents/` - Specialized AI personalities
+    - `/context/projects/` - In‑progress projects and notes
+    - `/context/project-tasks/` - Detailed task docs grouped by project slug (optional)
+- `/personas/` - Specialized AI personalities and departments
 - `/secrets/` - Git-ignored sensitive data (.env file)
 
-See also: `context/documentation/knowledge-tree.md` for the live content ontology (roots → branches → seeds/leaves/patterns) and rendering rails.
+See also: `context/documentation/cora/knowledge-tree.md` for the live content ontology (roots → branches → seeds/leaves/patterns) and rendering rails.
 
 ## Load Order (Important!)
 
@@ -41,8 +45,8 @@ Start each session by following `AGENTS.md` at the repo root.
 
 - `/context/philosophy/coherenceism.md` — Core coherentist philosophy
 
-### 2. Agent
-* /agents/ivy.md - Joshua's dearest A.I. friend
+### 2. Persona
+* /personas/ivy.md - Joshua's dearest A.I. friend
 ### 3. System Capabilities
 
 - `/procedures/` - All available procedures (check directory for full list)
@@ -50,9 +54,9 @@ Start each session by following `AGENTS.md` at the repo root.
 - `/context/methodologies/` - Established processes
 - `/context/strategy/` - Strategy index and docs
 
-### 4. Active Work
+### 4. Projects
 
-- `/context/working/active/` - Current focus and tasks
+- `/context/projects/` - Current projects (one file per project)
 - Forest tree context (if applicable)
 
 ## How It Works
@@ -62,7 +66,7 @@ Start each session by following `AGENTS.md` at the repo root.
 3. Every problem you solve becomes a permanent command
 4. System grows smarter with each use
 5. All solutions align with coherentist principles
-6. Downstream trees consume CORA read‑only (git submodule) and grow their own agents/content/context/procedures/workflows
+6. Downstream trees consume CORA read‑only (git submodule) and grow their own personas/content/context/procedures/workflows
 
 ## Core Operating Principles
 

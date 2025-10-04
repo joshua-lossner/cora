@@ -26,9 +26,9 @@ Provide a lightweight, reproducible approach to research that pairs with procedu
 6. Verify — run `fact_check` procedure; resolve mismatches or downgrade claims.
 
 ## Procedure Chain (recommended)
-- `procedures/outline.yml` → structure claims and risks.
-- `procedures/fact_check.yml` → verify and annotate.
-- `procedures/refine_style.yml` → tighten prose without losing labels.
+- `procedures/writing/outline.md` → structure claims and risks.
+- `procedures/writing/fact_check.md` → verify and annotate.
+- `procedures/writing/refine_style.md` → tighten prose without losing labels.
 
 ## Expected Signals
 - Claim table present with F/I/U and E1..E4 grades.
@@ -54,11 +54,10 @@ Provide a lightweight, reproducible approach to research that pairs with procedu
 - Claim table headers: `id,section,type,statement,evidence,risk,grade`
 
 ## Usage
-- Used by `workflows/essay_from_notes.yml` during `check_citations` and adjacent steps.
+- Used by `workflows/essay_from_notes.md` during citation checks and adjacent steps.
 - Applicable to any artifact that carries labeled claims and citations.
 
 ## Provenance
 - Created: 2025-10-02 by Codex (CORA agent)
 - Related: ties to `fact_check` and `outline` procedures
 - Notes: elevate to `active` after first full-cycle validation
-

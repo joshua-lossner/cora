@@ -13,7 +13,7 @@ tags: [procedures, coherence]
 Reusable capabilities with minimal frontmatter and human-readable usage.
 
 ## Structure
-- Root index: `procedures/INDEX.md` (human index; keep updated)
+- This page is the index for `procedures/`
 - Categories (subfolders):
   - `core/` — cora maintenance, validation, context loaders
   - `git/` — git hygiene and workflows

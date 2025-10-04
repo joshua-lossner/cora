@@ -24,6 +24,6 @@ Describe the downstream system this seed proposes (purpose, audience, core promi
 ## Germination Notes
 - Scope: the surfaces or mediums the downstream tree will operate in.
 - Seed stage: `idea | incubating | germinated | retired`.
-- Spawned systems: list slugs that map to `context/forest/` entries.
+- Spawned systems: list slugs that map to `coherenceism/forest/` entries.
 
 Keep this concise. Implementation, UI, and publishing live in the downstream tree; this seed only orients and tracks lineage.

@@ -1,0 +1,9 @@
+thesis: "Smaller scope creates bigger velocity in teams."
+audience: "engineering managers"
+stance: "explanatory"
+length_minutes: 5
+tone: "direct, concrete"
+keywords: ["scope", "velocity", "teams"]
+title_hint: "Small Scope, Big Velocity"
+sources:
+  - context/documentation/knowledge-tree.md

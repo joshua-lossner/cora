@@ -6,19 +6,22 @@ These are the startup instructions for any agent (e.g., Codex CLI, ChatGPT, Clau
 
 ## Load Order
 
-1. Persona: `agents/ivy.md`
-2. Philosophy: `context/philosophy/coherenceism.md`
-3. Ontology: `context/documentation/knowledge-tree.md`
-4. Strategy: `context/strategy/COHERENCE.md`
-5. Departments: `agents/COHERENCE.md`
-6. Procedures: scan `procedures/`, index via `procedures/INDEX.md`
+1. Philosophy: `context/philosophy/coherenceism.md`
+2. Persona: `personas/ivy.md`
+3. Strategy: `context/strategy/COHERENCE.md`
+4. Departments: `personas/COHERENCE.md`
+5. Ontology: `context/documentation/cora/knowledge-tree.md`
+6. Procedures: scan `procedures/`, index via `procedures/COHERENCE.md`
 7. Methodologies: scan `context/methodologies/`
-8. Active work: `context/working/`
+8. Context Index (map only): `context/COHERENCE.md`
+9. Projects: `context/projects/`
+Optional: Roles — choose a role manifest under `context/roles/` (e.g., `context/roles/project-manager.md`)
 
 ---
 
 ## Confirmations
 
+- ✅ Context index loaded  
 - ✅ UFC system loaded  
 - ✅ Persona loaded  
 - ✅ Philosophy loaded  
@@ -66,13 +69,14 @@ Follow with human-readable notes (Purpose, Usage, Examples).
 
 ## Indexes
 
-- `procedures/INDEX.md` — all procedures  
+- `procedures/COHERENCE.md` — procedures  
 - `context/methodologies/` — methodologies  
-- `agents/COHERENCE.md` — departments  
+- `personas/COHERENCE.md` — departments  
 - `workflows/COHERENCE.md` — workflow shapes  
+- `context/roles/COHERENCE.md` — roles  
 
 ---
 
 ## Grow From Seed
 
-See `context/documentation/grow-from-seed.md` for scaffolding new trees from CORA.
+See `context/documentation/cora/grow-from-seed.md` for scaffolding new trees from CORA.

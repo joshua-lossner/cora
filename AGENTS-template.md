@@ -7,7 +7,7 @@ Use this file in a tree to align with your cora system.
 - Or, if this file sits inside the cora repo, follow the relative paths below.
 
 ## Read First (relative when inside cora repo)
-- `agents/ivy.md`
+- `personas/ivy.md`
 - `context/COHERENCE.md`
 - `context/philosophy/coherenceism.md`
   (Optional) `context/tools/COHERENCE.md`

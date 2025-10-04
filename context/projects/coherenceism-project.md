@@ -28,6 +28,10 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 - [ ] context/project-tasks/coherenceism-project/parse-projects-and-tasks.md:1
 - [ ] context/project-tasks/coherenceism-project/ui-scaffold-and-filters.md:1
 - [ ] context/project-tasks/coherenceism-project/pr-links-and-a11y.md:1
+- [ ] context/project-tasks/coherenceism-project/design-write-through-pr-api.md:1
+- [ ] context/project-tasks/coherenceism-project/implement-write-through-pr-api.md:1
+- [ ] context/project-tasks/coherenceism-project/wire-gui-actions-to-api.md:1
+- [ ] context/project-tasks/coherenceism-project/webhooks-sync-and-conflicts.md:1
 
 ## PRs (Log)
 - Add entries here when opening PRs (date, branch, title, summary, status, link).

@@ -2,10 +2,10 @@
 kind: task
 title: Add Project Status Report Procedure
 project: cora
-status: done
-git_status: merged
+status: doing
+git_status: pr_open
 branch: feature/project-status-report
-pr_url: 
+pr_url: https://github.com/joshua-lossner/cora/pull/2
 updated: 2025-10-04
 tags: [projects, tasks, report]
 depends_on: [establish-branching-strategy]
@@ -27,4 +27,3 @@ Create a read-only procedure that prints a terminal report of all projects and t
 ## Links
 - `procedures/project-management/report_status.md:1`
 - `context/roles/project-manager.md:1`
-

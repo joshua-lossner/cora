@@ -35,7 +35,10 @@ This is a repository‑level content ontology and integrity spec (rails). It doc
 - Tools/procedures: `context/tools/…`, `procedures/…`
 
 ## Forest Registry
-Seeds that germinate new systems are catalogued under `coherenceism/forest/` using `kind: forest-tree`. Each file documents the downstream tree’s purpose, origin seeds, repository, and next change so lineage stays traceable without embedding implementation back into CORA.
+Seeds that germinate new systems are catalogued under `coherenceism/forest/` using one of:
+- `kind: forest-group` — a lightweight manifest listing member ids (used as the primary index in this repo)
+- `kind: forest-tree` — optional per-tree entries documenting purpose, origin seed, repository, and next change
+Each approach keeps lineage traceable without embedding implementation back into CORA.
 
 ## Frontmatter Requirements
 See also: `context/documentation/cora/content-contract.md` for the formal contract.
@@ -84,8 +87,8 @@ Conventions (recommended, not enforced by CORA):
 - Required keys present (see above) and valid `parent` types.
 - `canonical_slug` uniqueness; no collisions.
 - Optional: check `seed_refs` in leaves resolve to existing seeds.
-- Required (seeds): confirm `spawned_systems` exists and maps to `coherenceism/forest/` entries; recommended `seed_stage` in allowed set.
-Use `procedures/content/validate-content.md` as the enforcement scaffold.
+- Required (seeds): confirm `spawned_systems` exists and appears in the forest (either in a `forest-group` members list or a `forest-tree` entry); recommended `seed_stage` in allowed set.
+Use `procedures/content/validate-content.md:1` as the enforcement scaffold.
 
 ## Example — Leaf Frontmatter
 ```

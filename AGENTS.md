@@ -4,6 +4,14 @@ These are the startup instructions for any agent (e.g., Codex CLI, ChatGPT, Clau
 
 ---
 
+## Operator Quick Start
+
+- In a terminal, navigate to this folder and run `codex`.
+- Greet the assistant (e.g., “Load CORA”).
+- The agent will follow the Load Order below and confirm the checklist.
+
+---
+
 ## Load Order
 
 1. Philosophy: `context/philosophy/coherenceism.md`

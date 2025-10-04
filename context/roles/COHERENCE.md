@@ -30,6 +30,30 @@ Conventions
 Roles (current)
 - `project-manager.md` — manage projects/tasks; keep work small and linked
 - `researcher.md` — extract claims, scan sources, grade evidence, synthesize
+- `workflow-designer.md` — design/refactor workflows that chain procedures into outcomes
+- `role-architect.md` — create/refactor role manifests; ensure references exist; update roles index
+- `writer-editor.md` — outline, draft, refine, and compile leaves; maintain voice and provenance
+- `ux-designer.md` — map flows, wireframes, and content-first patterns; run a11y checks
+- `brand-visual-designer.md` — design marks/covers/cards aligned with tokens/templates
+- `product-lead.md` — define outcomes and MVP slices; align roadmap to forest
+- `forest-steward.md` — maintain forest group and lineage; reconcile seeds ↔ members
+- `fact-checker.md` — label claims (F/I/U), verify quotes, return checked drafts
+- `content-librarian.md` — maintain frontmatter/links/archives; compost drift
+- `design-system-steward.md` — evolve tokens/CSS/templates; guide adopters
+- `media-producer.md` — produce audio essays/conversations; publish notes
+- `frontend-engineer.md` — implement sites that consume CORA; apply design system
+- `backend-engineer.md` — expose minimal read-only APIs; preserve canon
+- `identity-sso-engineer.md` — implement centralized identity/SSO with clear scopes
+- `community-steward.md` — moderate and cultivate participation; apply handbook
+- `qa-release-manager.md` — define gates; run checks; ship small
+- `devops-sre.md` — deploy/monitor/back up downstream sites; runbooks
+- `integrations-engineer.md` — wire external services; document contracts
+- `governance-policy-lead.md` — evolve handbook/templates; capture field learning
+- `accessibility-lead.md` — audit contrast/keyboard/motion; gate releases
+- `localization-lead.md` — coordinate translations/glossaries/attribution
+- `commerce-lead.md` — package prompt packs; listings/delivery/refunds
+- `legal-privacy.md` — privacy/contract reviews; consent copy checks
+- `analytics-insights.md` — define success signals; minimal telemetry and dashboards
 
 Notes
 - Roles do not duplicate documents; they link to existing workflows/procedures/references.

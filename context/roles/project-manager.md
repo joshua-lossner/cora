@@ -26,6 +26,12 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
    - `procedures/project-management/log_decision.md:1`
    - `procedures/project-management/handoff.md:1`
 6) Rails/References — `context/documentation/cora/knowledge-tree.md:1`
+7) Git (shortlist)
+   - `procedures/git/branching_strategy.md:1`
+   - `procedures/git/start_feature.md:1`
+   - `procedures/git/start_bugfix.md:1`
+   - `procedures/git/open_pull_request.md:1`
+   - `procedures/git/update_branch_from_main.md:1`
 
 ## Scope
 - Do:
@@ -46,3 +52,8 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
 ## Handoffs
 - To S'Vektor (analysis/fact-check): claim extraction, source verification, numeric checks.
 - Back to Ivy (style/narrative): synthesis, refinement, and human-facing polish.
+
+## Today Plan (example)
+- Update tasks — `context/projects/essay-series.md:1` (check off “prepare-inputs.md” if created `content/essays/in/*.md`).
+- Outline first essay — run `procedures/writing/outline.md:1` using `content/essays/in/<file>.md`; save to `content/essays/out/YYYY-MM-DD/<slug>/outline.md`.
+- Handoff to S'Vektor — extract and grade claims using `procedures/research/extract_claims.md:1` and `procedures/research/grade_evidence.md:1` for the current draft.

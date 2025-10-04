@@ -1,21 +1,25 @@
 ---
 kind: documentation
 title: COHERENCE — Forest
-intent: Index for downstream tree registry and lineage
+intent: Index and conventions for downstream projects (the Coherenceism forest)
 status: active
 updated: 2025-10-04
 tags: [forest, registry]
 ---
 
-# Forest — Registry
+# Forest — Index
 
 Purpose
-- Track downstream trees seeded from Coherenceism and their lineage.
+- Provide a simple index for downstream projects that grow from the Coherenceism trunk (CORA), and document how we group and reference them.
 
-Contents
-- registry.md — entries for each downstream tree (purpose, origin seeds, repo, next change)
+Conventions
+- This repo catalogs forest members via a single group manifest (`coherenceism-forest.md`) rather than per-tree files.
+- CORA is the trunk, not a forest-tree entry; the group manifest may still list CORA for orientation.
+- Downstream repos include CORA as a read-only submodule.
 
-Notes
-- Keep entries concise; link to external repos for implementation details.
-- Maintain provenance and dates.
+Shapes (lightweight)
+- `kind: forest-group` — a list of member ids with short notes; acts as the index.
+- (Optional, not used here) `kind: forest-tree` — per-tree entries with origin seed and repo info.
 
+Index
+- `coherenceism/forest/coherenceism-forest.md:1` — The Coherenceism Forest (members and notes)

@@ -3,9 +3,9 @@ kind: task
 title: Expand Roles/Procedures and Reshape Forest Index
 project: cora
 status: doing
-git_status: in_branch
+git_status: pr_open
 branch: feature/roles-procedures-forest
-pr_url: 
+pr_url: https://github.com/joshua-lossner/cora/pull/1
 updated: 2025-10-04
 tags: [roles, procedures, forest]
 depends_on: [establish-branching-strategy]
@@ -32,4 +32,3 @@ Add comprehensive roles and supporting procedures so agents can operate end-to-e
 - `coherenceism/forest/COHERENCE.md:1`
 - `coherenceism/forest/coherenceism-forest.md:1`
 - `README.md:1`, `AGENTS.md:1`
-

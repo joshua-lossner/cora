@@ -3,9 +3,9 @@ kind: task
 title: Establish Branching Strategy & Git Procedures
 project: cora
 status: doing
-git_status: in_branch
+git_status: pr_open
 branch: feature/roles-procedures-forest
-pr_url: 
+pr_url: https://github.com/joshua-lossner/cora/pull/1
 updated: 2025-10-04
 tags: [git, process]
 depends_on: []
@@ -32,4 +32,3 @@ Adopt a clear, lightweight branching strategy (main + feature/bugfix + PRs) and 
 - `procedures/git/open_pull_request.md:1`
 - `context/roles/project-manager.md:1`
 - `context/roles/qa-release-manager.md:1`
-

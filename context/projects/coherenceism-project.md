@@ -35,3 +35,7 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 ## Notes
 - Downstream path: `~/Projects/coherenceism.project/` (code lives there; this file tracks intent/plan in CORA).
 
+## Next Small Moves
+- Initialize downstream repo and add CORA submodule — `context/project-tasks/coherenceism-project/init-repo-and-submodule.md:1`
+- Implement UFC adapter to parse projects and tasks — `context/project-tasks/coherenceism-project/parse-projects-and-tasks.md:1`
+- Draft UX brief and scaffold UI with filters — `context/project-tasks/coherenceism-project/ui-scaffold-and-filters.md:1`

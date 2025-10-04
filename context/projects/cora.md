@@ -23,7 +23,7 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - [ ] context/project-tasks/cora/track-prs.md:1
 
 ## PRs (Log)
-- 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/1
+- 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1
   - Summary: Adds a full set of role manifests and supporting procedures; simplifies the forest to a single group manifest; seeds downstream projects; improves README/AGENTS onboarding; and links the validator and example session.
 
 ## Next Small Moves

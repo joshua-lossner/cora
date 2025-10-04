@@ -2,8 +2,8 @@
 kind: task
 title: Expand Roles/Procedures and Reshape Forest Index
 project: cora
-status: doing
-git_status: pr_open
+status: done
+git_status: merged
 branch: feature/roles-procedures-forest
 pr_url: https://github.com/joshua-lossner/cora/pull/1
 updated: 2025-10-04

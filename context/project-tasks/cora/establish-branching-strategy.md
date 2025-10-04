@@ -2,8 +2,8 @@
 kind: task
 title: Establish Branching Strategy & Git Procedures
 project: cora
-status: doing
-git_status: pr_open
+status: done
+git_status: merged
 branch: feature/roles-procedures-forest
 pr_url: https://github.com/joshua-lossner/cora/pull/1
 updated: 2025-10-04

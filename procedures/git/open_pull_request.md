@@ -18,9 +18,10 @@ Steps
    - Checklist outcomes (validation, release needs)
    - Links to project/tasks
 3) Request review from QA/Release Manager (and others as needed).
-4) Update the relevant project page and task:
+4) Update logs immediately (required):
    - Project page (e.g., `context/projects/cora.md:1`) → add an entry under “PRs (Log)” with date, branch, title, summary, status = “PR Open”, and the PR link.
    - Task frontmatter (e.g., `context/project-tasks/<project>/<task>.md`) → set `git_status: pr_open`, add `branch` and `pr_url`, and update `updated`.
+   - Commit these documentation updates to the same feature branch.
 
 Expected
 - A clear PR ready for review and checks.
@@ -60,6 +61,15 @@ Reviewers
 
 Links
 - Project/task paths or notes that track this work.
+
+Operator Prompt (to update logs)
+"""
+You just opened PR <number> from branch <branch-name>.
+Update the project PR log and the task frontmatter now.
+- Project page: add an entry (date, branch, title, short summary, status: PR Open, link).
+- Task: set git_status: pr_open, add branch and pr_url, update date.
+Commit these doc changes to the feature branch.
+"""
 
 Operator Prompt (to draft the PR body)
 """

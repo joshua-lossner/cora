@@ -20,6 +20,9 @@ Schema (frontmatter)
 - updated: `YYYY-MM-DD`
 - tags: `[]` (optional)
 - depends_on: `[task-slug, ...]` (optional)
+ - git_status: `none|in_branch|pr_open|merged` (optional)
+ - branch: `feature/<slug>` or `bugfix/<slug>` (optional)
+ - pr_url: `https://…` (optional)
 
 Body Sections (recommended)
 - Purpose — why this task exists
@@ -31,4 +34,4 @@ Body Sections (recommended)
 Usage
 - Keep a short checklist on the project page; link to these task pages for detail.
 - Update `status` and `updated` in the task frontmatter as you work.
-
+ - When opening a PR for a task, set `git_status: pr_open`, add `pr_url`, and keep `branch` populated for easy tracking.

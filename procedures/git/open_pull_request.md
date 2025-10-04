@@ -25,6 +25,13 @@ Steps
 Expected
 - A clear PR ready for review and checks.
 
+Tools (optional)
+- GitHub CLI — `context/tools/github-cli.md:1`
+  - Open PR from current branch (auto-fill template): `gh pr create --base main --fill`
+  - Or specify title/body: `gh pr create --base main --title "<title>" --body-file .github/pull_request_template.md`
+  - View PR in browser: `gh pr view --web`
+  - Add reviewers: `gh pr edit --add-reviewer <user>`
+
 PR Template (copy-paste)
 Title
 - Short, plain-language summary (e.g., “Add roles and tidy forest index”)

@@ -31,6 +31,7 @@ Tools (optional)
   - Or specify title/body: `gh pr create --base main --title "<title>" --body-file .github/pull_request_template.md`
   - View PR in browser: `gh pr view --web`
   - Add reviewers: `gh pr edit --add-reviewer <user>`
+  - Edit an existing PR (e.g., add the plain-language body): `gh pr edit <number> --title "<title>" --body-file <path-to-body.md>`
 
 PR Template (copy-paste)
 Title

@@ -55,6 +55,6 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
 - Back to Ivy (style/narrative): synthesis, refinement, and human-facing polish.
 
 ## Today Plan (example)
-- Update tasks — `context/projects/essay-series.md:1` (check off “prepare-inputs.md” if created `content/essays/in/*.md`).
-- Outline first essay — run `procedures/writing/outline.md:1` using `content/essays/in/<file>.md`; save to `content/essays/out/YYYY-MM-DD/<slug>/outline.md`.
-- Handoff to S'Vektor — extract and grade claims using `procedures/research/extract_claims.md:1` and `procedures/research/grade_evidence.md:1` for the current draft.
+- Update tasks — `context/projects/cora.md:1` (flip statuses and add timestamps for active items).
+- Compile links index — verify `content/albums/out/we-are-the-wire/index.md:1` links resolve; note any broken paths.
+- Handoff to S'Vektor — if analysis is needed, open `procedures/research/extract_claims.md:1` and `procedures/research/grade_evidence.md:1` on the relevant artifact.

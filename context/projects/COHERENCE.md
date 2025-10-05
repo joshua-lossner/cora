@@ -19,7 +19,6 @@ Conventions
 - Prefer a “Next small move” under each project to maintain momentum.
 
 Contents
-- `essay-series.md` — Multi‑essay series exploring Coherenceism in practice.
 - `cora.md` — Trunk evolution and operations (roles, procedures, rails)
 - `coherenceism-project.md` — UFC project/task/workflow visualizer app
 

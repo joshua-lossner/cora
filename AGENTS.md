@@ -82,6 +82,7 @@ Follow with human-readable notes (Purpose, Usage, Examples).
 - `personas/COHERENCE.md` — departments  
 - `workflows/COHERENCE.md` — workflow shapes  
 - `context/roles/COHERENCE.md` — roles  
+- `context/mcp/COHERENCE.md` — MCP servers (docs only)
 
 ---
 

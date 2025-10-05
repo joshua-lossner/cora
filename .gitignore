@@ -17,3 +17,6 @@ venv/
 node_modules/
 .cache/
 *.log
+
+# Local agent configs (untracked)
+.codex/

@@ -20,8 +20,9 @@ How to Manage (Global)
 
 Recommended MCPs
 - Web/browser: `context/mcp/web-browser.md:1`
+- Example local config: `context/mcp/codex-config.example.json:1` (copy to `.codex/config.json` locally; `.codex/` is git‑ignored)
 
 Notes
 - Keep commands resilient (use `uvx --from <pkg> <tool>` or similar) to avoid path drift.
 - Validate with a quick health check before relying on an MCP in workflows.
-
+ - CORA trunk is vendor‑neutral: docs only. Place actual configs under `.codex/` locally.

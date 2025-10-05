@@ -24,7 +24,7 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
 
 ## Outputs
 - `content/songs/out/<song-slug>/<song-name>.md` — a single Markdown file with frontmatter and sections for Style Prompt and Lyrics.
-- (Optional) Archive input to `content/songs/archive/<YYYY-MM-DD>/<slug>/input.md`.
+- Archived input at `content/songs/archive/<YYYY-MM-DD>/<song-slug>/input.md`.
 
 ## Steps (Prompts to Use)
 
@@ -72,6 +72,11 @@ references: [ .. ]
 <paste tagged lyrics>
 ```
 
+6) Archive Input (PM)
+- Create folder `content/songs/archive/<YYYY-MM-DD>/<song-slug>/` (use today’s date and the chosen `<song-slug>`).
+- Move the processed input file from `content/songs/in/<slug>.md` to `content/songs/archive/<YYYY-MM-DD>/<song-slug>/input.md`.
+- Rationale: preserves provenance and keeps the `in/` queue clean.
+
 ## Chain (Procedures)
 - `procedures/media/suno-create-style-prompt.md:1`
 - `procedures/media/suno-create-custom-lyrics.md:1`
@@ -80,4 +85,4 @@ references: [ .. ]
 - Style prompt is concise and follows the key elements (genre/mood/tempo/instrumentation/structure/vocals/negatives).
 - Lyrics are original, singable, with clear section tags; chorus contains a memorable repeated hook.
 - Final file saved under the correct path with accurate frontmatter and both sections present.
-
+ - Input file archived under the dated folder with the chosen song slug.

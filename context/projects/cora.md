@@ -32,6 +32,8 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - [ ] context/project-tasks/cora/suno-procedure-iterate-and-compare.md:1
 
 ## PRs (Log)
+- 2025-10-05 — feature/branches-of-coherence-album — Add “Branches of Coherence” smooth‑jazz album and 9 Suno‑ready songs — Status: Merged — PR: n/a
+  - Summary: Adds album overview and links; compiles 9 Suno‑ready track outputs (style prompts + instrumental cues); archives all inputs per workflow. Warm, reflective, late‑night suite with recurring resonance motif.
 - 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1
   - Summary: Adds a full set of role manifests and supporting procedures; simplifies the forest to a single group manifest; seeds downstream projects; improves README/AGENTS onboarding; and links the validator and example session.
 - 2025-10-04 — feature/project-status-report — Add Project Status Report procedure; wire into PM role (terminal-only) — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/2

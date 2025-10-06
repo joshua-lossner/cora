@@ -23,10 +23,10 @@ This Markdown‑only workflow turns one album input into a concept description, 
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/albums/out/<YYYY-MM-DD>/<album-slug>/album.md` — album frontmatter + sections (Concept, Tracklist, Notes).
+- `content/albums/out/<album-slug>/album.md` — album frontmatter + sections (Concept, Tracklist, Notes).
 - For each track: a song input file at `content/songs/in/<track-slug>.md` (based on the songs template), prefilled from the album context.
 - Archived album input at `content/albums/archive/<YYYY-MM-DD>/<album-slug>/input.md`.
-- Link index at `content/albums/out/<YYYY-MM-DD>/<album-slug>/index.md` — links to album overview and each track output.
+- Link index at `content/albums/out/<album-slug>/index.md` — links to album overview and each track output.
 
 ## Steps (Prompts to Use)
 
@@ -63,7 +63,7 @@ This Markdown‑only workflow turns one album input into a concept description, 
 - Draft original lyrics with section tags matching the intended structure.
 
 7) Compile Album Output (PM)
-- Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/` (use today’s date).
+- Create `content/albums/out/<album-slug>/`.
 - Save `album.md` with frontmatter:
 
 ```
@@ -105,9 +105,9 @@ tracks:
 - Rationale: preserves provenance and keeps the `in/` queue clean.
 
 9) Create Links Index (Scribe)
-- Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/index.md` with:
+- Create `content/albums/out/<album-slug>/index.md` with:
   - Frontmatter: `kind: album_links`, `title: <Album Title> — Track Links`, `updated: <YYYY-MM-DD>`.
-  - Links: one to `album.md` and one per track pointing to `content/songs/out/<YYYY-MM-DD>/<track-slug>/*.md`.
+  - Links: one to `album.md` and one per track pointing to `content/songs/out/<track-slug>/*.md`.
   - Keep relative paths so the index is portable.
 
 ## Chain (Procedures)

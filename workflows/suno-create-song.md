@@ -23,7 +23,7 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/songs/out/<YYYY-MM-DD>/<song-slug>/<song-name>.md` — a single Markdown file with frontmatter and sections for Style Prompt and Lyrics.
+- `content/songs/out/<song-slug>/<song-name>.md` — a single Markdown file with frontmatter and sections for Style Prompt and Lyrics.
 - Archived input at `content/songs/archive/<YYYY-MM-DD>/<song-slug>/input.md`.
 
 ## Steps (Prompts to Use)
@@ -44,7 +44,7 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
 - Derive `<song-slug>` from the chosen title (kebab-case, ASCII).
 
 5) Compile Output (Scribe)
-- Create folder `content/songs/out/<YYYY-MM-DD>/<song-slug>/` (use today’s date).
+- Create folder `content/songs/out/<song-slug>/`.
 - Save `<song-name>.md` with frontmatter and body using this shape:
 
 ```

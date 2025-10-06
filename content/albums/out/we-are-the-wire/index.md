@@ -20,4 +20,3 @@ updated: 2025-10-04
 
 # Related
 - [Universal Hum (single)](../../../songs/out/universal-hum-01-universal-hum/Universal%20Hum.md)
-

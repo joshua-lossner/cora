@@ -33,7 +33,7 @@ This is a repository‑level content ontology and integrity spec (rails). It doc
 - System rails and load order: `context/COHERENCE.md`, `context/architecture/…`
  - Essays workflow I/O: inputs at `content/essays/in/` (markdown+frontmatter); outputs at `content/essays/out/YYYY-MM-DD/<slug>/` (finals carry `type: leaf`).
 - Tools/procedures: `context/tools/…`, `procedures/…`
- - Music (Suno) I/O: song inputs at `content/songs/in/` → song outputs at `content/songs/out/YYYY-MM-DD/<song-slug>/`; album inputs at `content/albums/in/` → album outputs at `content/albums/out/YYYY-MM-DD/<album-slug>/`.
+ - Music (Suno) I/O: song inputs at `content/songs/in/` evolve into songs and move to `content/songs/out/YYYY-MM-DD/<song-slug>/` (no archive; git history is provenance). Album inputs at `content/albums/in/` evolve and move to `content/albums/out/YYYY-MM-DD/<album-slug>/`.
 
 ## Forest Registry
 Seeds that germinate new systems are catalogued under `coherenceism/forest/` using one of:

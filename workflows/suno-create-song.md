@@ -9,7 +9,7 @@ tags: [workflow, suno, music]
 
 # Workflow — Suno Create Song
 
-This Markdown‑only workflow chains two procedures to create a song from a simple input file. It produces a single output file under `content/songs/out/<YYYY-MM-DD>/<song-slug>/`.
+This Markdown‑only workflow chains two procedures to create a song from a simple input file. It evolves the input itself and then moves it to `content/songs/out/<YYYY-MM-DD>/<song-slug>/`.
 
 ## Actors
 - Writer/Editor — `context/roles/writer-editor.md:1`
@@ -23,8 +23,8 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/songs/out/<YYYY-MM-DD>/<song-slug>/<song-name>.md` — a single Markdown file with frontmatter and sections for Style Prompt and Lyrics.
-- Archived input at `content/songs/archive/<YYYY-MM-DD>/<song-slug>/input.md`.
+- `content/songs/out/<YYYY-MM-DD>/<song-slug>/<song-name>.md` — the evolved input file (now a song) containing frontmatter, Inspiration, Style Prompt, and Lyrics.
+  - No archive folder is used; provenance is tracked via git history.
 
 ## Steps (Prompts to Use)
 
@@ -41,41 +41,29 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
 
 4) Title the Song (PM)
 - Propose 3 short title candidates that match mood/genre; select one.
-- Derive `<song-slug>` from the chosen title (kebab-case, ASCII).
+- Derive `<song-slug>` from the chosen title (kebab‑case, ASCII).
 
-5) Compile Output (Scribe)
-- Create folder `content/songs/out/<YYYY-MM-DD>/<song-slug>/` (use today’s date).
-- Save `<song-name>.md` with frontmatter and body using this shape:
+5) Evolve the Input (Scribe)
+- In the same input file:
+  - Normalize/fill frontmatter keys (title, slug, created date, language, genre, mood, energy_bpm, instrumentation, vocals, structure, negatives, persona_id, references).
+  - Change `kind: song_input` to `kind: song`.
+  - Keep the existing `# Inspiration` section.
+  - Add two sections below Inspiration:
+    - `# Style Prompt` — final, concise style prompt.
+    - `# Lyrics` — tagged lyrics. If instrumental, include tagged instrumental cues (e.g., [Intro], [Head A], [Solo], [Outro]) rather than vocals.
+- Create folder `content/songs/out/<YYYY-MM-DD>/<song-slug>/` (use the file’s `created` date if set; otherwise today).
+- Move the evolved file into that folder and name it `<Song Title>.md`.
 
-```
----
-kind: song
-title: <Chosen Title>
-slug: <song-slug>
-created: <YYYY-MM-DD>
-language: <from input>
-genre: <from input>
-mood: [ .. ]
-energy_bpm: <number or descriptor>
-instrumentation: [ .. ]
-vocals: { on: true|false, style: <..> }
-structure: [Intro, Verse 1, Chorus, Verse 2, Bridge, Chorus, Outro]
-negatives: [ .. ]
-persona_id: <optional>
-references: [ .. ]
----
+Frontmatter keys (reference)
+- kind: song
+- title, slug, created (YYYY‑MM‑DD)
+- language, genre, mood[], energy_bpm
+- instrumentation[], vocals { on, style }, structure[]
+- negatives[], persona_id, references[]
 
-# Style Prompt
-<paste final style prompt>
-
-# Lyrics
-<paste tagged lyrics>
-```
-
-6) Archive Input (PM)
-- Create folder `content/songs/archive/<YYYY-MM-DD>/<song-slug>/` (use today’s date and the chosen `<song-slug>`).
-- Move the processed input file from `content/songs/in/<slug>.md` to `content/songs/archive/<YYYY-MM-DD>/<song-slug>/input.md`.
-- Rationale: preserves provenance and keeps the `in/` queue clean.
+6) Move (PM)
+- Move the evolved file out of `content/songs/in/` into `content/songs/out/<YYYY-MM-DD>/<song-slug>/<Song Title>.md`.
+- `content/songs/in/` stays clean; no separate archive is created.
 
 ## Chain (Procedures)
 - `procedures/media/suno-create-style-prompt.md:1`
@@ -85,4 +73,4 @@ references: [ .. ]
 - Style prompt is concise and follows the key elements (genre/mood/tempo/instrumentation/structure/vocals/negatives).
 - Lyrics are original, singable, with clear section tags; chorus contains a memorable repeated hook.
 - Final file saved under the correct path with accurate frontmatter and both sections present.
- - Input file archived under the dated folder with the chosen song slug.
+- Evolved input moved under dated output folder; no archive created.

@@ -9,7 +9,7 @@ tags: [workflow, suno, music, album]
 
 # Workflow — Suno Create Concept Album
 
-This Markdown‑only workflow turns one album input into a concept description, a curated track list, and per‑track song inputs. It uses the same two Suno procedures (style prompt and custom lyrics) optionally per track.
+This Markdown‑only workflow turns one album input into a concept description, a curated track list, and per‑track song inputs. It evolves the album input itself (no archive) and optionally evolves each song input via the song workflow.
 
 ## Actors
 - Writer/Editor — `context/roles/writer-editor.md:1`
@@ -23,10 +23,10 @@ This Markdown‑only workflow turns one album input into a concept description, 
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/albums/out/<YYYY-MM-DD>/<album-slug>/album.md` — album frontmatter + sections (Concept, Tracklist, Notes).
-- For each track: a song input file at `content/songs/in/<track-slug>.md` (based on the songs template), prefilled from the album context.
-- Archived album input at `content/albums/archive/<YYYY-MM-DD>/<album-slug>/input.md`.
+- `content/albums/out/<YYYY-MM-DD>/<album-slug>/album.md` — the evolved album input file with frontmatter and sections (Concept, Tracklist, Notes).
+- For each track: an initial song input at `content/songs/in/<track-slug>.md` (based on the songs template) that you then evolve and move using the song workflow.
 - Link index at `content/albums/out/<YYYY-MM-DD>/<album-slug>/index.md` — links to album overview and each track output.
+  - No album archive folder is used; provenance is tracked via git history.
 
 ## Steps (Prompts to Use)
 
@@ -62,9 +62,12 @@ This Markdown‑only workflow turns one album input into a concept description, 
 - Open: `procedures/media/suno-create-custom-lyrics.md:1`
 - Draft original lyrics with section tags matching the intended structure.
 
-7) Compile Album Output (PM)
-- Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/` (use today’s date).
-- Save `album.md` with frontmatter:
+7) Evolve Album Input (PM)
+- In the same album input file:
+  - Normalize frontmatter keys (title, slug, created, language, genre, mood, energy_bpm, instrumentation, vocals, negatives, persona_id, references, tracks[] as `{ title, slug }`).
+  - Add/complete album sections: `# Concept`, `# Tracklist`, `# Notes`.
+- Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/` (use the file’s `created` date if present; otherwise today).
+- Move the evolved file into that folder as `album.md`.
 
 ```
 ---
@@ -99,10 +102,9 @@ tracks:
 <Any production or sequencing notes>
 ```
 
-8) Archive Album Input (PM)
-- Create folder `content/albums/archive/<YYYY-MM-DD>/<album-slug>/` (use today’s date and the `<album-slug>`).
-- Move the processed album input from `content/albums/in/<album-slug>.md` to `content/albums/archive/<YYYY-MM-DD>/<album-slug>/input.md`.
-- Rationale: preserves provenance and keeps the `in/` queue clean.
+8) Move Album (PM)
+- Move the evolved album file from `content/albums/in/<album-slug>.md` to `content/albums/out/<YYYY-MM-DD>/<album-slug>/album.md`.
+- `content/albums/in/` stays clean; no separate archive is created.
 
 9) Create Links Index (Scribe)
 - Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/index.md` with:

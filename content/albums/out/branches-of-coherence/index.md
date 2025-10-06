@@ -7,15 +7,15 @@ updated: 2025-10-05
 - Album Overview: content/albums/out/branches-of-coherence/album.md
 
 - Track Outputs:
-- content/songs/out/the-universal-mind/The Universal Mind.md
-- content/songs/out/nothing-really-ends/Nothing Really Ends.md
-- content/songs/out/carried-by-the-current/Carried by the Current.md
-- content/songs/out/quiet-attention/Quiet Attention.md
-- content/songs/out/gentle-resolve/Gentle Resolve.md
-- content/songs/out/rituals-we-share/Rituals We Share.md
-- content/songs/out/new-instrument/New Instrument.md
-- content/songs/out/held-in-wonder/Held in Wonder.md
-- content/songs/out/thread-by-thread/Thread by Thread.md
+- content/songs/out/2025-10-05/the-universal-mind/The Universal Mind.md
+- content/songs/out/2025-10-05/nothing-really-ends/Nothing Really Ends.md
+- content/songs/out/2025-10-05/carried-by-the-current/Carried by the Current.md
+- content/songs/out/2025-10-05/quiet-attention/Quiet Attention.md
+- content/songs/out/2025-10-05/gentle-resolve/Gentle Resolve.md
+- content/songs/out/2025-10-05/rituals-we-share/Rituals We Share.md
+- content/songs/out/2025-10-05/new-instrument/New Instrument.md
+- content/songs/out/2025-10-05/held-in-wonder/Held in Wonder.md
+- content/songs/out/2025-10-05/thread-by-thread/Thread by Thread.md
 
 - Current Song Inputs (scaffolded):
 - content/songs/in/the-universal-mind.md

@@ -63,6 +63,7 @@ This Markdown‑only workflow turns one album input into a concept description, 
 - Draft original lyrics with section tags matching the intended structure.
 
 7) Evolve Album Input (PM)
+– Follow: `procedures/media/evolve_and_move_album.md:1`.
 - In the same album input file:
   - Normalize frontmatter keys (title, slug, created, language, genre, mood, energy_bpm, instrumentation, vocals, negatives, persona_id, references, tracks[] as `{ title, slug }`).
   - Add/complete album sections: `# Concept`, `# Tracklist`, `# Notes`.
@@ -105,6 +106,12 @@ tracks:
 8) Move Album (PM)
 - Move the evolved album file from `content/albums/in/<album-slug>.md` to `content/albums/out/<YYYY-MM-DD>/<album-slug>/album.md`.
 - `content/albums/in/` stays clean; no separate archive is created.
+
+## Chain (Procedures)
+- `procedures/media/evolve_and_move_album.md:1`
+- `procedures/media/evolve_and_move_song.md:1` (per‑track)
+- `procedures/media/suno-create-style-prompt.md:1`
+- `procedures/media/suno-create-custom-lyrics.md:1`
 
 9) Create Links Index (Scribe)
 - Create `content/albums/out/<YYYY-MM-DD>/<album-slug>/index.md` with:

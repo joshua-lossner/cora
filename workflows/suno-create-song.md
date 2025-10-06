@@ -44,6 +44,7 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
 - Derive `<song-slug>` from the chosen title (kebab‑case, ASCII).
 
 5) Evolve the Input (Scribe)
+– Follow: `procedures/media/evolve_and_move_song.md:1`.
 - In the same input file:
   - Normalize/fill frontmatter keys (title, slug, created date, language, genre, mood, energy_bpm, instrumentation, vocals, structure, negatives, persona_id, references).
   - Change `kind: song_input` to `kind: song`.
@@ -66,6 +67,7 @@ Frontmatter keys (reference)
 - `content/songs/in/` stays clean; no separate archive is created.
 
 ## Chain (Procedures)
+- `procedures/media/evolve_and_move_song.md:1`
 - `procedures/media/suno-create-style-prompt.md:1`
 - `procedures/media/suno-create-custom-lyrics.md:1`
 

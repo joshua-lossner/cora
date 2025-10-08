@@ -31,5 +31,5 @@ Produce audio essays and conversations with clear notes and provenance.
 - To QA/Release Manager: final checks before publish.
 
 ## Artifacts
-- `content/media/out/YYYY-MM-DD/<slug>/episode.md` (notes + metadata)
+- `harvest/media/out/YYYY-MM-DD/<slug>/episode.md` (notes + metadata)
 

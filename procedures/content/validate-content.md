@@ -13,10 +13,10 @@ Purpose
 - Ensure repository content conforms to the Knowledge Tree rails in `context/documentation/cora/knowledge-tree.md:1`.
 
 Scope
-- Files under `coherenceism/` and `content/` (plus any other content with `kind: content`).
+- Files under `coherenceism/` and `harvest/` (plus any other content with `kind: content`).
 
 Inputs
-- Target paths (default): `coherenceism/`, `content/essays/out/`
+- Target paths (default): `coherenceism/`, `harvest/essays/out/`
 
 Expected
 - A short report listing: missing/invalid frontmatter, broken parent refs, duplicate `canonical_slug`, and unresolved references.
@@ -40,7 +40,7 @@ You are validating CORA content against its Knowledge Tree rails.
 
 1) Scan these folders for Markdown with YAML frontmatter:
    - coherenceism/
-   - content/essays/out/
+   - harvest/essays/out/
 
 2) For each file, parse frontmatter and capture:
    - kind, type, title, status, updated, canonical_slug, parent, tags, authors, sites, related, seed_refs, spawned_systems, seed_stage

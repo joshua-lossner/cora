@@ -35,7 +35,7 @@ A simple, durable publishing surface for written communication that promotes Coh
 
 ## Content Sources (from CORA)
 - Leaves (canon): `coherenceism/leaves/*.md`
-- Essays pipeline outputs: `content/essays/out/YYYY-MM-DD/<slug>/final.md`
+- Essays pipeline outputs: `harvest/essays/out/YYYY-MM-DD/<slug>/final.md`
 - Context references: `context/philosophy/coherenceism.md:1`, `context/documentation/cora/knowledge-tree.md:1`
 
 ## MVP Slice

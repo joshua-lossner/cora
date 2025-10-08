@@ -1,16 +1,16 @@
 ---
 kind: documentation
-title: Content Contract v1
-intent: Define frontmatter keys, relationships, and invariants for CORA content
+title: Harvest Contract v1
+intent: Define frontmatter keys, relationships, and invariants for CORA fruit stored in harvest/
 status: active
-updated: 2025-09-23
-tags: [contract, content, ontology]
+updated: 2025-10-09
+tags: [contract, harvest, ontology]
 ---
 
-# Content Contract v1
+# Harvest Contract v1
 
 ## Scope
-Applies to files under `content/` in CORA (trunk). Downstream trees should honor this contract when consuming or extending CORA content.
+Applies to files under `harvest/` in CORA (trunk). Downstream trees should honor this contract when consuming or extending CORA fruit.
 
 ## Types
 - type: `root|branch|seed|leaf`
@@ -45,7 +45,7 @@ Applies to files under `content/` in CORA (trunk). Downstream trees should honor
 - No `type: pattern` in trunk. Use seeds/leaves; downstream repos may define additional types locally.
 
 ## Notes for Consumers
-- CORA ships no UI or rendering code. Downstream trees render content using their own overlays.
+- CORA ships no UI or rendering code. Downstream trees render fruit using their own overlays.
 - `sites` is a convenience hint; do not rely on fixed domain mappings.
 
 ## Validation

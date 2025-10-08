@@ -9,14 +9,14 @@ tags: [workflow, writing]
 
 # Workflow — Essay From Notes (LLM-First)
 
-This is a Markdown-only workflow designed for operators who don’t use code. It chains Markdown procedures with clear copy/paste prompts for an LLM (Ivy + S'Vektor via COHERENCE). Outputs go under `content/essays/out/YYYY-MM-DD/<slug>/`; no separate archives (use git history).
+This is a Markdown-only workflow designed for operators who don’t use code. It chains Markdown procedures with clear copy/paste prompts for an LLM (Ivy + S'Vektor via COHERENCE). Outputs go under `harvest/essays/out/YYYY-MM-DD/<slug>/`; no separate archives (use git history).
 
 ## Actors
 - Ivy (primary drafting + style)
 - S'Vektor (outline, checks, compile)
 
 ## Inputs
-- One file at `content/essays/in/<file>.md` with YAML frontmatter containing: `thesis, audience, stance, length_minutes` (plus optional `tone, sources[], keywords[], title_hint`).
+- One file at `harvest/essays/in/<file>.md` with YAML frontmatter containing: `thesis, audience, stance, length_minutes` (plus optional `tone, sources[], keywords[], title_hint`).
 
 ## Outputs
 - `outline.md`, `claim_table.csv`, `draft.md`, `counterpoint.md`, `draft_checked.md`, `refined.md`, `citations.md`, `final.md`, `final.pdf`

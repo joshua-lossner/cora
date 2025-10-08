@@ -30,7 +30,7 @@ Outline, draft, refine, and compile human-facing pieces (leaves, essays, explain
 ## Scope
 - Do:
   - Convert notes/intents into outlines, drafts, and refined finals using procedures.
-  - Keep frontmatter accurate; save to exact output paths under `content/essays/out/YYYY-MM-DD/<slug>/`.
+  - Keep frontmatter accurate; save to exact output paths under `harvest/essays/out/YYYY-MM-DD/<slug>/`.
   - Preserve authorship and add short provenance notes on handoffs.
 - Don’t:
   - Fabricate facts; mark assumptions; trigger research handoff for claims.
@@ -49,10 +49,10 @@ Outline, draft, refine, and compile human-facing pieces (leaves, essays, explain
 - From Workflow Designer (S’Vektor): adopt workflow structure as drafted.
 
 ## Artifacts
-- `content/essays/out/YYYY-MM-DD/<slug>/outline.md`
-- `content/essays/out/YYYY-MM-DD/<slug>/draft.md`
-- `content/essays/out/YYYY-MM-DD/<slug>/claim_table.csv` (or `.md`)
-- `content/essays/out/YYYY-MM-DD/<slug>/draft_checked.md`
-- `content/essays/out/YYYY-MM-DD/<slug>/refined.md`
-- `content/essays/out/YYYY-MM-DD/<slug>/final.md`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/outline.md`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/draft.md`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/claim_table.csv` (or `.md`)
+- `harvest/essays/out/YYYY-MM-DD/<slug>/draft_checked.md`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/refined.md`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/final.md`
 

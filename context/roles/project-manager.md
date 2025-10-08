@@ -56,5 +56,5 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
 
 ## Today Plan (example)
 - Update tasks — `context/projects/cora.md:1` (flip statuses and add timestamps for active items).
-- Compile links index — verify `content/albums/out/we-are-the-wire/index.md:1` links resolve; note any broken paths.
+- Compile links index — verify `harvest/albums/out/we-are-the-wire/index.md:1` links resolve; note any broken paths.
 - Handoff to S'Vektor — if analysis is needed, open `procedures/research/extract_claims.md:1` and `procedures/research/grade_evidence.md:1` on the relevant artifact.

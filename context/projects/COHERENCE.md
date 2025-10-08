@@ -25,6 +25,7 @@ Conventions
 Contents
 - `cora.md` — Trunk evolution and operations (roles, procedures, rails)
 - `coherenceism-project.md` — UFC project/task/workflow visualizer app
+- `coherenceism-org.md` — Shared artifact hub: tokens, shells, docs
 
 Notes
 - Archive by renaming `status: archived` when a project completes; keep the file for provenance.

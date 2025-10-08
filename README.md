@@ -24,7 +24,7 @@ This trunk is a **bridge**: today downstream trees may still need code (websites
 
 - **Personas** — specialized voices or departments that act within the system  
 - **Context** — philosophy, ontology, strategy, active work  
-- **Content (Coherenceism)** — canonical content tree (roots, branches, seeds, leaves)  
+- **Harvest** — shared fruit (essays, songs, media) gathered from every project for reuse  
 - **Procedures** — reusable methods, captured once and kept permanent  
 - **Workflows** — compositions of procedures that turn intent into artifacts  
 - **Policies (optional)** — guardrails for sourcing, safety, licensing; when present, capture under `context/`  
@@ -39,7 +39,7 @@ repo root
 ├── procedures/                  # Reusable procedures (Markdown)
 ├── context/                     # Philosophy, strategy, tools, working
 ├── coherenceism/                # Canonical Coherenceism content (roots/branches/seeds/leaves)
-├── content/                     # Templates and essay I/O (in/out; no archive)
+├── harvest/                     # Templates and essay I/O (in/out; no archive)
 ├── workflows/                   # Workflow templates
 ├── AGENTS.md                    # Startup guide for Codex/agents
 └── .env.example                 # Optional env hints
@@ -76,11 +76,11 @@ Recommended — Agent‑operated (Codex CLI)
 Optional — Chat‑only fallback (no terminal)
 1) Download this repo as a ZIP and unzip it locally.
 2) In your chat AI, say: “You are operating inside CORA. Load according to AGENTS.md:1. Use relative paths only.”
-3) When the AI asks for files, provide the small pieces it needs (intent/notes/procedure prompt), and save outputs to the paths it names (e.g., `content/essays/out/YYYY-MM-DD/<slug>/`).
+3) When the AI asks for files, provide the small pieces it needs (intent/notes/procedure prompt), and save outputs to the paths it names (e.g., `harvest/essays/out/YYYY-MM-DD/<slug>/`).
 
 Where files go
-- Inputs (essays): `content/essays/in/`
-- Outputs (essays): `content/essays/out/YYYY-MM-DD/<slug>/`
+- Inputs (essays): `harvest/essays/in/`
+- Outputs (essays): `harvest/essays/out/YYYY-MM-DD/<slug>/`
 - No separate archives: rely on git history for provenance.
 
 Tips
@@ -92,7 +92,7 @@ Tips
 
 ## Usage Modes
 
-- **LLM-first (no code)**: use workflow/procedure prompts; save artifacts to listed paths (e.g., `content/essays/out/YYYY-MM-DD/<slug>/`). See `context/documentation/cora/LLM-Operator.md:1`.  
+- **LLM-first (no code)**: use workflow/procedure prompts; save artifacts to listed paths (e.g., `harvest/essays/out/YYYY-MM-DD/<slug>/`). See `context/documentation/cora/LLM-Operator.md:1`.  
 - **Hybrid**: pair CORA with downstream tools (e.g., render slides/audio/video) defined in project workflows.  
 - **Agent-native**: chat agents (e.g., Codex CLI) load CORA directly; the chat and saved artifacts are the output.  
 

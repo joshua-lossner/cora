@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Create Persona
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno, persona]
 depends_on: [create-suno-prompt-procedures]
 ---
@@ -39,4 +39,4 @@ Create a procedure to define a consistent artist persona (voice and aesthetic) r
 
 ## Notes
 - Keep influences high-level, not derivative of specific works.
-
+ - Resolution: closed as not needed as a separate procedure — reuse existing personas under `personas/` and reference via `persona_id` in song/album inputs.

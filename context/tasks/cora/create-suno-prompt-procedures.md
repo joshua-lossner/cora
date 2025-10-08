@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedures — Suno Prompt Recipes
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, prompts, media, suno]
 depends_on: [create-suno-prompt-workflow]
 ---
@@ -40,4 +40,4 @@ Add concrete procedures that operators can run to compose, iterate, and refine S
 
 ## Notes
 - Avoid copyrighted lyrics and direct song replication; keep prompts descriptive at the style/mood level.
-
+- Resolution: closed as completed via `procedures/media/suno-create-style-prompt.md:1` and `procedures/media/suno-create-custom-lyrics.md:1`; iteration guidance lives inside workflows and docs.

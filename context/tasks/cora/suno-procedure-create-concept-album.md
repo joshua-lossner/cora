@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Create Concept Album
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno, album]
 depends_on: [create-suno-prompt-procedures]
 ---
@@ -39,4 +39,4 @@ Create a procedure to define a concept album arc and track list with per‑track
 
 ## Notes
 - Keep per‑track seeds concise to enable focused generation.
-
+ - Resolution: closed as completed via `workflows/suno-create-album.md:1` and `procedures/media/evolve_and_move_album.md:1`.

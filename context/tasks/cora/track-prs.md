@@ -2,11 +2,11 @@
 kind: task
 title: Track PRs in CORA Project Page
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/update-pr-logging-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/6
+updated: 2025-10-08
 tags: [git, pm]
 depends_on: []
 ---
@@ -24,4 +24,3 @@ Keep a human-readable PR log on the CORA project page so non-technical collabora
 ## Acceptance
 - Project page shows a current PR list with links and statuses.
 - Task frontmatter reflects actual git state (branch/PR/merge).
-

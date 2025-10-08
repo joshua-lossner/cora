@@ -2,11 +2,11 @@
 kind: task
 title: Create Workflow — Suno Prompting
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [workflow, prompts, media, suno]
 depends_on: []
 ---
@@ -39,4 +39,4 @@ Define a reusable workflow for crafting effective prompts for Suno (AI music), i
 
 ## Notes
 - Keep prompts original; avoid copyrighted lyrics. Reference styles at a high level; do not copy specific compositions.
-
+ - Resolution: closed as completed via `workflows/suno-create-song.md:1` and `workflows/suno-create-album.md:1` which supersede a single generic workflow.

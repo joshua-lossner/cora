@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — Methodologies
 intent: Index for repeatable methods used by procedures and workflows
 status: active
-updated: 2025-10-04
+updated: 2025-10-08
 tags: [methodologies]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Methodologies — Index
@@ -17,4 +21,3 @@ Contents
 
 Notes
 - Keep methods concise and testable; prefer checklists and templates.
-

@@ -20,7 +20,7 @@ Define an HTTP API that converts GUI actions in coherenceism.project into CORA p
 1) Specify endpoints and payloads (minimal set):
    - `POST /cora/projects/{project}/tasks/{task}/state` → flip `status`, update `updated`, optional git fields.
    - `POST /cora/projects/{project}/log` → append PR log entries.
-   - Path whitelist limited to `context/projects/` and `context/project-tasks/`.
+   - Path whitelist limited to `context/projects/` and `context/tasks/`.
 2) Auth model: GitHub App with restricted perms (contents:write, pull_requests:write).
 3) Conflict policy: optimistic (include base sha); on drift, rebase/update and re-run patch.
 4) Output: branch, PR URL; include preview of the computed diff.
@@ -43,4 +43,3 @@ Define an HTTP API that converts GUI actions in coherenceism.project into CORA p
 
 ## Notes
 - Default to read-only runtime; writes always go through PRs with human review.
-

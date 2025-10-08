@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — UFC System
 intent: Central UFC principles, structure, and load order
 status: active
-updated: 2025-09-16
+updated: 2025-10-08
 tags: [coherence, ufc]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Universal File-based Context (UFC) System
@@ -31,7 +35,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
     - `/context/roles/` - Role manifests (curated session load sets)
     - `/context/strategy/` - Network strategy: challenges, programs, objectives, metrics
     - `/context/projects/` - In‑progress projects and notes
-    - `/context/project-tasks/` - Detailed task docs grouped by project slug (optional)
+    - `/context/tasks/` - Detailed task docs grouped by project slug (optional)
 - `/personas/` - Specialized AI personalities and departments
 - `/secrets/` - Git-ignored sensitive data (.env file)
 

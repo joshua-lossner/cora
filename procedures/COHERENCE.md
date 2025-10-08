@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — Procedures (procedures/)
 intent: Organize reusable procedures into clear categories with a single index
 status: active
-updated: 2025-09-16
+updated: 2025-10-08
 tags: [procedures, coherence]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Procedures

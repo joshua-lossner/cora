@@ -18,7 +18,7 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
 1) Persona — `personas/ivy.md:1`
 2) Operator Guides — `context/documentation/cora/LLM-Operator.md:1`, `context/documentation/cora/QUICKSTART.md:1`
 3) Projects — `context/projects/COHERENCE.md:1` (open the relevant project file(s) for today)
-4) Project Tasks — `context/project-tasks/` (open tasks for the active project only)
+4) Project Tasks — `context/tasks/` (open tasks for the active project only)
 5) Procedures (shortlist — project management)
    - `procedures/project-management/plan_session.md:1`
    - `procedures/project-management/update_tasks.md:1`

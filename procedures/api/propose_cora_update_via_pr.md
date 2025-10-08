@@ -18,7 +18,7 @@ Inputs
 - Base commit SHA of CORA `main` used to generate the patch
 
 Steps
-1) Validate request fields; ensure target paths are inside `context/projects/` or `context/project-tasks/`.
+1) Validate request fields; ensure target paths are inside `context/projects/` or `context/tasks/`.
 2) Read current files at the provided base SHA; compute minimal patch (frontmatter flips + PR log append).
 3) Run content validator (`procedures/content/validate-content.md:1`).
 4) Create branch `feature/task-<slug>-<yyyymmdd>` and commit patch with clear message (+ links to paths).
@@ -34,4 +34,3 @@ Safety
 
 Notes
 - Keep the service stateless where possible; log audit context (who, what paths, base sha).
-

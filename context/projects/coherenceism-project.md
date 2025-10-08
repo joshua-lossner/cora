@@ -24,14 +24,14 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 - (Optional) GitHub token for PR metadata.
 
 ## Tasks (Summary)
-- [ ] context/project-tasks/coherenceism-project/init-repo-and-submodule.md:1
-- [ ] context/project-tasks/coherenceism-project/parse-projects-and-tasks.md:1
-- [ ] context/project-tasks/coherenceism-project/ui-scaffold-and-filters.md:1
-- [ ] context/project-tasks/coherenceism-project/pr-links-and-a11y.md:1
-- [ ] context/project-tasks/coherenceism-project/design-write-through-pr-api.md:1
-- [ ] context/project-tasks/coherenceism-project/implement-write-through-pr-api.md:1
-- [ ] context/project-tasks/coherenceism-project/wire-gui-actions-to-api.md:1
-- [ ] context/project-tasks/coherenceism-project/webhooks-sync-and-conflicts.md:1
+- [ ] context/tasks/coherenceism-project/init-repo-and-submodule.md:1
+- [ ] context/tasks/coherenceism-project/parse-projects-and-tasks.md:1
+- [ ] context/tasks/coherenceism-project/ui-scaffold-and-filters.md:1
+- [ ] context/tasks/coherenceism-project/pr-links-and-a11y.md:1
+- [ ] context/tasks/coherenceism-project/design-write-through-pr-api.md:1
+- [ ] context/tasks/coherenceism-project/implement-write-through-pr-api.md:1
+- [ ] context/tasks/coherenceism-project/wire-gui-actions-to-api.md:1
+- [ ] context/tasks/coherenceism-project/webhooks-sync-and-conflicts.md:1
 
 ## PRs (Log)
 - Add entries here when opening PRs (date, branch, title, summary, status, link).
@@ -42,6 +42,6 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 - Downstream path: `~/Projects/coherenceism.project/` (code lives there; this file tracks intent/plan in CORA).
 
 ## Next Small Moves
-- Initialize downstream repo and add CORA submodule — `context/project-tasks/coherenceism-project/init-repo-and-submodule.md:1`
-- Implement UFC adapter to parse projects and tasks — `context/project-tasks/coherenceism-project/parse-projects-and-tasks.md:1`
-- Draft UX brief and scaffold UI with filters — `context/project-tasks/coherenceism-project/ui-scaffold-and-filters.md:1`
+- Initialize downstream repo and add CORA submodule — `context/tasks/coherenceism-project/init-repo-and-submodule.md:1`
+- Implement UFC adapter to parse projects and tasks — `context/tasks/coherenceism-project/parse-projects-and-tasks.md:1`
+- Draft UX brief and scaffold UI with filters — `context/tasks/coherenceism-project/ui-scaffold-and-filters.md:1`

@@ -22,7 +22,7 @@ A UFC‑aware application to visualize CORA projects, tasks, workflows, and proc
 
 ## Germination Notes
 - Shape: desktop/web app that reads the repo read‑only (first), then optionally proposes edits as PRs.
-- Sources: `context/projects/*.md`, `context/project-tasks/<project>/*.md`, `context/roles/*.md`, `procedures/**/*.md`, `workflows/*.md`.
+- Sources: `context/projects/*.md`, `context/tasks/<project>/*.md`, `context/roles/*.md`, `procedures/**/*.md`, `workflows/*.md`.
 - Identity: integrate with `coherenceism.identity` when ready; keep local viewer usable without auth.
 
 ## MVP Slice
@@ -58,4 +58,3 @@ A UFC‑aware application to visualize CORA projects, tasks, workflows, and proc
 2) Parse project/task frontmatter; render MVP dashboards and filters.
 3) Adopt `coherenceism.design` tokens; test a11y checklist.
 4) Add “Open in GitHub” for PR links; consider gh integration next.
-

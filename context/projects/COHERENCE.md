@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — Projects
 intent: Index and conventions for tracking in‑progress projects (one file per project)
 status: active
-updated: 2025-10-04
+updated: 2025-10-08
 tags: [projects, working]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Projects — Index

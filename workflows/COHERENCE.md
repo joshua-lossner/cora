@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — Workflows
 intent: Orchestrate agents, procedures, and methods into repeatable chains
 status: active
-updated: 2025-09-16
+updated: 2025-10-08
 tags: [workflows, coherence]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Workflows

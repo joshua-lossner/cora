@@ -21,7 +21,7 @@ Steps
 3) Pull latest `main` locally: `git checkout main && git pull --ff-only`.
 4) Update logs (required):
    - Project page (e.g., `context/projects/<project>.md:1`) → find the PR entry and change Status from “PR Open” to “Merged”. Optionally add a one‑line post‑merge note.
-   - Task frontmatter (e.g., `context/project-tasks/<project>/<task>.md`) → set `git_status: merged`; if the task’s objective is complete, set `status: done` and update `updated`.
+   - Task frontmatter (e.g., `context/tasks/<project>/<task>.md`) → set `git_status: merged`; if the task’s objective is complete, set `status: done` and update `updated`.
    - Commit these documentation updates on a tiny follow‑up branch (e.g., `chore/pr-<number>-merge-log`) and open a fast PR; merge it.
 
 Expected

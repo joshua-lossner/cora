@@ -3,8 +3,12 @@ kind: documentation
 title: COHERENCE — Roles
 intent: Curate session load sets via role manifests (who + what to load)
 status: active
-updated: 2025-10-04
+updated: 2025-10-08
 tags: [roles, sessions]
+init:
+  files: []
+index:
+  map: []
 ---
 
 # Roles — Index

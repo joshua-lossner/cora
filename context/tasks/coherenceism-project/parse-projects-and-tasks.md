@@ -14,7 +14,7 @@ depends_on: [init-repo-and-submodule]
 # Task — Parse CORA Projects and Tasks (UFC Adapter)
 
 ## Purpose
-Implement a read-only UFC adapter that scans `cora/context/projects/*.md` and `cora/context/project-tasks/*/*.md`, extracting frontmatter and key sections for the viewer app.
+Implement a read-only UFC adapter that scans `cora/context/projects/*.md` and `cora/context/tasks/*/*.md`, extracting frontmatter and key sections for the viewer app.
 
 ## Steps
 1) Define data models for Project and Task (frontmatter + links to sections):

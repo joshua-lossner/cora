@@ -18,18 +18,20 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - No downstream UI or code (lives in other repos)
 
 ## Tasks (Summary)
-- [ ] context/project-tasks/cora/establish-branching-strategy.md:1
-- [ ] context/project-tasks/cora/roles-procedures-forest.md:1
-- [ ] context/project-tasks/cora/track-prs.md:1
-- [ ] context/project-tasks/cora/create-suno-prompt-workflow.md:1
-- [ ] context/project-tasks/cora/create-suno-prompt-procedures.md:1
-- [ ] context/project-tasks/cora/open-session-branch-and-pr.md:1
-- [ ] context/project-tasks/cora/suno-procedure-propose-genre-concept.md:1
-- [ ] context/project-tasks/cora/suno-procedure-create-lyrics.md:1
-- [ ] context/project-tasks/cora/suno-procedure-create-style-prompt.md:1
-- [ ] context/project-tasks/cora/suno-procedure-create-persona.md:1
-- [ ] context/project-tasks/cora/suno-procedure-create-concept-album.md:1
-- [ ] context/project-tasks/cora/suno-procedure-iterate-and-compare.md:1
+- [ ] context/tasks/cora/establish-branching-strategy.md:1
+- [ ] context/tasks/cora/roles-procedures-forest.md:1
+- [ ] context/tasks/cora/track-prs.md:1
+- [ ] context/tasks/cora/create-suno-prompt-workflow.md:1
+- [ ] context/tasks/cora/create-suno-prompt-procedures.md:1
+- [ ] context/tasks/cora/open-session-branch-and-pr.md:1
+- [ ] context/tasks/cora/suno-procedure-propose-genre-concept.md:1
+- [ ] context/tasks/cora/suno-procedure-create-lyrics.md:1
+- [ ] context/tasks/cora/suno-procedure-create-style-prompt.md:1
+- [ ] context/tasks/cora/suno-procedure-create-persona.md:1
+- [ ] context/tasks/cora/suno-procedure-create-concept-album.md:1
+- [ ] context/tasks/cora/suno-procedure-iterate-and-compare.md:1
+- [ ] context/tasks/cora/backup-strategy.md:1
+- [ ] context/tasks/cora/session-checkpoint-procedure.md:1
 
 ## PRs (Log)
 - 2025-10-05 — feature/branches-of-coherence-album — Add “Branches of Coherence” smooth‑jazz album and 9 Suno‑ready songs — Status: Merged — PR: n/a

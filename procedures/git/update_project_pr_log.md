@@ -20,7 +20,7 @@ Steps — On PR Open (feature branch)
 1) Project page (e.g., `context/projects/<project>.md:1`):
    - Add a line to “PRs (Log)” with: `YYYY-MM-DD — <branch> — <title> — Status: PR Open — PR: <url>`.
    - Add a short indented Summary line if helpful.
-2) Task frontmatter (e.g., `context/project-tasks/<project>/<task>.md`):
+2) Task frontmatter (e.g., `context/tasks/<project>/<task>.md`):
    - `git_status: pr_open`, set `branch` and `pr_url`, update `updated` date.
 3) Commit these documentation updates to the same feature branch.
 
@@ -36,4 +36,3 @@ Acceptance
 Links
 - `procedures/git/open_pull_request.md:1`
 - `procedures/git/merge_to_main.md:1`
-

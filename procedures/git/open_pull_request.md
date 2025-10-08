@@ -20,7 +20,7 @@ Steps
 3) Request review from QA/Release Manager (and others as needed).
 4) Update logs immediately (required):
    - Project page (e.g., `context/projects/cora.md:1`) → add an entry under “PRs (Log)” with date, branch, title, summary, status = “PR Open”, and the PR link.
-   - Task frontmatter (e.g., `context/project-tasks/<project>/<task>.md`) → set `git_status: pr_open`, add `branch` and `pr_url`, and update `updated`.
+   - Task frontmatter (e.g., `context/tasks/<project>/<task>.md`) → set `git_status: pr_open`, add `branch` and `pr_url`, and update `updated`.
    - Commit these documentation updates to the same feature branch.
 
 Expected

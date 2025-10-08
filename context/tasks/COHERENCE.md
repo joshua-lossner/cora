@@ -1,16 +1,16 @@
 ---
 kind: documentation
-title: COHERENCE — Project Tasks
-intent: Conventions and index for detailed project task documents grouped by project slug
+title: COHERENCE — Tasks
+intent: Conventions and index for detailed task documents grouped by project slug
 status: active
 updated: 2025-10-04
 tags: [projects, tasks]
 ---
 
-# Project Tasks — Conventions
+# Tasks — Conventions
 
 Purpose
-- Keep substantial task documentation out of the project page when tasks need more space. Group tasks under `context/project-tasks/<project-slug>/`.
+- Keep substantial task documentation out of the project page when tasks need more space. Group tasks under `context/tasks/<project-slug>/`.
 
 Schema (frontmatter)
 - kind: `task`

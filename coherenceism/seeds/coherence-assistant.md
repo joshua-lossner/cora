@@ -51,7 +51,7 @@ Build an assistant that acts like a tuning fork, not a fog machine. It should su
 - Single‑agent chat with left nav reading local CORA repo.
 - “Load CORA” hydrates persona + context; shows checklist.
 - Open/browse files; agent can propose edits and write to repo paths you approve.
-- Run the essay pipeline end‑to‑end (outline → draft → check → refine → final) saving to `content/essays/out/YYYY-MM-DD/<slug>/`.
+- Run the essay pipeline end‑to‑end (outline → draft → check → refine → final) saving to `harvest/essays/out/YYYY-MM-DD/<slug>/`.
 - Handoff log: Ivy ↔ S’Vektor attribution captured at the top of `final.md`.
 
 ## Core Capabilities

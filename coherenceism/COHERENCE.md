@@ -1,13 +1,13 @@
 ---
 kind: documentation
-title: Coherenceism — Content Tree
-intent: Orientation to the Coherenceism content tree and where to start
+title: Coherenceism — Living Tree
+intent: Orientation to the living Coherenceism tree and how it feeds the shared harvest
 status: active
-updated: 2025-10-04
-tags: [coherenceism, content]
+updated: 2025-10-09
+tags: [coherenceism, tree, harvest]
 ---
 
-# Coherenceism — Content Tree
+# Coherenceism — Living Tree
 
 Start at the root: `coherenceism/roots/coherenceism-root.md`.
 
@@ -16,5 +16,7 @@ Structure:
 - branches/ — major themes
 - leaves/ — essays and elaborations
 - seeds/ — project starters that may spawn downstream trees
+
+Fruit (essays, songs, albums, media) grown from any part of the tree is gathered in `harvest/`, so downstream projects can reuse it without hunting through project folders.
 
 For system rails (types, relationships, validation), see `context/documentation/cora/knowledge-tree.md`.

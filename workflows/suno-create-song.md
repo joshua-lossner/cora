@@ -9,7 +9,7 @@ tags: [workflow, suno, music]
 
 # Workflow — Suno Create Song
 
-This Markdown‑only workflow chains two procedures to create a song from a simple input file. It evolves the input itself and then moves it to `content/songs/out/<YYYY-MM-DD>/<song-slug>/`.
+This Markdown‑only workflow chains two procedures to create a song from a simple input file. It evolves the input itself and then moves it to `harvest/songs/out/<YYYY-MM-DD>/<song-slug>/`.
 
 ## Actors
 - Writer/Editor — `context/roles/writer-editor.md:1`
@@ -17,19 +17,19 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
 - Project Manager — `context/roles/project-manager.md:1`
 
 ## Inputs
-- One file at `content/songs/in/<slug>.md` using the template `content/songs/in/TEMPLATE.md:1`.
+- One file at `harvest/songs/in/<slug>.md` using the template `harvest/songs/in/TEMPLATE.md:1`.
 - Recommended references:
   - `context/documentation/suno/effective-style-prompt-writing.md:1`
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/songs/out/<YYYY-MM-DD>/<song-slug>/<song-name>.md` — the evolved input file (now a song) containing frontmatter, Inspiration, Style Prompt, and Lyrics.
+- `harvest/songs/out/<YYYY-MM-DD>/<song-slug>/<song-name>.md` — the evolved input file (now a song) containing frontmatter, Inspiration, Style Prompt, and Lyrics.
   - No archive folder is used; provenance is tracked via git history.
 
 ## Steps (Prompts to Use)
 
 1) Prepare Input (PM)
-- Copy `content/songs/in/TEMPLATE.md:1` to `content/songs/in/<slug>.md` and fill frontmatter and Inspiration section.
+- Copy `harvest/songs/in/TEMPLATE.md:1` to `harvest/songs/in/<slug>.md` and fill frontmatter and Inspiration section.
 
 2) Create Style Prompt (Media Producer)
 - Open: `procedures/media/suno-create-style-prompt.md:1`
@@ -52,7 +52,7 @@ This Markdown‑only workflow chains two procedures to create a song from a simp
   - Add two sections below Inspiration:
     - `# Style Prompt` — final, concise style prompt.
     - `# Lyrics` — tagged lyrics. If instrumental, include tagged instrumental cues (e.g., [Intro], [Head A], [Solo], [Outro]) rather than vocals.
-- Create folder `content/songs/out/<YYYY-MM-DD>/<song-slug>/` (use the file’s `created` date if set; otherwise today).
+- Create folder `harvest/songs/out/<YYYY-MM-DD>/<song-slug>/` (use the file’s `created` date if set; otherwise today).
 - Move the evolved file into that folder and name it `<Song Title>.md`.
 
 Frontmatter keys (reference)
@@ -63,8 +63,8 @@ Frontmatter keys (reference)
 - negatives[], persona_id, references[]
 
 6) Move (PM)
-- Move the evolved file out of `content/songs/in/` into `content/songs/out/<YYYY-MM-DD>/<song-slug>/<Song Title>.md`.
-- `content/songs/in/` stays clean; no separate archive is created.
+- Move the evolved file out of `harvest/songs/in/` into `harvest/songs/out/<YYYY-MM-DD>/<song-slug>/<Song Title>.md`.
+- `harvest/songs/in/` stays clean; no separate archive is created.
 
 ## Chain (Procedures)
 - `procedures/media/evolve_and_move_song.md:1`

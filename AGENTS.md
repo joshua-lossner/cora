@@ -54,7 +54,7 @@ Purpose
 Events
 - Startup (Agent launch)
   - Trigger: Codex starts in this repo (before first user input).
-  - Action: output a single friendly greeting line: "This is Ivy — <random friendly greeting>."
+  - Action: output a single friendly greeting line: "This is {persona_name} — <random friendly greeting>." Use the loaded persona's display name; default to Ivy if detection fails.
   - Then: immediately run Lean Load quietly; after completion, return one-line readiness (see SessionStart).
   - Sample greetings (rotate): "Nice to see you!", "Ready when you are.", "Good to be with you.", "Let’s make this clear and light.", "Here and attentive." 
 - SessionStart (Greeting)
@@ -92,7 +92,7 @@ Conventions
 - Propose chaining procedures where useful.  
 - Update incrementally; preserve style of nearby docs.  
 - Treat `procedures/` as permanent capabilities.  
-- Log provenance: after any procedure/workflow or any change to `context/` or `content/`, append an entry via `procedures/core/update_log.md:1` (see `context/logs/COHERENCE.md:1`).  
+- Log provenance: after any procedure/workflow or any change to `context/` or `harvest/`, append an entry via `procedures/core/update_log.md:1` (see `context/logs/COHERENCE.md:1`).  
  - Do this automatically without prompting when writes occur; skip read‑only scans. Batch micro‑edits within ~2 minutes into one entry to reduce noise. Set actor via `CORA_ACTOR` (default `ivy`).  
  - Types: `procedure | workflow | context-add | context-edit | content-add | content-edit`. Include relative paths and a one‑line summary.
  - Fallback: if logging fails, queue and append at session end.
@@ -129,7 +129,7 @@ Conventions
 
 ## Automation Defaults
 
-- Auto‑log: ON by default. Trigger after any file write in this repo (e.g., `context/`, `content/`, `procedures/`, `workflows/`, `personas/`, `roles/`, `context/projects/`). Do not prompt. Disable with `CORA_AUTO_LOG=false`.
+- Auto‑log: ON by default. Trigger after any file write in this repo (e.g., `context/`, `harvest/`, `procedures/`, `workflows/`, `personas/`, `roles/`, `context/projects/`). Do not prompt. Disable with `CORA_AUTO_LOG=false`.
 - Auto‑snapshot: DEFAULT at session end if any writes occurred or if a change set touches >5 files. Path: `snapshots/YYYY-MM-DD/HHMM/`. Include repo root unless `CORA_SNAPSHOT_INCLUDE` is set. Disable with `CORA_AUTO_SNAPSHOT=off`.
 - Safety: snapshots are local, non‑destructive copies; never remove originals. Optional mirror to iCloud via `CORA_SYNC_DIR` (local filesystem path). No network calls beyond local sync folder.
 - Throttling: coalesce rapid successive edits into a single log entry and a single end‑of‑session snapshot.

@@ -15,12 +15,12 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 - Reads from a local CORA submodule (no canon edits).
 - Dashboards: projects list, tasks by project with status/updated/git fields, PRs log.
 - Filters: status (todo/doing/blocked/done) and git_status (none/in_branch/pr_open/merged).
-- Design: adopt `coherenceism.design` tokens/CSS for visual coherence.
+- Design: adopt `coherenceism.org` tokens/shell components for visual coherence.
 - Optional: show PR titles/status via GitHub when configured.
 
 ## Dependencies
 - CORA as a read‑only submodule (`cora/`).
-- (Later) `coherenceism.design` tokens.
+- (Later) `coherenceism.org` tokens and shared shells.
 - (Optional) GitHub token for PR metadata.
 
 ## Tasks (Summary)
@@ -32,7 +32,7 @@ Build a read‑only, UFC‑aware app that visualizes CORA projects, tasks (with 
 - [ ] context/tasks/coherenceism-project/implement-write-through-pr-api.md:1
 - [ ] context/tasks/coherenceism-project/wire-gui-actions-to-api.md:1
 - [ ] context/tasks/coherenceism-project/webhooks-sync-and-conflicts.md:1
- - [ ] context/tasks/coherenceism-project/integrate-coherenceism-ui-shell.md:1
+ - [ ] context/tasks/coherenceism-project/integrate-coherenceism-org-hub.md:1
 
 ## PRs (Log)
 - Add entries here when opening PRs (date, branch, title, summary, status, link).

@@ -17,21 +17,21 @@ This Markdown‑only workflow turns one album input into a concept description, 
 - Project Manager — `context/roles/project-manager.md:1`
 
 ## Inputs
-- One file at `content/albums/in/<album-slug>.md` using the template `content/albums/in/TEMPLATE.md:1`.
+- One file at `harvest/albums/in/<album-slug>.md` using the template `harvest/albums/in/TEMPLATE.md:1`.
 - Recommended references:
   - `context/documentation/suno/effective-style-prompt-writing.md:1`
   - `context/documentation/suno/suno-using-custom-lyrics.md:1`
 
 ## Outputs
-- `content/albums/out/<album-slug>/album.md` — the evolved album input file with frontmatter and sections (Concept, Tracklist, Notes).
-- For each track: an initial song input at `content/songs/in/<track-slug>.md` (based on the songs template) that you then evolve and move using the song workflow.
-- Link index at `content/albums/out/<album-slug>/index.md` — links to album overview and each track output.
+- `harvest/albums/out/<album-slug>/album.md` — the evolved album input file with frontmatter and sections (Concept, Tracklist, Notes).
+- For each track: an initial song input at `harvest/songs/in/<track-slug>.md` (based on the songs template) that you then evolve and move using the song workflow.
+- Link index at `harvest/albums/out/<album-slug>/index.md` — links to album overview and each track output.
   - No album archive folder is used; provenance is tracked via git history.
 
 ## Steps (Prompts to Use)
 
 1) Prepare Album Input (PM)
-- Copy `content/albums/in/TEMPLATE.md:1` to `content/albums/in/<album-slug>.md`.
+- Copy `harvest/albums/in/TEMPLATE.md:1` to `harvest/albums/in/<album-slug>.md`.
 - Fill frontmatter (language, mood, energy_bpm, genre, instrumentation, vocals, negatives, persona, track_count and optional track_themes[]).
 - Write the Inspiration section.
 
@@ -45,7 +45,7 @@ This Markdown‑only workflow turns one album input into a concept description, 
 
 4) Scaffold Song Inputs (Scribe)
 - For each track:
-  - Copy `content/songs/in/TEMPLATE.md:1` → `content/songs/in/<track-slug>.md`.
+  - Copy `harvest/songs/in/TEMPLATE.md:1` → `harvest/songs/in/<track-slug>.md`.
   - Prefill frontmatter from the album (language, mood, energy_bpm, genre, instrumentation, vocals, structure, negatives, persona_id, references).
   - In “Inspiration”, write 2–4 lines derived from album concept + the track’s one‑line theme.
 
@@ -67,7 +67,7 @@ This Markdown‑only workflow turns one album input into a concept description, 
 - In the same album input file:
   - Normalize frontmatter keys (title, slug, created, language, genre, mood, energy_bpm, instrumentation, vocals, negatives, persona_id, references, tracks[] as `{ title, slug }`).
   - Add/complete album sections: `# Concept`, `# Tracklist`, `# Notes`.
-- Create `content/albums/out/<album-slug>/`.
+- Create `harvest/albums/out/<album-slug>/`.
 - Move the evolved file into that folder as `album.md`.
 
 ```
@@ -104,8 +104,8 @@ tracks:
 ```
 
 8) Move Album (PM)
-- Move the evolved album file from `content/albums/in/<album-slug>.md` to `content/albums/out/<album-slug>/album.md`.
-- `content/albums/in/` stays clean; no separate archive is created.
+- Move the evolved album file from `harvest/albums/in/<album-slug>.md` to `harvest/albums/out/<album-slug>/album.md`.
+- `harvest/albums/in/` stays clean; no separate archive is created.
 
 ## Chain (Procedures)
 - `procedures/media/evolve_and_move_album.md:1`
@@ -114,9 +114,9 @@ tracks:
 - `procedures/media/suno-create-custom-lyrics.md:1`
 
 9) Create Links Index (Scribe)
-- Create `content/albums/out/<album-slug>/index.md` with:
+- Create `harvest/albums/out/<album-slug>/index.md` with:
   - Frontmatter: `kind: album_links`, `title: <Album Title> — Track Links`, `updated: <YYYY-MM-DD>`.
-  - Links: one to `album.md` and one per track pointing to `content/songs/out/<YYYY-MM-DD>/<track-slug>/*.md`.
+  - Links: one to `album.md` and one per track pointing to `harvest/songs/out/<YYYY-MM-DD>/<track-slug>/*.md`.
   - Keep relative paths so the index is portable.
 
 ## Chain (Procedures)
@@ -129,4 +129,4 @@ tracks:
 - Track list sequenced with clear per‑track themes and unique slugs.
 - Song input files exist for each track with prefilled metadata and tailored Inspiration text.
 - 2–4 tracks include intentional structure variants (pre‑chorus, instrumental break, double chorus) to add natural variation.
-- Album moved under `content/albums/out/<album-slug>/` and links index exists; all links resolve to generated outputs.
+- Album moved under `harvest/albums/out/<album-slug>/` and links index exists; all links resolve to generated outputs.

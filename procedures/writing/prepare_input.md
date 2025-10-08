@@ -1,13 +1,13 @@
 ---
 name: prepare_input
 intent: Derive slug, title, and split unified input (frontmatter + notes) into operator artifacts
-inputs: [content/essays/in/<file>.md]
+inputs: [harvest/essays/in/<file>.md]
 steps:
   - Read YAML frontmatter; validate required fields
   - Derive Title from `title_hint` or `thesis`; compute `slug` (lower-kebab-case)
   - Emit `intent.yml` (frontmatter minus runner-specific keys)
   - Emit `notes.md` (the markdown body after the second `---`)
-  - Save derived artifacts under `content/essays/out/YYYY-MM-DD/<slug>/` (no separate archives)
+  - Save derived artifacts under `harvest/essays/out/YYYY-MM-DD/<slug>/` (no separate archives)
 expected: intent.yml, notes.md, title.txt, slug.txt, meta.json
 tags: [writing, io]
 ---
@@ -15,10 +15,10 @@ tags: [writing, io]
 # Prepare Input — Operator Prompt (S'Vektor)
 
 Goal: From one input file with YAML frontmatter + notes, produce these files in the output folder:
-- `content/essays/out/YYYY-MM-DD/<slug>/intent.yml` — frontmatter only (cleaned)
-- `content/essays/out/YYYY-MM-DD/<slug>/notes.md` — body only
-- `content/essays/out/YYYY-MM-DD/<slug>/title.txt` and `slug.txt`
-- `content/essays/out/YYYY-MM-DD/<slug>/meta.json` with `derived_title`, `slug`, and `input_path`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/intent.yml` — frontmatter only (cleaned)
+- `harvest/essays/out/YYYY-MM-DD/<slug>/notes.md` — body only
+- `harvest/essays/out/YYYY-MM-DD/<slug>/title.txt` and `slug.txt`
+- `harvest/essays/out/YYYY-MM-DD/<slug>/meta.json` with `derived_title`, `slug`, and `input_path`
 
 Constraints:
 - Required frontmatter: `thesis, audience, stance, length_minutes`
@@ -40,12 +40,12 @@ Operator Steps:
 Example Return Shape:
 
 ```text
-path: content/essays/out/2025-10-04/example/title.txt
+path: harvest/essays/out/2025-10-04/example/title.txt
 ---
 Comfort vs. Coherence at Work
 ---
 
-path: content/essays/out/2025-10-04/example/slug.txt
+path: harvest/essays/out/2025-10-04/example/slug.txt
 ---
 comfort-vs-coherence-at-work
 ---

@@ -1,9 +1,0 @@
-thesis: "Choose signal over noise to reduce cognitive load."
-audience: "indie hackers and analysts"
-stance: "argumentative"
-length_minutes: 4
-tone: "direct, unsentimental"
-keywords: ["signal", "noise", "attention"]
-title_hint: "Signal Over Noise"
-sources:
-  - context/philosophy/coherenceism.md

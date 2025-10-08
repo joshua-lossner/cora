@@ -23,7 +23,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 - `/context/` - Knowledge and documentation (philosophy, strategy, tools, working)
 - `/coherenceism/` - Canonical Coherenceism content tree (roots, branches, seeds, leaves)
     - `/content/_templates/` - Content templates for new items
-    - `/content/essays/` - Essay I/O (in/out/archive)
+    - `/content/essays/` - Essay I/O (in/out; no separate archive)
     - `/context/philosophy/` - Coherenceism foundation and related texts
     - `/coherenceism/forest/` - Registry of downstream trees seeded from Coherenceism
     - `/context/tools/` - Tool documentation

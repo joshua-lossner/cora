@@ -7,19 +7,18 @@ steps:
   - Derive Title from `title_hint` or `thesis`; compute `slug` (lower-kebab-case)
   - Emit `intent.yml` (frontmatter minus runner-specific keys)
   - Emit `notes.md` (the markdown body after the second `---`)
-  - Archive originals under `content/essays/archive/YYYY-MM-DD/<slug>/`
+  - Save derived artifacts under `content/essays/out/YYYY-MM-DD/<slug>/` (no separate archives)
 expected: intent.yml, notes.md, title.txt, slug.txt, meta.json
 tags: [writing, io]
 ---
 
 # Prepare Input — Operator Prompt (S'Vektor)
 
-Goal: From one input file with YAML frontmatter + notes, produce these files:
-- `content/essays/archive/YYYY-MM-DD/<slug>/input.md` — exact original
-- `.../intent.yml` — frontmatter only (cleaned)
-- `.../notes.md` — body only
+Goal: From one input file with YAML frontmatter + notes, produce these files in the output folder:
+- `content/essays/out/YYYY-MM-DD/<slug>/intent.yml` — frontmatter only (cleaned)
+- `content/essays/out/YYYY-MM-DD/<slug>/notes.md` — body only
 - `content/essays/out/YYYY-MM-DD/<slug>/title.txt` and `slug.txt`
-- `.../meta.json` with `derived_title`, `slug`, and `input_path`
+- `content/essays/out/YYYY-MM-DD/<slug>/meta.json` with `derived_title`, `slug`, and `input_path`
 
 Constraints:
 - Required frontmatter: `thesis, audience, stance, length_minutes`
@@ -32,11 +31,11 @@ Operator Steps:
 2. Validate required keys; if missing, return a minimal block listing missing keys.
 3. Compute Title and Slug. Show them clearly.
 4. Return blocks for each output with fenced markers and file paths as headings:
-   - path: `.../archive/YYYY-MM-DD/<slug>/intent.yml`
-   - path: `.../archive/YYYY-MM-DD/<slug>/notes.md`
+   - path: `.../out/YYYY-MM-DD/<slug>/intent.yml`
+   - path: `.../out/YYYY-MM-DD/<slug>/notes.md`
    - path: `.../out/YYYY-MM-DD/<slug>/title.txt`
    - path: `.../out/YYYY-MM-DD/<slug>/slug.txt`
-   - path: `.../archive/YYYY-MM-DD/<slug>/meta.json`
+   - path: `.../out/YYYY-MM-DD/<slug>/meta.json`
 
 Example Return Shape:
 
@@ -51,4 +50,3 @@ path: content/essays/out/2025-10-04/example/slug.txt
 comfort-vs-coherence-at-work
 ---
 ```
-

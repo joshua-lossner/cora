@@ -6,7 +6,7 @@ Start from template: `content/essays/in/TEMPLATE.md` (copy and edit).
 2. Place your file under `content/essays/in/`.
 3. Open `workflows/essay_from_notes.md` and follow the steps. Each procedure page contains a copy/paste “Operator Prompt”.
 4. Save the returned blocks to the paths shown under `content/essays/out/YYYY-MM-DD/<slug>/`.
-   - Archive the original input and derived files under `content/essays/archive/YYYY-MM-DD/<slug>/` (input.md, intent.yml, notes.md).
+   - No separate archive; provenance is tracked in git history.
 
 ## Validate Content (Manual)
 1. Ensure `context/documentation/cora/knowledge-tree.md` exists.

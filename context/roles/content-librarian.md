@@ -6,21 +6,21 @@ default_persona: s_vektor
 alternates: [ivy]
 status: active
 updated: 2025-10-04
-tags: [library, hygiene, archives]
+tags: [library, hygiene]
 ---
 
 # Role — Content Librarian
 
 ## Overview
-Maintain structure, frontmatter hygiene, and archives. Keep links valid and compost stale content.
+Maintain structure and frontmatter hygiene. Keep links valid and compost stale content. No separate archives; rely on git history and `status: archived` flags when needed.
 
 ## Load Order
 1) Persona — `personas/s_vektor.md:1`
 2) Ontology — `context/documentation/cora/knowledge-tree.md:1`
-3) Procedures — `procedures/content/validate-content.md:1`, `procedures/content/archive_item.md:1`
+3) Procedures — `procedures/content/validate-content.md:1` (archive procedure deprecated)
 
 ## Scope
-- Do: run validators, fix metadata, archive with summaries, resolve broken links.
+- Do: run validators, fix metadata, resolve broken links, mark items `status: archived` when appropriate (without moving files).
 - Don’t: alter voice or meaning; escalate content changes to authors.
 
 ## Capsule Prompt
@@ -31,5 +31,4 @@ Maintain structure, frontmatter hygiene, and archives. Keep links valid and comp
 - To Project Manager: when hygiene work impacts project timelines.
 
 ## Artifacts
-- Validation reports; archived items under `content/essays/archive/` with notes.
-
+- Validation reports; notes on archived items in-place.

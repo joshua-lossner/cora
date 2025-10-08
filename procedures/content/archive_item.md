@@ -1,25 +1,24 @@
 ---
 kind: procedure
-title: Content — Archive Item
-intent: Archive a content item with a short summary that feeds future seeds
-status: active
-updated: 2025-10-04
-tags: [content, archive]
+title: Content — Archive Item (Deprecated)
+intent: Legacy archive guidance; prefer git history and `status: archived` without moving files
+status: deprecated
+updated: 2025-10-07
+tags: [content]
 ---
 
-# Procedure — Archive Item
+# Procedure — Archive Item (Deprecated)
 
 Purpose
-- Move a content item to archive while preserving links and adding a nutrient summary.
+- Historical reference. CORA now relies on git history; do not move files to `archive/`.
 
 Inputs
-- Path to item, reason for archive, summary.
+- Path to item, reason for archival note, summary.
 
 Steps
-1) Update frontmatter `status: archived`; add a short `archive_note`.
-2) Move/copy to archive path (e.g., `content/essays/archive/YYYY-MM-DD/<slug>/`).
-3) Add a link from the original location if needed; update indexes.
+1) Update frontmatter `status: archived`; add a short `archive_note` with rationale and date.
+2) Do not move the file; leave it in place so links remain stable.
+3) Update any indexes if you want to hide it from navigation.
 
 Expected
-- Archived item with context; no broken links.
-
+- Item marked archived with context; no path changes.

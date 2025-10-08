@@ -10,7 +10,7 @@ tags: [media, suno, album, evolve]
 # Procedure — Evolve and Move Album (Suno)
 
 Purpose
-- Evolve a single album input into its final form by normalizing frontmatter, completing the album sections, then moving it to `content/albums/out/YYYY-MM-DD/<album-slug>/album.md`.
+- Evolve a single album input into its final form by normalizing frontmatter, completing the album sections, then moving it to `content/albums/out/<album-slug>/album.md`.
 
 Inputs
 - Path: `content/albums/in/<album-slug>.md`
@@ -38,15 +38,15 @@ Steps
      - `# Tracklist` — numbered list with one‑line themes per track.
      - `# Notes` — production/sequencing notes.
 3) Move the evolved file
-   - Compute destination: `content/albums/out/<created>/<album-slug>/album.md`
+   - Compute destination: `content/albums/out/<album-slug>/album.md`
    - Create folder if needed and move the same file (don’t copy).
 4) (Optional) Scaffold per‑track song inputs
    - Create `content/songs/in/<track-slug>.md` for each track using the songs template, prefill from album frontmatter, and run `procedures/media/evolve_and_move_song.md:1` for each.
 5) Update links index (optional now, recommended later)
-   - Create/update `content/albums/out/<created>/<album-slug>/index.md` with links to `album.md` and each song output path.
+   - Create/update `content/albums/out/<album-slug>/index.md` with links to `album.md` and each song output path.
 
 Expected
-- The original album input is evolved in place, then moved under the dated out folder as `album.md`.
+- The original album input is evolved in place, then moved under `content/albums/out/<album-slug>/album.md`.
 - Final file contains: frontmatter (kind: album), Concept, Tracklist, Notes (Inspiration may remain for provenance of intent).
 - No archives are created; `content/albums/in/` stays clean.
 
@@ -61,7 +61,6 @@ Operator Prompt (optional)
 You are evolving a Suno album input.
 1) Normalize frontmatter (kind→album; title, slug, created, language, genre, mood, BPM, instrumentation, vocals, negatives, persona_id, references, tracks[]).
 2) Keep Inspiration; add Concept, Tracklist, Notes.
-3) Move file to content/albums/out/YYYY-MM-DD/<album-slug>/album.md.
+3) Move file to content/albums/out/<album-slug>/album.md.
 Do not create an archive; rely on git history.
 """
-

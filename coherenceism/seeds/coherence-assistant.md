@@ -37,7 +37,7 @@ Build an assistant that acts like a tuning fork, not a fog machine. It should su
 ## Navigation & UX
 - Left Nav (UFC‑aware):
   - Coherenceism (roots → branches → seeds/leaves)
-  - Content (templates, essays in/out/archive)
+  - Content (templates, essays in/out)
   - Context (philosophy, strategy, methodologies, roles)
   - Personas / Departments
   - Procedures / Workflows

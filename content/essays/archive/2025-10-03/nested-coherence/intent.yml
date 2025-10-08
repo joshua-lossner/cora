@@ -1,9 +1,0 @@
-thesis: "Nested coherence aligns local moves with wider patterns."
-audience: "org designers and engineers"
-stance: "explanatory"
-length_minutes: 7
-tone: "clear, concrete"
-keywords: ["nested coherence", "alignment", "systems"]
-title_hint: "Nested Coherence"
-sources:
-  - context/documentation/knowledge-tree.md

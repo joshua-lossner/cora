@@ -39,7 +39,7 @@ repo root
 ├── procedures/                  # Reusable procedures (Markdown)
 ├── context/                     # Philosophy, strategy, tools, working
 ├── coherenceism/                # Canonical Coherenceism content (roots/branches/seeds/leaves)
-├── content/                     # Templates and essay I/O (in/out/archive)
+├── content/                     # Templates and essay I/O (in/out; no archive)
 ├── workflows/                   # Workflow templates
 ├── AGENTS.md                    # Startup guide for Codex/agents
 └── .env.example                 # Optional env hints
@@ -81,7 +81,7 @@ Optional — Chat‑only fallback (no terminal)
 Where files go
 - Inputs (essays): `content/essays/in/`
 - Outputs (essays): `content/essays/out/YYYY-MM-DD/<slug>/`
-- Archives: `content/essays/archive/YYYY-MM-DD/<slug>/`
+- No separate archives: rely on git history for provenance.
 
 Tips
 - If your chat AI can’t open files, paste only the small parts needed for the current step (intent, notes, or procedure prompt). Keep messages short and focused.

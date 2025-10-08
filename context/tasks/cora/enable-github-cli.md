@@ -2,11 +2,11 @@
 kind: task
 title: Enable GitHub CLI PR Flow
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/update-pr-logging-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/6
+updated: 2025-10-08
 tags: [tools, github, pr]
 depends_on: [establish-branching-strategy]
 ---
@@ -30,4 +30,3 @@ Allow operators/agents to open and manage PRs from the terminal using GitHub CLI
 - `context/tools/github-cli.md:1`
 - `.github/pull_request_template.md:1`
 - `procedures/git/open_pull_request.md:1`
-

@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Iterate and Compare
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno, iteration]
 depends_on: [create-suno-prompt-procedures]
 ---
@@ -39,4 +39,4 @@ Create a procedure for controlled iteration (vary seeds/settings) and comparison
 
 ## Notes
 - Keep notes succinct; support reproducibility by recording changed variables.
-
+ - Resolution: closed as not needed separately — iteration guidance is embedded in `workflows/suno-create-song.md:1` and `context/documentation/suno/effective-style-prompt-writing.md:1`.

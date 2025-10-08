@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Propose Genre/Concept
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno]
 depends_on: [create-suno-prompt-procedures]
 ---
@@ -40,4 +40,4 @@ Create a procedure that, given inspiration (text or image alt), proposes 3–5 g
 
 ## Notes
 - Keep references high-level (style descriptors), never copy specific compositions.
-
+- Resolution: closed as not needed separately — genre/concept exploration is integrated into `workflows/suno-create-album.md:1` and supported by `procedures/media/suno-create-style-prompt.md:1`.

@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Create Lyrics
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno, lyrics]
 depends_on: [create-suno-prompt-procedures]
 ---

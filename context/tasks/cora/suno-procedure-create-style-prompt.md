@@ -2,11 +2,11 @@
 kind: task
 title: Author Procedure — Suno Create Style Prompt
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/suno-music-procedures
+pr_url: https://github.com/joshua-lossner/cora/pull/10
+updated: 2025-10-08
 tags: [procedures, media, prompts, suno, style]
 depends_on: [create-suno-prompt-procedures]
 ---
@@ -39,4 +39,3 @@ Create a procedure to craft a concise, production-ready style prompt string for 
 
 ## Notes
 - Avoid named artists; describe style via abstract descriptors.
-

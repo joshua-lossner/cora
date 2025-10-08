@@ -2,11 +2,11 @@
 kind: task
 title: Open Session Branch and PR
 project: cora
-status: todo
-git_status: none
-branch: 
-pr_url: 
-updated: 2025-10-04
+status: done
+git_status: merged
+branch: feature/coherenceism-project-and-suno-tasks
+pr_url: https://github.com/joshua-lossner/cora/pull/5
+updated: 2025-10-08
 tags: [git, pr, session, pm]
 depends_on: [establish-branching-strategy]
 ---

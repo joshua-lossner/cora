@@ -4,7 +4,7 @@ id: coherenceism
 title: The Coherenceism Forest
 summary: Grouping of downstream projects grown from the Coherenceism trunk.
 status: active
-updated: 2025-10-04
+updated: 2025-10-09
 tags: [forest, group]
 members: [cora, coherenceism-identity, coherenceism-ai, coherenceism-info, coherenceism-studio, coherenceism-blog, coherenceism-net, coherenceism-com, coherenceism-design, coherenceism-media, coherenceism-org, coherenceism-project]
 ---
@@ -19,7 +19,7 @@ Notes
 - CORA is the trunk and appears here for orientation.
 
 Trees (current)
-- cora — The Coherence Operating & Reasoning Architecture (this trunk; canonical content/procedures)
+- cora — The Coherence Operating & Reasoning Architecture (this trunk; canonical harvest/procedures)
 - coherenceism-identity — Centralized identity & consent (OIDC/OAuth2, passkeys) for SSO across properties (downstream infra)
 - coherenceism-ai — Chat + Markdown studio to operate CORA (downstream code)
 - coherenceism-info — Public site that communicates Coherenceism (downstream web)

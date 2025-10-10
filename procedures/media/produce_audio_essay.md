@@ -18,7 +18,7 @@ Inputs
 Steps
 1) Draft script from the leaf; keep quotes accurate; add footnotes.
 2) Record audio; export to distribution format; capture duration and file URL.
-3) Create `content/media/out/YYYY-MM-DD/<slug>/episode.md` with frontmatter (title, summary, duration, sources).
+3) Create `harvest/media/out/YYYY-MM-DD/<slug>/episode.md` with frontmatter (title, summary, duration, sources).
 
 Expected
 - Audio plus episode notes referencing CORA sources.

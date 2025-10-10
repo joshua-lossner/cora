@@ -3,7 +3,7 @@ kind: documentation
 title: COHERENCE — UFC System
 intent: Central UFC principles, structure, and load order
 status: active
-updated: 2025-10-08
+updated: 2025-10-09
 tags: [coherence, ufc]
 init:
   files: []
@@ -25,9 +25,10 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 
 - `/procedures/` - Reusable solutions (Markdown procedures)
 - `/context/` - Knowledge and documentation (philosophy, strategy, tools, working)
+- `/harvest/` - Shared fruit (essays, songs, albums, media) ready for reuse
+    - `/harvest/_templates/` - Fruit templates for new items
+    - `/harvest/essays/` - Essay I/O (in/out; no separate archive)
 - `/coherenceism/` - Canonical Coherenceism content tree (roots, branches, seeds, leaves)
-    - `/content/_templates/` - Content templates for new items
-    - `/content/essays/` - Essay I/O (in/out; no separate archive)
     - `/context/philosophy/` - Coherenceism foundation and related texts
     - `/coherenceism/forest/` - Registry of downstream trees seeded from Coherenceism
     - `/context/tools/` - Tool documentation
@@ -39,7 +40,7 @@ Your file system IS your AI's knowledge base. Each directory contains specific c
 - `/personas/` - Specialized AI personalities and departments
 - `/secrets/` - Git-ignored sensitive data (.env file)
 
-See also: `context/documentation/cora/knowledge-tree.md` for the live content ontology (roots → branches → seeds/leaves/patterns) and rendering rails.
+See also: `context/documentation/cora/knowledge-tree.md` for the live tree + fruit ontology (roots → branches → seeds/leaves/fruit) and rendering rails.
 
 ## Load Order (Important!)
 
@@ -70,7 +71,7 @@ Start each session by following `AGENTS.md` at the repo root.
 3. Every problem you solve becomes a permanent command
 4. System grows smarter with each use
 5. All solutions align with coherentist principles
-6. Downstream trees consume CORA read‑only (git submodule) and grow their own personas/content/context/procedures/workflows
+6. Downstream trees consume CORA read‑only (git submodule) and grow their own personas, context, harvest, procedures, and workflows
 
 ## Core Operating Principles
 

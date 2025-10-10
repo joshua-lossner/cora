@@ -21,8 +21,8 @@ This guide shows how to run CORA using only Markdown. The LLM is the operating s
  - Example Session: `context/documentation/cora/example-session-essay-from-notes.md:1`
 
 ## File Locations (Essays)
-- Input: `content/essays/in/<file>.md` (frontmatter + notes)
-- Output: `content/essays/out/YYYY-MM-DD/<slug>/` (no separate archive; rely on git history)
+- Input: `harvest/essays/in/<file>.md` (frontmatter + notes)
+- Output: `harvest/essays/out/YYYY-MM-DD/<slug>/` (no separate archive; rely on git history)
 
 ## Tips
 - Keep your LLM chat grounded: include the relevant files (intent, notes, outline) when running each step.

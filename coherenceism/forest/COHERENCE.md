@@ -19,6 +19,7 @@ Purpose
 Conventions
 - This repo catalogs forest members via a single group manifest (`coherenceism-forest.md`) rather than per-tree files.
 - CORA is the trunk, not a forest-tree entry; the group manifest may still list CORA for orientation.
+- Downstream code projects live as sibling repositories to `cora/` (e.g., `~/Projects/coherenceism-ai/`). Do not nest downstream repos inside CORA; reference CORA via submodule.
 - Downstream repos include CORA as a read-only submodule.
 
 Shapes (lightweight)

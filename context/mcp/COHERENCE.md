@@ -24,6 +24,8 @@ How to Manage (Global)
 
 Recommended MCPs
 - Web/browser: `context/mcp/web-browser.md:1`
+ - Capabilities contract (verbs, IO, fallbacks): `context/mcp/capabilities.md:1`
+ - Health check procedure: `procedures/core/mcp-health-check.md:1`
 - Example local config: `context/mcp/codex-config.example.json:1` (copy to `.codex/config.json` locally; `.codex/` is git‑ignored)
 
 Notes

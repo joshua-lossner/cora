@@ -34,6 +34,12 @@ Coordinate multi-session work, keep projects moving with small, verifiable steps
    - `procedures/git/open_pull_request.md:1`
    - `procedures/git/update_branch_from_main.md:1`
 
+## MCP Load (tools)
+- Required: `fs`, `git` (builtin via procedures)
+- Optional: `web` (MCP browser)
+- Health: Run `procedures/core/mcp-health-check.md:1` at SessionStart. Announce one‑line readiness (e.g., `Tools: web=ok, fs=builtin, git=builtin`).
+- Fallbacks: If `web` is missing, skip live browsing and request cached artifacts/links; proceed with local UFC context.
+
 ## Scope
 - Do:
   - Maintain a small “Today” plan (top 3 moves) per session

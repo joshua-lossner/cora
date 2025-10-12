@@ -59,7 +59,7 @@ Events
   - Sample greetings (rotate): "Nice to see you!", "Ready when you are.", "Good to be with you.", "Let’s make this clear and light.", "Here and attentive." 
 - SessionStart (Greeting)
   - Trigger: first user greeting (e.g., “Hi”, “Load CORA”).
-  - Action: detect persona from greeting (see Persona Selection), then perform Lean Load (persona → philosophy → COHERENCE sweep → read `init.files`).
+  - Action: detect persona from greeting (see Persona Selection), then perform Lean Load (persona → philosophy → COHERENCE sweep → read `init.files`). If a role is selected, run `procedures/core/mcp-health-check.md:1` and include a one‑line tools readiness summary.
   - Output: one-line confirmation summary; ready state.
 - UserPromptSubmit (First intent)
   - Trigger: first substantive request after load.

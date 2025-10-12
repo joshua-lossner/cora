@@ -1,6 +1,7 @@
 .obsidian/
 # Secrets/env
 .env
+.env.local
 secrets/
 
 # OS/editor noise

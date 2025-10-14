@@ -9,6 +9,8 @@ themes: [theme-1, theme-2]
 premise: <one-sentence premise>
 comp_titles: [<comp 1>, <comp 2>]
 length_words: 60000-90000
+chapter_count: 18 # provisional (use to derive per‑chapter target)
+target_words_per_chapter: 3500 # optional explicit per‑chapter target
 tone: <e.g., warm, incisive>
 persona_id: ivy
 references: []
@@ -21,4 +23,3 @@ Short paragraph about the core idea, feel, and promise to the reader.
 
 # Notes
 Freeform notes, constraints, and any non-negotiables.
-

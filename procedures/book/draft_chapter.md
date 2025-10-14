@@ -15,19 +15,22 @@ Purpose
 Inputs
 - chapter_input with Beats
 - voice guide, outline, character bible
+- targets (optional): target_per_chapter words and tolerance (±10–15%)
 
 Steps
 1) Set rails
    - Confirm POV/tense and any diction/cadence constraints from the voice guide.
 2) Draft pass
    - Write scene-by-scene; 1–3 paragraphs per beat. Include sensory specifics and micro‑tension.
-3) Exits
+3) Length & exits
+   - Aim for `target_per_chapter ± tolerance`.
+   - Use small expansions (micro‑scenes, interiority, setting texture, concrete examples) or trims (collapse redundant beats, tighten summary) to land near target.
    - Ensure end‑of‑scene and end‑of‑chapter leave an open loop or small forward pressure.
 4) Trim
    - Remove throat‑clearing, keep sentences active, vary rhythm.
 
 Expected
-- A clean draft body ready to paste under `# Chapter` in the evolved file.
+- A clean draft body ready to paste under `# Chapter`, within target ± tolerance.
 
 Operator Prompt (Ivy)
 """
@@ -38,4 +41,3 @@ Return only the chapter body without extra commentary.
 
 Links
 - context/documentation/writing/pov-tense-voice.md:1
-

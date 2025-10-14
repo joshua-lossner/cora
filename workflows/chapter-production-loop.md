@@ -32,19 +32,23 @@ This workflow turns one chapter input into a finalized chapter file and moves it
 - Open: `procedures/book/draft_chapter.md:1`
 - Expand beats into scenes; maintain POV/tense and voice guide constraints.
 
-3) Developmental Edit (S'Vektor)
+3) (If under target) Expand to Target (Ivy)
+- Open: `procedures/book/expand_to_target.md:1`
+- Add micro‑scenes/interiority/texture to reach target ± tolerance.
+
+4) Developmental Edit (S'Vektor)
 - Open: `procedures/book/dev_edit.md:1`
 - Fix structure, pacing, arc alignment, and scene purpose.
 
-4) Line Edit (Ivy)
+5) Line Edit (Ivy)
 - Open: `procedures/book/line_edit.md:1`
 - Tighten clarity, rhythm, and imagery while preserving voice.
 
-5) Copy Edit (S'Vektor)
+6) Copy Edit (S'Vektor)
 - Open: `procedures/book/copy_edit.md:1`
 - Correct grammar/usage/style, track a style sheet if used.
 
-6) Evolve and Move Chapter (PM)
+7) Evolve and Move Chapter (PM)
 - Open: `procedures/book/evolve_and_move_chapter.md:1`
 - Normalize frontmatter, keep Beats, add Chapter body, and move under the book.
 
@@ -60,4 +64,3 @@ This workflow turns one chapter input into a finalized chapter file and moves it
 - Chapter adheres to POV/tense; beats realized; scenes end with momentum.
 - Structure and line-level clarity improved; copy is clean.
 - File saved under the correct path with accurate numbering and title.
-

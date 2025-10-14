@@ -12,7 +12,7 @@ tags: [writing, metadata]
 Book (book/book_input)
 - kind: book|book_input
 - title, slug, created, updated, status
-- audience, genre, themes[], length_words, tone
+- audience, genre, themes[], length_words, chapter_count?, target_words_per_chapter?, tone
 - persona_id, references[]
 
 Chapter (chapter/chapter_input)
@@ -23,4 +23,3 @@ Chapter (chapter/chapter_input)
 Conventions
 - `number` is 1‑based; filename prefixes pad to 2 digits.
 - No archive folders; rely on git history.
-

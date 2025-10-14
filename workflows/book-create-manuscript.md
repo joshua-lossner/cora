@@ -52,16 +52,26 @@ This Markdown‑only workflow turns one book input into a coherent voice guide, 
   - Set `book_slug`, `number`, `title`, `slug`, `pov`, `tense`, `target_words`.
   - Fill `# Beats` with 5–9 concrete beats.
 
-6) Chapter Production Loop (Repeat per Chapter)
+6) Wordcount Plan (PM)
+- From `length_words` (range) in book frontmatter, set the midpoint as `target_total`.
+- Choose provisional `chapter_count` and compute `target_per_chapter = target_total / chapter_count`.
+- Set tolerance: ±10–15% per chapter; ±5% total.
+
+7) Chapter Production Loop (Repeat per Chapter)
 - Open: `workflows/chapter-production-loop.md:1`
 - Draft → Dev edit → Line edit → Copy edit → Evolve & Move Chapter.
 
-7) Evolve Book Input (PM)
+8) Evolve Book Input (PM)
 – Follow: `procedures/book/evolve_and_move_book.md:1`.
 - Normalize frontmatter; add/complete sections (Concept, Voice, Outline, Characters, Notes).
 - Move to `harvest/books/out/<book-slug>/book.md`.
 
-8) Create Links Index (Scribe)
+9) Create Links Index (Scribe)
+- Keep relative paths.
+
+10) Wordcount Audit (S'Vektor)
+- Open: `procedures/book/wordcount_audit.md:1`
+- Emit `metrics/wordcount.csv` and `metrics/wordcount.md` under the book folder; adjust plan if out of tolerance.
 - Create `harvest/books/out/<book-slug>/index.md` with frontmatter and links to `book.md` and each chapter file.
 - Keep relative paths.
 
@@ -84,4 +94,3 @@ This Markdown‑only workflow turns one book input into a coherent voice guide, 
 - Character bible aligns arcs and stakes across chapters.
 - Each chapter shipped as a finalized file under `chapters/`.
 - `index.md` links resolve and order matches outline.
-

@@ -27,6 +27,8 @@ Steps
    - Ensure character choices reflect current arc position; fix contradictions.
 5) Notes for line edit
    - List hotspots to tighten later (voice slips, repetition).
+6) Wordcount check (optional)
+   - Compare to target_per_chapter ± tolerance; flag if outside. Recommend expansions (micro‑scenes, lived examples) or trims (redundancy) as needed.
 
 Expected
 - A revised chapter body and a short bullet list of edit notes.
@@ -39,4 +41,3 @@ Return a revised chapter body followed by a short list of structural notes (bull
 
 Links
 - context/documentation/writing/editing-passes.md:1
-

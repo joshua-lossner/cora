@@ -127,4 +127,4 @@ Nine pop anthems translate Coherenceism’s branches into modern boy‑band lang
 - EDM drop cliche → prefer dance breaks with vocal stacks over big synth “drops.”
 
 ### Operator Pointers
-- After review, run `workflows/suno-create-album.md:1` → evolve/move via `procedures/media/evolve_and_move_album.md:1` → scaffold songs and proceed per‑track.
+- After review, run `workflows/music/suno-create-album.md:1` → evolve/move via `procedures/media/evolve_and_move_album.md:1` → scaffold songs and proceed per‑track.

@@ -3,8 +3,9 @@ kind: documentation
 title: COHERENCE — Philosophy
 intent: Index for philosophical foundations (Coherenceism and related texts)
 status: active
-updated: 2025-10-04
+updated: 2025-10-16
 tags: [philosophy, coherence]
+scope: directory
 ---
 
 # Philosophy — Index
@@ -17,4 +18,3 @@ Contents
 
 Notes
 - Keep canonical content under `coherenceism/`; link as needed.
-

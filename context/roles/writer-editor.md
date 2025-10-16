@@ -17,7 +17,7 @@ Outline, draft, refine, and compile human-facing pieces (leaves, essays, explain
 ## Load Order (for this role)
 1) Persona — `personas/ivy.md:1`
 2) Operator Guides — `context/documentation/cora/LLM-Operator.md:1`
-3) Workflows — `workflows/essay_from_notes.md:1`
+3) Workflows — `workflows/writing/essay_from_notes.md:1`
 4) Procedures (writing)
    - `procedures/writing/prepare_input.md:1`
    - `procedures/writing/outline.md:1`
@@ -55,4 +55,3 @@ Outline, draft, refine, and compile human-facing pieces (leaves, essays, explain
 - `harvest/essays/out/YYYY-MM-DD/<slug>/draft_checked.md`
 - `harvest/essays/out/YYYY-MM-DD/<slug>/refined.md`
 - `harvest/essays/out/YYYY-MM-DD/<slug>/final.md`
-

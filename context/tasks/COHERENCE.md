@@ -3,8 +3,9 @@ kind: documentation
 title: COHERENCE — Tasks
 intent: Conventions and index for detailed task documents grouped by project slug
 status: active
-updated: 2025-10-04
+updated: 2025-10-16
 tags: [projects, tasks]
+scope: directory
 ---
 
 # Tasks — Conventions

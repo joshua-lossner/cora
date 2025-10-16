@@ -3,8 +3,9 @@ kind: documentation
 title: COHERENCE — Documentation
 intent: Purpose, load guidance, and links for documentation
 status: active
-updated: 2025-09-16
+updated: 2025-10-16
 tags: [coherence, documentation]
+scope: directory
 ---
 
 # COHERENCE — Documentation

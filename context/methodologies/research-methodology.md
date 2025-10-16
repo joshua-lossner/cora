@@ -54,7 +54,7 @@ Provide a lightweight, reproducible approach to research that pairs with procedu
 - Claim table headers: `id,section,type,statement,evidence,risk,grade`
 
 ## Usage
-- Used by `workflows/essay_from_notes.md` during citation checks and adjacent steps.
+- Used by `workflows/writing/essay_from_notes.md` during citation checks and adjacent steps.
 - Applicable to any artifact that carries labeled claims and citations.
 
 ## Provenance

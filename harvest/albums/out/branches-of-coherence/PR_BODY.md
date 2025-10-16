@@ -36,7 +36,7 @@ Reviewers
 - Project Manager — sequencing/notes fit album arc
 
 Links
-- workflows/suno-create-album.md:1
-- workflows/suno-create-song.md:1
+- workflows/music/suno-create-album.md:1
+- workflows/music/suno-create-song.md:1
 - context/projects/COHERENCE.md:1
 - context/projects/cora.md:1

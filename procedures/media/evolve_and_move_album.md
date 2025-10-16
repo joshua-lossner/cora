@@ -53,7 +53,7 @@ Expected
 Notes
 - Provenance is tracked via git history; no separate archive is used.
 - Pair this with:
-  - `workflows/suno-create-album.md:1` (end‑to‑end album flow)
+  - `workflows/music/suno-create-album.md:1` (end‑to‑end album flow)
   - `procedures/media/evolve_and_move_song.md:1` (per‑track evolution)
 
 Operator Prompt (optional)

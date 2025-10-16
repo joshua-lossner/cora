@@ -3,8 +3,9 @@ kind: documentation
 title: COHERENCE — Logs
 intent: Markdown‑first provenance of changes to context, harvest, procedures, and workflows
 status: active
-updated: 2025-10-09
+updated: 2025-10-16
 tags: [logs, provenance, coherence]
+scope: directory
 ---
 
 # Logs — Provenance & Policy

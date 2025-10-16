@@ -22,6 +22,7 @@ Steps
    - If `chapter_count` not provided, use current number of chapter files.
    - Compute `target_per_chapter = target_total / chapter_count`.
    - Set tolerance: ±10–15% per chapter; ±5% total.
+   - Assign a variance budget: allow 2–3 chapters up to ±20% if total remains within ±5%.
 2) Count words
    - Count chapter words excluding YAML frontmatter.
 3) Emit report
@@ -44,4 +45,4 @@ Return two blocks:
 Notes
 - Counting heuristic: Ignore YAML frontmatter (between the first and second `---`). Count the remainder as words.
 - Use consistent tokenizer (split on whitespace) for rough counts; this is a planning tool, not typesetting.
-
+ - Treat early chapters as tone‑setters; if under, prefer expansion before moving on to stabilize cadence.

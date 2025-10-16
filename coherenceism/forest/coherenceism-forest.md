@@ -4,7 +4,7 @@ id: coherenceism
 title: The Coherenceism Forest
 summary: Grouping of downstream projects grown from the Coherenceism trunk.
 status: active
-updated: 2025-10-09
+updated: 2025-10-16
 tags: [forest, group]
 members: [cora, coherenceism-identity, coherenceism-ai, coherenceism-info, coherenceism-studio, coherenceism-blog, coherenceism-net, coherenceism-com, coherenceism-design, coherenceism-media, coherenceism-org, coherenceism-project]
 ---
@@ -17,6 +17,7 @@ Purpose
 Notes
 - This repo tracks the forest via this single group manifest (no per-tree files).
 - CORA is the trunk and appears here for orientation.
+ - Administrative note (2025-10-16): coherenceism-ai, coherenceism-org, and coherenceism-project remain conceptual forest members but are no longer tracked as projects/tasks inside CORA. Their CORA project pages and task folders were removed for clarity; downstream repos (if any) continue independently.
 
 Trees (current)
 - cora — The Coherence Operating & Reasoning Architecture (this trunk; canonical harvest/procedures)

@@ -21,6 +21,7 @@ Steps
    - State what changes from the start to end of the chapter (state/knowledge/relationship).
 2) Write beats (5–9)
    - One line each; concrete turns. Note scene/sequel balance and exit hook.
+   - (Optional) Add a rough words budget per beat (e.g., 400–800) to guide drafting.
 3) Continuity hooks
    - Seeds/payoffs; character arc notes.
 
@@ -39,4 +40,3 @@ Keep lines short; ensure momentum into the next chapter.
 
 Links
 - context/documentation/writing/story-structure.md:1
-

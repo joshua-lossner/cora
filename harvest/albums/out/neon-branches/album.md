@@ -124,4 +124,4 @@ Nine songs mirror the Coherenceism branch order, reframed through an 80s‑alter
 - Modern drift → 707/606, chorus tones, and era‑true processing keep it grounded.
 
 ### Operator Pointers
-- After review, run `workflows/suno-create-album.md:1` → fill final titles/sequence → evolve and move via `procedures/media/evolve_and_move_album.md:1`.
+- After review, run `workflows/music/suno-create-album.md:1` → fill final titles/sequence → evolve and move via `procedures/media/evolve_and_move_album.md:1`.

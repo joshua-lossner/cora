@@ -53,6 +53,9 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - 2025-10-04 — feature/suno-music-procedures — Add Suno workflows, docs, and procedures — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/10
   - Summary: Adds Suno style prompt and custom lyrics procedures; adds create-song and create-album workflows with content scaffolding; adds Suno guidance docs.
 
+## Notes
+- Retired projects: coherenceism-ai, coherenceism-org, and coherenceism-project were removed from CORA tracking on 2025-10-16. Any internal links mentioned in older PR summaries that pointed to their project/task files have been pruned. See context/logs/2025-10-16.md:12 for provenance.
+
 ## Next Small Moves
 - Open PR for current branch and log it above.
 - Run content validator and note any fixes.

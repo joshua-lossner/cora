@@ -5,6 +5,7 @@ intent: Index for vendor-neutral tool notes referenced by procedures
 status: active
 updated: 2025-10-04
 tags: [tools]
+scope: directory
 ---
 
 # Tools — Index

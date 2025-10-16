@@ -3,8 +3,9 @@ kind: documentation
 title: COHERENCE — Harvest
 intent: Centralize the shared harvest of Coherenceism fruit across projects; enable cross-site reuse
 status: active
-updated: 2025-10-09
+updated: 2025-10-16
 tags: [harvest, coherence, publishing]
+scope: directory
 ---
 
 # COHERENCE — Harvest (Trunk)
@@ -24,7 +25,7 @@ See also: `context/documentation/cora/content-contract.md` for the formal harves
 - `coherenceism/roots/` — canon and orientation
 - `coherenceism/branches/` — stable themes
 - `coherenceism/seeds/` — project starters that can spawn downstream trees/systems
-- `coherenceism/leaves/` — narrative and practice surfaces
+ - `coherenceism/leaves/` — atomic knowledge units (claims, definitions, patterns, references, questions)
 
 ## Frontmatter Schema (recommended)
 - kind: `content`
@@ -41,6 +42,7 @@ See also: `context/documentation/cora/content-contract.md` for the formal harves
 - order: number for sibling ordering (optional)
 - authors: `[ ... ]` (optional)
 - related: `[canonical_slug, ...]` (optional)
+- subtype: `claim|definition|pattern|reference|question` (leaves only; optional)
 
 Note: Patterns are out of scope for the trunk. Use seeds + leaves to capture practices and narratives; downstream repos may define additional types.
 
@@ -70,6 +72,28 @@ rg -l '^sites:.*\bblog\b' coherenceism
 # Titles and slugs for those pieces
 rg -n '^(title|canonical_slug|sites):' $(rg -l '^sites:.*\bblog\b' coherenceism)
 ```
+
+### Leaf Subtype Queries
+Leaves are atomic knowledge units that often omit `sites`. Use `subtype` to filter by kind of knowledge.
+
+```bash
+# Files for leaves with subtype "claim"
+rg -l '^type:\s*leaf' coherenceism | xargs rg -l '^subtype:\s*claim'
+
+# Titles, slugs, and subtype for those leaves
+rg -n '^(title|canonical_slug|subtype):' $(rg -l '^type:\s*leaf' coherenceism | xargs rg -l '^subtype:\s*claim')
+
+# Count leaves by subtype (distribution)
+rg -l '^type:\s*leaf' coherenceism \
+  | xargs rg -n '^subtype:\s*' \
+  | sed -E 's/.*subtype:\s*([^#]+).*/\1/' \
+  | awk '{$1=$1};1' \
+  | sort | uniq -c | sort -nr
+```
+
+Notes
+- If you also classify publish-ready fruit with `subtype`, run the same queries in `harvest/` or the whole repo.
+- Omit `subtype` on leaves when not helpful; it’s optional and meant for lightweight selection.
 
 ## Root Navigation
 

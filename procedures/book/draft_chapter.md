@@ -18,15 +18,19 @@ Inputs
 - targets (optional): target_per_chapter words and tolerance (±10–15%)
 
 Steps
+0) Context skim (2–3 minutes)
+   - Skim the prior 1–2 chapters’ openings/closings and the voice guide; note active threads, cadence, and any linker to carry.
 1) Set rails
    - Confirm POV/tense and any diction/cadence constraints from the voice guide.
-2) Draft pass
+2) Plan expansion (optional, 2–3 bullets)
+   - If under a strict target, pick beats likely to carry examples/method blocks.
+3) Draft pass
    - Write scene-by-scene; 1–3 paragraphs per beat. Include sensory specifics and micro‑tension.
-3) Length & exits
+4) Length & exits
    - Aim for `target_per_chapter ± tolerance`.
    - Use small expansions (micro‑scenes, interiority, setting texture, concrete examples) or trims (collapse redundant beats, tighten summary) to land near target.
    - Ensure end‑of‑scene and end‑of‑chapter leave an open loop or small forward pressure.
-4) Trim
+5) Trim
    - Remove throat‑clearing, keep sentences active, vary rhythm.
 
 Expected
@@ -35,7 +39,7 @@ Expected
 Operator Prompt (Ivy)
 """
 You are drafting a chapter from beats.
-Maintain the specified POV/tense and voice guide. For each beat, write 1–3 short paragraphs. Keep concrete detail and momentum. End with a small open loop.
+Before drafting, skim the prior 1–2 chapters and the voice guide to align voice and cadence and pick up any linker. Maintain the specified POV/tense and voice guide. For each beat, write 1–3 short paragraphs. Keep concrete detail and momentum. End with a small open loop.
 Return only the chapter body without extra commentary.
 """
 

@@ -23,3 +23,9 @@ Short paragraph about the core idea, feel, and promise to the reader.
 
 # Notes
 Freeform notes, constraints, and any non-negotiables.
+
+# Length & Cadence Plan (optional)
+- target_total: <midpoint of length_words>
+- chapter_count: <int>
+- target_per_chapter: <int>
+- variance_budget: up to 3 chapters may vary by ±20% if total remains within ±5%

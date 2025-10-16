@@ -118,12 +118,18 @@ init:
   files: []        # relative paths to read during initial load (keep minimal)
 index:
   map: []          # optional list of folders/files to know about (index-only)
+scope: directory   # required semantics: this file indexes only its own folder tree
 ```
 
 Conventions
 - Keep `init.files` minimal or empty; indexes list what exists without forcing reads.
 - Use relative paths; avoid globs unless they are stable and low-cost to enumerate.
+- Scope: each `COHERENCE.md` covers only its directory tree. Avoid cross-repo directory maps here; use `AGENTS.md` for global orientation.
 - The body of each `COHERENCE.md` remains a readable index with brief notes.
+
+Loader efficiency (recommended)
+- When sweeping for `**/COHERENCE.md`, exclude `.git/`, `snapshots/`, and other cache or mirror directories.
+- Treat items not listed in `init.files` as index-only; do not open or scan entire directories on initial load.
 
 ---
 

@@ -3,12 +3,13 @@ kind: documentation
 title: COHERENCE — Forest
 intent: Index and conventions for downstream projects (the Coherenceism forest)
 status: active
-updated: 2025-10-08
+updated: 2025-10-16
 tags: [forest, registry]
 init:
   files: []
 index:
   map: []
+scope: directory
 ---
 
 # Forest — Index

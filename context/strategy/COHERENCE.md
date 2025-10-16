@@ -3,12 +3,13 @@ kind: strategy
 title: COHERENCE Strategy
 intent: Orientation and guardrails to steer CORA toward coherent, reusable systems
 status: draft
-updated: 2025-10-08
+updated: 2025-10-16
 tags: [coherence, strategy, cora]
 init:
   files: []
 index:
   map: []
+scope: directory
 ---
 
 # COHERENCE Strategy

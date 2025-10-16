@@ -3,12 +3,13 @@ kind: documentation
 title: COHERENCE — Projects
 intent: Index and conventions for tracking in‑progress projects (one file per project)
 status: active
-updated: 2025-10-08
+updated: 2025-10-16
 tags: [projects, working]
 init:
   files: []
 index:
   map: []
+scope: directory
 ---
 
 # Projects — Index
@@ -24,8 +25,7 @@ Conventions
 
 Contents
 - `cora.md` — Trunk evolution and operations (roles, procedures, rails)
-- `coherenceism-project.md` — UFC project/task/workflow visualizer app
-- `coherenceism-org.md` — Shared artifact hub: tokens, shells, docs
+ 
 
 Notes
 - Archive by renaming `status: archived` when a project completes; keep the file for provenance.

@@ -14,7 +14,7 @@ Transcript (abbreviated)
 - Operator: “Load CORA.”
 - Agent: Confirms load order (Persona, Philosophy, Strategy, Departments, Ontology, Procedures, Methodologies, Index, Projects).
 - Operator: “Run the essay_from_notes workflow.”
-- Agent: “Open `workflows/essay_from_notes.md:1`. Provide or confirm input under `harvest/essays/in/`.”
+- Agent: “Open `workflows/writing/essay_from_notes.md:1`. Provide or confirm input under `harvest/essays/in/`.”
 - Operator: “Use `harvest/essays/in/TEMPLATE.md:1` as a base; I’ll save notes to `harvest/essays/in/my-note.md`.”
 - Agent: “Step 1 — Outline. Using `procedures/writing/outline.md:1`. I’ll return an outline; save to `harvest/essays/out/YYYY-MM-DD/my-note/outline.md`.”
 - Operator: “Proceed.”
@@ -35,4 +35,3 @@ Notes
 - Replace `my-note` with your slug. Keep today’s date in the path.
 - If the agent requests specific context (intent, notes), provide only the small, relevant portions.
 - If canon-worthy, consider adding a leaf under `coherenceism/leaves/`.
-

@@ -17,7 +17,7 @@ This guide shows how to run CORA using only Markdown. The LLM is the operating s
 - You paste that prompt into your LLM, then save the blocks it returns to the paths shown.
 
 ## Where to Start
-- Essays: `workflows/essay_from_notes.md`
+- Essays: `workflows/writing/essay_from_notes.md`
  - Example Session: `context/documentation/cora/example-session-essay-from-notes.md:1`
 
 ## File Locations (Essays)

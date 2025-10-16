@@ -98,6 +98,6 @@ Coherence mapping (for track ideation)
 - Living Coherence — daily, ordinary practice; small moves, steady rhythm.
 
 Operational notes
-- Use `workflows/suno-create-album.md` to evolve this input into `harvest/albums/out/<album-slug>/album.md` and scaffold per‑track song inputs.
-- Use `workflows/suno-create-song.md` per track to create style prompts and custom lyrics.
+- Use `workflows/music/suno-create-album.md` to evolve this input into `harvest/albums/out/<album-slug>/album.md` and scaffold per‑track song inputs.
+- Use `workflows/music/suno-create-song.md` per track to create style prompts and custom lyrics.
 - Keep frontmatter references high‑level (era/scene/technique); titles and slugs will be finalized during evolution.

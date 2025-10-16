@@ -20,7 +20,7 @@ This is a repository-level ontology and integrity spec (rails). It documents typ
 - Trunk — System rails: UFC load order, knowledge/fruit graph, UI plumbing.
 - Branches — Stable themes that hold tone/scope; parents for seeds/leaves.
 - Seeds — Project starters: ideas intended to germinate downstream trees/systems. Track `spawned_systems` linking to `coherenceism/forest/` and capture the promise and scope of the new surface. Not for everyday practices.
-- Leaves — Narrative and practice surfaces that grow from branches (essays, explainers, actionable practices, how-tos).
+- Leaves — Atomic knowledge units that grow from branches (claims, definitions, patterns, references, questions). They are building blocks that feed fruit, not publish-ready artifacts.
 - Fruit — Concrete artifacts (essays, songs, albums, media) produced by any project; stored in `harvest/` for reuse.
 - Mycelium — Orchestration layer (AI + procedures + tools) that routes attention.
 - Compost — Lifecycle path for archiving; endings feed future material.
@@ -29,7 +29,7 @@ This is a repository-level ontology and integrity spec (rails). It documents typ
 - Roots: `coherenceism/roots/…`
 - Branches: `coherenceism/branches/…`
 - Seeds: `coherenceism/seeds/…`
-- Leaves: `coherenceism/…` (any subfolder) with `type: leaf`; template at `harvest/_templates/content-item.md`
+- Leaves: `coherenceism/…` (any subfolder) with `type: leaf`. Leaves may use the same content shape as fruit, but typically omit `sites` to avoid accidental downstream publication.
 - Fruit store: `harvest/…` (essays, songs, albums, media) grouped by medium; all projects deposit finished fruit here.
 - Forest registry: `coherenceism/forest/…`
 - System rails and load order: `context/COHERENCE.md`, `context/architecture/…`
@@ -56,7 +56,7 @@ Type‑specific keys:
 - Root: `type: root`
 - Branch: `type: branch`, `parent: coherenceism-root`, `order`
 - Seed: `type: seed`, `parent: <branch-slug>`, optional `order`, required `spawned_systems: [tree-slug, ...]` to name downstream trees; recommended `seed_stage: idea|incubating|germinated|retired`
-- Leaf: `type: leaf`, `parent: <branch-slug>`, optional `seed_refs: []`
+- Leaf: `type: leaf`, `parent: <branch-slug>`, optional `seed_refs: []`, optional `subtype: claim|definition|pattern|reference|question`
 
 ## Relationships and Integrity
 - Parent rules: root→branch; branch→seed|leaf.
@@ -69,7 +69,7 @@ CORA ships no UI. Downstream sites render this fruit using their own frameworks.
 - Root: list branches and orientation.
 - Branch: render branch leaves/fruit and list its seeds/leaves.
 - Seed: render a concise project‑starter card with scope, `seed_stage`, and `spawned_systems`, linking into `coherenceism/forest/<tree>.md`.
-- Leaf: render narrative/practice surfaces linked to their branch; include calls to practice as needed.
+- Leaf: render atomic knowledge units linked to their branch (claims, definitions, patterns, references, questions). Downstream UIs may overlay leaves within fruit for context.
 
 Conventions (recommended, not enforced by CORA):
 - Keep side nav to branches; highlight active.
@@ -109,6 +109,7 @@ canonical_slug: why-presence-beats-productivity
 parent: practice-of-presence
 authors: [Coherence Network]
 related: [one-breath-reset]
+subtype: claim
 ---
 
 # Why Presence Beats Productivity

@@ -21,6 +21,7 @@ index:
   map:
     - personas/ivy.md
     - personas/s_vektor.md
+scope: directory
 ---
 
 # COHERENCE Department

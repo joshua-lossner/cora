@@ -3,12 +3,13 @@ kind: documentation
 title: COHERENCE — MCP Servers (Docs)
 intent: Document recommended MCP servers and how to manage them without vendor lock‑in
 status: active
-updated: 2025-10-08
+updated: 2025-10-16
 tags: [mcp, tooling]
 init:
   files: []
 index:
   map: []
+scope: directory
 ---
 
 # MCP Servers — Index (Docs Only)

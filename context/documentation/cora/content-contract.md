@@ -33,6 +33,7 @@ Applies to files under `harvest/` in CORA (trunk). Downstream trees should honor
 - `order`: number for sibling ordering (branches and siblings)
 - `spawned_systems`: `[tree-slug, ...]` (seeds only; map to entries in `coherenceism/forest/`) — required for `type: seed`
 - `seed_stage`: `idea|incubating|germinated|retired` (recommended for `type: seed`)
+- `subtype`: `claim|definition|pattern|reference|question` (leaves only; optional)
 
 ## Relationships
 - Roots have no `parent`.
@@ -50,4 +51,5 @@ Applies to files under `harvest/` in CORA (trunk). Downstream trees should honor
 
 ## Validation
 - Use `procedures/content/validate-content.md` to run lightweight checks for this contract (includes seed checks for `spawned_systems` and `seed_stage`).
+- If `type: leaf` and `subtype` is present, ensure it is one of `claim|definition|pattern|reference|question`.
 - Extend in downstream repos if stricter validation is needed.

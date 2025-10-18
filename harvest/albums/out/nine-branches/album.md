@@ -2,53 +2,98 @@
 kind: album
 title: Nine Branches
 slug: nine-branches
-created: 2025-10-11
-language: "English"
+created: 2025-10-11T00:00:00.000Z
+status: published
+cover_image: >-
+  https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/covers/nine-branches.png
+language: English
 track_count: 9
-mood: [reflective, assertive, streetwise, spiritual, communal]
-energy_bpm: "88–96 BPM (boom‑bap); 92–100 BPM for a G‑funk lift on 1–2 tracks"
-genre: "Hip‑Hop/Rap (1990s boom‑bap with light G‑funk color)"
-instrumentation: [
-  "chopped jazz/soul samples",
-  "boom‑bap drums (punchy kick + snare)",
-  "filtered/looped basslines",
-  "Rhodes/piano stabs",
-  "horn hits + strings textures",
-  "vinyl crackle + tape hiss (light)",
-  "turntable scratches for hooks/outros"
-]
+mood:
+  - reflective
+  - assertive
+  - streetwise
+  - spiritual
+  - communal
+energy_bpm: 88–96 BPM (boom‑bap); 92–100 BPM for a G‑funk lift on 1–2 tracks
+genre: Hip‑Hop/Rap (1990s boom‑bap with light G‑funk color)
+instrumentation:
+  - chopped jazz/soul samples
+  - boom‑bap drums (punchy kick + snare)
+  - filtered/looped basslines
+  - Rhodes/piano stabs
+  - horn hits + strings textures
+  - vinyl crackle + tape hiss (light)
+  - turntable scratches for hooks/outros
 vocals:
-  on: true
-  style: "male gritty, multisyllabic internal rhymes; optional female sung hooks; punchy, close‑mic; no Autotune"
-negatives: [
-  "modern trap hi‑hat rolls",
-  "808 sub‑bass dominance",
-  "glossy EDM risers/supersaws",
-  "heavy Autotune/melodyned leads",
-  "hyper‑compressed ‘loudness war’ masters",
-  "pop EDM breakdown tropes",
-  "trap triplet flow as default"
-]
-persona_id: "ivy"
-references: [
-  "NYC boom‑bap 1994–1999 (SP‑1200/MPC swing)",
-  "jazz/soul crate‑digging, chopped loops",
-  "DJ scratch choruses + vocal cut hooks",
-  "lo‑fi grit with clear, upfront vocals",
-  "West Coast G‑funk synth bass color (select tracks)"
-]
+  'on': true
+  style: >-
+    male gritty, multisyllabic internal rhymes; optional female sung hooks;
+    punchy, close‑mic; no Autotune
+negatives:
+  - modern trap hi‑hat rolls
+  - 808 sub‑bass dominance
+  - glossy EDM risers/supersaws
+  - heavy Autotune/melodyned leads
+  - hyper‑compressed ‘loudness war’ masters
+  - pop EDM breakdown tropes
+  - trap triplet flow as default
+persona_id: ivy
+references:
+  - NYC boom‑bap 1994–1999 (SP‑1200/MPC swing)
+  - 'jazz/soul crate‑digging, chopped loops'
+  - DJ scratch choruses + vocal cut hooks
+  - 'lo‑fi grit with clear, upfront vocals'
+  - West Coast G‑funk synth bass color (select tracks)
 tracks:
-  - { title: Universal Mindset, slug: universal-mindset }
-  - { title: Nothing Vanishes, slug: nothing-vanishes }
-  - { title: In Tune, slug: in-tune }
-  - { title: Here & Now, slug: here-and-now }
-  - { title: Right Weight, slug: right-weight }
-  - { title: The Circle Lives, slug: the-circle-lives }
-  - { title: Digital Presence, slug: digital-presence }
-  - { title: Luminous Mystery, slug: luminous-mystery }
-  - { title: Small Moves, slug: small-moves }
-structure_default: [Intro, Verse 1, Hook, Verse 2, Hook, Verse 3, Hook, Outro]
-structure_variation_notes: "Vary 3–4 tracks: (1) DJ scratch [Instrumental Break] after Verse 2; (2) Story track with no Hook (long Verses); (3) Double [Hook] finale; (4) Swap Verse 3 for [Bridge] + extended Hook on one track. Keep palette consistent."
+  - title: Universal Mindset
+    slug: universal-mindset
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--universal-mindset.mp3
+  - title: Nothing Vanishes
+    slug: nothing-vanishes
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--nothing-vanishes.mp3
+  - title: In Tune
+    slug: in-tune
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--in-tune.mp3
+  - title: Here & Now
+    slug: here-and-now
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--here-and-now.mp3
+  - title: Right Weight
+    slug: right-weight
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--right-weight.mp3
+  - title: The Circle Lives
+    slug: the-circle-lives
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--the-circle-lives.mp3
+  - title: Digital Presence
+    slug: digital-presence
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--digital-presence.mp3
+  - title: Luminous Mystery
+    slug: luminous-mystery
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--luminous-mystery.mp3
+  - title: Small Moves
+    slug: small-moves
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/nine-branches--small-moves.mp3
+structure_default:
+  - Intro
+  - Verse 1
+  - Hook
+  - Verse 2
+  - Hook
+  - Verse 3
+  - Hook
+  - Outro
+structure_variation_notes: >-
+  Vary 3–4 tracks: (1) DJ scratch [Instrumental Break] after Verse 2; (2) Story
+  track with no Hook (long Verses); (3) Double [Hook] finale; (4) Swap Verse 3
+  for [Bridge] + extended Hook on one track. Keep palette consistent.
 ---
 
 # Concept

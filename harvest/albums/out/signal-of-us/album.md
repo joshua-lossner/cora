@@ -2,46 +2,91 @@
 kind: album
 title: Signal of Us — Coherenceism in Modern Boy Band Pop
 slug: signal-of-us
-created: 2025-10-06
-language: "English"
+created: 2025-10-06T00:00:00.000Z
+status: published
+cover_image: >-
+  https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/covers/signal-of-us.png
+language: English
 track_count: 9
-mood: ["uplifting", "nostalgic", "intimate", "anthemic"]
-energy_bpm: "95–128 BPM"
-genre: "Modern boy‑band pop with ’80s roots (pop/R&B/dance‑pop blend)"
-instrumentation: [
-  "slick pop drums (claps/snaps/808 with tasteful hats)",
-  "lush synth pads + polysynth stabs",
-  "shimmering clean/acoustic guitars",
-  "sub‑bass with side‑chain pocket",
-  "stacked vocal harmonies + ad‑libs"
-]
+mood:
+  - uplifting
+  - nostalgic
+  - intimate
+  - anthemic
+energy_bpm: 95–128 BPM
+genre: Modern boy‑band pop with ’80s roots (pop/R&B/dance‑pop blend)
+instrumentation:
+  - slick pop drums (claps/snaps/808 with tasteful hats)
+  - lush synth pads + polysynth stabs
+  - shimmering clean/acoustic guitars
+  - sub‑bass with side‑chain pocket
+  - stacked vocal harmonies + ad‑libs
 vocals:
-  on: true
-  style: "male multi‑voice group: lead + stacked harmonies; falsetto lifts; tasteful ad‑libs"
-negatives: [
-  "no named artist references",
-  "no aggressive trap hat triplet rolls",
-  "no heavy EDM drops",
-  "no harsh distortion"
-]
-persona_id: "ivy"
-references: [
-  "contemporary boy‑band pop (arena‑ready anthems)",
-  "R&B‑tinged harmony stacks",
-  "’80s synth‑pop nostalgia (clean, modern mix)"
-]
+  'on': true
+  style: >-
+    male multi‑voice group: lead + stacked harmonies; falsetto lifts; tasteful
+    ad‑libs
+negatives:
+  - no named artist references
+  - no aggressive trap hat triplet rolls
+  - no heavy EDM drops
+  - no harsh distortion
+persona_id: ivy
+references:
+  - contemporary boy‑band pop (arena‑ready anthems)
+  - R&B‑tinged harmony stacks
+  - '’80s synth‑pop nostalgia (clean, modern mix)'
 tracks:
-  - { title: All Around Us, slug: all-around-us }
-  - { title: Never Disappears, slug: never-disappears }
-  - { title: Lean With Me, slug: lean-with-me }
-  - { title: Be Here With You, slug: be-here-with-you }
-  - { title: Make Us Stronger, slug: make-us-stronger }
-  - { title: Little Things We Do, slug: little-things-we-do }
-  - { title: Warm Circuits, slug: warm-circuits }
-  - { title: Leave It Open, slug: leave-it-open }
-  - { title: Thread Us In, slug: thread-us-in }
-structure_default: [Intro, Verse 1, Pre‑Chorus, Chorus, Verse 2, Bridge, Chorus, Post‑Chorus, Outro]
-structure_variation_notes: "Across the album, add 2–3 [Dance Break] / [Instrumental Break] moments (8–16 bars), a few double [Chorus] endings, and one [Vocal Breakdown] with harmony stack to extend runtime naturally."
+  - title: All Around Us
+    slug: all-around-us
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--all-around-us.mp3
+  - title: Never Disappears
+    slug: never-disappears
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--never-disappears.mp3
+  - title: Lean With Me
+    slug: lean-with-me
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--lean-with-me.mp3
+  - title: Be Here With You
+    slug: be-here-with-you
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--be-here-with-you.mp3
+  - title: Make Us Stronger
+    slug: make-us-stronger
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--make-us-stronger.mp3
+  - title: Little Things We Do
+    slug: little-things-we-do
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--little-things-we-do.mp3
+  - title: Warm Circuits
+    slug: warm-circuits
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--warm-circuits.mp3
+  - title: Leave It Open
+    slug: leave-it-open
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--leave-it-open.mp3
+  - title: Thread Us In
+    slug: thread-us-in
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/signal-of-us--thread-us-in.mp3
+structure_default:
+  - Intro
+  - Verse 1
+  - Pre‑Chorus
+  - Chorus
+  - Verse 2
+  - Bridge
+  - Chorus
+  - Post‑Chorus
+  - Outro
+structure_variation_notes: >-
+  Across the album, add 2–3 [Dance Break] / [Instrumental Break] moments (8–16
+  bars), a few double [Chorus] endings, and one [Vocal Breakdown] with harmony
+  stack to extend runtime naturally.
 ---
 
 # Concept

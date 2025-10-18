@@ -2,25 +2,65 @@
 kind: album
 title: Quiet Signals
 slug: quiet-signals
-created: 2025-10-13
+created: 2025-10-13T00:00:00.000Z
+status: in_progress
 language: English
 genre: cinematic downtempo / ambient electronica
-mood: [intimate, atmospheric, tense, hopeful]
+mood:
+  - intimate
+  - atmospheric
+  - tense
+  - hopeful
 energy_bpm: 76–96 BPM
-instrumentation: [analog synth pads, tape-warm piano, soft drums, subtle bass, field recordings]
-vocals: { on: true, style: hushed female lead; whispered harmonies }
-negatives: [no EDM supersaw, no heavy reverb wash, no overcompressed loudness, no harsh distortion]
+instrumentation:
+  - analog synth pads
+  - tape-warm piano
+  - soft drums
+  - subtle bass
+  - field recordings
+vocals:
+  'on': true
+  style: hushed female lead; whispered harmonies
+negatives:
+  - no EDM supersaw
+  - no heavy reverb wash
+  - no overcompressed loudness
+  - no harsh distortion
 persona_id: ivy
-references: [analog synths, tape saturation, late-night city ambience, subway field recordings]
+references:
+  - analog synths
+  - tape saturation
+  - late-night city ambience
+  - subway field recordings
 tracks:
-  - { title: Noise Map, slug: noise-map }
-  - { title: The Quiet Signal, slug: the-quiet-signal }
-  - { title: Archive of Breath, slug: archive-of-breath }
-  - { title: The Listening Room, slug: the-listening-room }
-  - { title: False Flags, slug: false-flags }
-  - { title: The Drift, slug: the-drift }
-  - { title: Open Channel, slug: open-channel }
-  - { title: The Small Move, slug: the-small-move }
+  - title: Noise Map
+    slug: noise-map
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/quiet-signals--noise-map.mp3
+  - title: The Quiet Signal
+    slug: the-quiet-signal
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/quiet-signals--the-quiet-signal.mp3
+  - title: Archive of Breath
+    slug: archive-of-breath
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/quiet-signals--archive-of-breath.mp3
+  - title: The Listening Room
+    slug: the-listening-room
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/quiet-signals--the-listening-room.mp3
+  - title: False Flags
+    slug: false-flags
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/quiet-signals--false-flags.mp3
+  - title: The Drift
+    slug: the-drift
+  - title: Open Channel
+    slug: open-channel
+  - title: The Small Move
+    slug: the-small-move
+cover_image: >-
+  https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/covers/quiet-signals.png
 ---
 
 # Concept

@@ -61,4 +61,21 @@ A simple, durable site that explains Coherenceism and shows how to engage: read 
 - Initialize `coherenceism.info` repo; consume CORA as a submodule/read‑only source.
 - Implement content loaders for branches/leaves/seeds/forest with frontmatter awareness.
 - Ship Home + Coherenceism + Branch index + one Leaf page.
+ - Optionally run a doc-only preflight: `procedures/site/downstream-check.md:1`.
 
+## Lean Load (agents)
+- Downstream repo includes an `AGENTS.md` with a tailored Lean Load.
+- Downstream `COHERENCE.md` has minimal `init.files` so startup reads only what’s necessary:
+  - `README.md`
+  - `package.json`
+  - `scripts/build.js`
+  - `scripts/sync-content.js`
+  - `src/templates/default.html`
+  - `src/templates/home.html`
+  - `src/templates/styles.css`
+- Everything else remains index-only on initial load; open as needed by the task.
+
+## Developer Notes
+- Commands: `npm install`, `npm run sync`, `npm run build`, `npm run dev`, `npm run preview`.
+- Output lives in `public/`; avoid long-lived hand edits to generated files.
+- Keep links relative; source-of-truth is CORA.

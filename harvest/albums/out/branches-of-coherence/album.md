@@ -2,26 +2,81 @@
 kind: album
 title: Branches of Coherence — A Smooth Jazz Suite
 slug: branches-of-coherence
-created: 2025-10-05
+created: 2025-10-05T00:00:00.000Z
+status: published
+cover_image: >-
+  https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/covers/branches-of-coherence.png
 language: Instrumental
 genre: Smooth Jazz
-mood: [warm, reflective, spacious, soothing, late‑night]
-energy_bpm: "70–95 BPM"
-instrumentation: [electric piano (Rhodes), upright bass, brushed drums, tenor sax, clean electric guitar, flugelhorn, vibraphone, subtle strings pad]
-vocals: { on: false, style: "" }
-negatives: [aggressive drums, distortion, harsh synths, heavy EDM elements, overly busy solos]
+mood:
+  - warm
+  - reflective
+  - spacious
+  - soothing
+  - late‑night
+energy_bpm: 70–95 BPM
+instrumentation:
+  - electric piano (Rhodes)
+  - upright bass
+  - brushed drums
+  - tenor sax
+  - clean electric guitar
+  - flugelhorn
+  - vibraphone
+  - subtle strings pad
+vocals:
+  'on': false
+  style: ''
+negatives:
+  - aggressive drums
+  - distortion
+  - harsh synths
+  - heavy EDM elements
+  - overly busy solos
 persona_id: ivy
-references: [late‑night quartet, ECM‑style spaciousness, 1970s analog warmth, soft swing, lofi jazz textures]
+references:
+  - late‑night quartet
+  - ECM‑style spaciousness
+  - 1970s analog warmth
+  - soft swing
+  - lofi jazz textures
 tracks:
-  - { title: The Universal Mind, slug: the-universal-mind }
-  - { title: Nothing Really Ends, slug: nothing-really-ends }
-  - { title: Carried by the Current, slug: carried-by-the-current }
-  - { title: Quiet Attention, slug: quiet-attention }
-  - { title: Gentle Resolve, slug: gentle-resolve }
-  - { title: Rituals We Share, slug: rituals-we-share }
-  - { title: New Instrument, slug: new-instrument }
-  - { title: Held in Wonder, slug: held-in-wonder }
-  - { title: Thread by Thread, slug: thread-by-thread }
+  - title: The Universal Mind
+    slug: the-universal-mind
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--the-universal-mind.mp3
+  - title: Nothing Really Ends
+    slug: nothing-really-ends
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--nothing-really-ends.mp3
+  - title: Carried by the Current
+    slug: carried-by-the-current
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--carried-by-the-current.mp3
+  - title: Quiet Attention
+    slug: quiet-attention
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--quiet-attention.mp3
+  - title: Gentle Resolve
+    slug: gentle-resolve
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--gentle-resolve.mp3
+  - title: Rituals We Share
+    slug: rituals-we-share
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--rituals-we-share.mp3
+  - title: New Instrument
+    slug: new-instrument
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--new-instrument.mp3
+  - title: Held in Wonder
+    slug: held-in-wonder
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--held-in-wonder.mp3
+  - title: Thread by Thread
+    slug: thread-by-thread
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/branches-of-coherence--thread-by-thread.mp3
 ---
 
 # Concept
@@ -43,4 +98,3 @@ A late‑night, unhurried suite where each piece reflects a branch of Coherencei
 - Bass slightly forward for warmth; drums tucked with brushes.  
 - Reuse the three‑note resonance motif in heads and as a tag.  
 - Feature order varies for texture; overall feel remains calm and cohesive.
-

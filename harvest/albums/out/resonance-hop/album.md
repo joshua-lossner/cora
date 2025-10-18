@@ -2,28 +2,88 @@
 kind: album
 title: Resonance Hop
 slug: resonance-hop
-created: 2025-10-12
+created: 2025-10-12T00:00:00.000Z
+status: published
+cover_image: 'https://cdn2.suno.ai/87525f1a.jpeg?width=360'
 language: English
 genre: 1950s rock & roll
-mood: [energetic, youthful, danceable, rebellious, heartfelt]
-energy_bpm: "140–165 BPM; swing/shuffle feel"
-instrumentation: [electric guitar (clean twang, slapback), upright bass (slap), piano (boogie-woogie), drums (ride/shuffle, rimshots), tenor sax, handclaps, tambourine, backing vocals (doo‑wop)]
+mood:
+  - energetic
+  - youthful
+  - danceable
+  - rebellious
+  - heartfelt
+energy_bpm: 140–165 BPM; swing/shuffle feel
+instrumentation:
+  - electric guitar (clean twang
+  - slapback)
+  - upright bass (slap)
+  - piano (boogie-woogie)
+  - drums (ride/shuffle
+  - rimshots)
+  - tenor sax
+  - handclaps
+  - tambourine
+  - backing vocals (doo‑wop)
 vocals:
-  on: true
-  style: "energetic lead with doo‑wop harmonies; clear 1950s diction"
-negatives: [modern trap/EDM elements, autotune, heavy distortion, contemporary synths, hip‑hop drums, modern rap flows, overly complex sound design]
+  'on': true
+  style: energetic lead with doo‑wop harmonies; clear 1950s diction
+negatives:
+  - modern trap/EDM elements
+  - autotune
+  - heavy distortion
+  - contemporary synths
+  - hip‑hop drums
+  - modern rap flows
+  - overly complex sound design
 persona_id: ivy
-references: ["Sun Studio slapback", "mono room ambience", "upright bass slap", "boogie‑woogie piano", "doo‑wop background 'oohs'/'bops'", "guitar: clean twang + tape echo", "saxophone solo", "fade‑out endings"]
+references:
+  - Sun Studio slapback
+  - mono room ambience
+  - upright bass slap
+  - boogie‑woogie piano
+  - doo‑wop background 'oohs'/'bops'
+  - 'guitar: clean twang + tape echo'
+  - saxophone solo
+  - fade‑out endings
 tracks:
-  - { title: The Universal Hop, slug: the-universal-hop }
-  - { title: Shake, Rattle & Align, slug: shake-rattle-and-align }
-  - { title: Quiet Attention, slug: quiet-attention }
-  - { title: Right by the Rhythm, slug: right-by-the-rhythm }
-  - { title: Thread by Thread, slug: thread-by-thread }
-  - { title: Nothing Really Ends, slug: nothing-really-ends }
-  - { title: New Instrument, slug: new-instrument }
-  - { title: Held in Wonder, slug: held-in-wonder }
-  - { title: Corner Jamboree, slug: corner-jamboree }
+  - title: The Universal Hop
+    slug: the-universal-hop
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--the-universal-hop.mp3
+  - title: Shake
+    Rattle & Align: null
+    slug: shake-rattle-and-align
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--shake-rattle-and-align.mp3
+  - title: Quiet Attention
+    slug: quiet-attention
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--quiet-attention.mp3
+  - title: Right by the Rhythm
+    slug: right-by-the-rhythm
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--right-by-the-rhythm.mp3
+  - title: Thread by Thread
+    slug: thread-by-thread
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--thread-by-thread.mp3
+  - title: Nothing Really Ends
+    slug: nothing-really-ends
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--nothing-really-ends.mp3
+  - title: New Instrument
+    slug: new-instrument
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--new-instrument.mp3
+  - title: Held in Wonder
+    slug: held-in-wonder
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--held-in-wonder.mp3
+  - title: Corner Jamboree
+    slug: corner-jamboree
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/resonance-hop--corner-jamboree.mp3
 ---
 
 # Concept

@@ -2,28 +2,76 @@
 kind: album
 title: Warm Signal — Songs for the Living Line
 slug: warm-signal
-created: 2025-10-09
-language: "English"
-mood: [warm, hopeful, unhurried, grounded]
-energy_bpm: "72–92 BPM"
-genre: "country‑soul / 1970s soul‑rock"
-instrumentation: [clean electric guitar (light tremolo), Wurlitzer/Rhodes, Hammond organ pad, warm electric bass, laid‑back drums, tambourine, subtle string pad, small gospel BGVs]
+created: 2025-10-09T00:00:00.000Z
+status: published
+cover_image: 'https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/covers/warm-signal.png'
+language: English
+mood:
+  - warm
+  - hopeful
+  - unhurried
+  - grounded
+energy_bpm: 72–92 BPM
+genre: country‑soul / 1970s soul‑rock
+instrumentation:
+  - clean electric guitar (light tremolo)
+  - Wurlitzer/Rhodes
+  - Hammond organ pad
+  - warm electric bass
+  - laid‑back drums
+  - tambourine
+  - subtle string pad
+  - small gospel BGVs
 vocals:
-  on: true
-  style: "male baritone; gentle grit; conversational"
-negatives: [heavy distortion, EDM/trap hats, glossy auto‑tune, hyper‑compression]
-persona_id: "ivy"
-references: ["early‑1970s analog tape warmth", "southern/country‑soul rhythm section", "soul ballad arrangements"]
+  'on': true
+  style: male baritone; gentle grit; conversational
+negatives:
+  - heavy distortion
+  - EDM/trap hats
+  - glossy auto‑tune
+  - hyper‑compression
+persona_id: ivy
+references:
+  - early‑1970s analog tape warmth
+  - southern/country‑soul rhythm section
+  - soul ballad arrangements
 tracks:
-  - { title: Wide Open Mind, slug: wide-open-mind }
-  - { title: Passing Through, slug: passing-through }
-  - { title: Lean with the Line, slug: lean-with-the-line }
-  - { title: Stay with the Note, slug: stay-with-the-note }
-  - { title: Do the Next True Thing, slug: do-the-next-true-thing }
-  - { title: Neighbor Light, slug: neighbor-light }
-  - { title: Teach the Wire to Sing, slug: teach-the-wire-to-sing }
-  - { title: Deep Quiet Wonder, slug: deep-quiet-wonder }
-  - { title: The Living Line, slug: the-living-line }
+  - title: Wide Open Mind
+    slug: wide-open-mind
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--wide-open-mind.mp3
+  - title: Passing Through
+    slug: passing-through
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--passing-through.mp3
+  - title: Lean with the Line
+    slug: lean-with-the-line
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--lean-with-the-line.mp3
+  - title: Stay with the Note
+    slug: stay-with-the-note
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--stay-with-the-note.mp3
+  - title: Do the Next True Thing
+    slug: do-the-next-true-thing
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--do-the-next-true-thing.mp3
+  - title: Neighbor Light
+    slug: neighbor-light
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--neighbor-light.mp3
+  - title: Teach the Wire to Sing
+    slug: teach-the-wire-to-sing
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--teach-the-wire-to-sing.mp3
+  - title: Deep Quiet Wonder
+    slug: deep-quiet-wonder
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--deep-quiet-wonder.mp3
+  - title: The Living Line
+    slug: the-living-line
+    suno_url: >-
+      https://vwg1ncft29dfjhnp.public.blob.vercel-storage.com/tracks/warm-signal--the-living-line.mp3
 ---
 
 # Inspiration
@@ -49,4 +97,3 @@ Nine songs trace Coherenceism from wide‑field seeing to daily practice: awaren
 - Keep vocals present and conversational; phrasing slightly behind the beat.
 - Acoustic spaces over synthetic tails; let the room do the lifting.
 - Repeat a quiet three‑note “resonance” tag at the end of a few tracks.
-

@@ -3,7 +3,7 @@ kind: procedure
 title: Git — Merge to Main (Squash)
 intent: Merge an approved PR into `main` using squash-merge and clean messages
 status: active
-updated: 2025-10-04
+updated: 2025-10-18
 tags: [git, merge]
 ---
 
@@ -14,6 +14,7 @@ Pre-merge
   - Content validation complete.
   - Release checklist applied if publishing downstream.
   - Branch up to date with `main`.
+  - Preview diff reviewed (when merging a downstream `preview/` branch).
 
 Steps
 1) Squash-merge the PR into `main` with a concise message.

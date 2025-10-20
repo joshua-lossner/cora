@@ -1,9 +1,9 @@
 ---
 kind: procedure
 title: Git — Open Pull Request
-intent: Open a PR from a feature/bugfix branch to `main` with lightweight checks
+intent: Open a PR from a feature/bugfix/preview branch to `main` with lightweight checks
 status: active
-updated: 2025-10-04
+updated: 2025-10-18
 tags: [git, pr]
 ---
 
@@ -11,7 +11,7 @@ tags: [git, pr]
 
 Steps
 1) Push your branch:
-   - `git push -u origin <branch-name>`
+   - `git push -u origin <branch-name>` (e.g., `preview/media-player-polish`, `feature/roles-expansion`)
 2) Open PR to `main` and include:
    - Summary (what/why)
    - Paths changed and linked procedures/roles

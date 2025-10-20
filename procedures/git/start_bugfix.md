@@ -3,11 +3,13 @@ kind: procedure
 title: Git — Start Bugfix Branch
 intent: Create a short-lived bugfix branch to address a specific issue
 status: active
-updated: 2025-10-04
+updated: 2025-10-18
 tags: [git, bugfix]
 ---
 
 # Procedure — Start Bugfix Branch
+
+Downstream repos use `procedures/git/start_preview_branch.md:1`; reserve this procedure for CORA trunk fixes.
 
 Steps
 1) Sync `main` (same as start_feature): fetch, checkout main, pull.
@@ -18,4 +20,3 @@ Steps
 
 Expected
 - A bugfix branch focused on one problem.
-

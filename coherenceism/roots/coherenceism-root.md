@@ -39,28 +39,9 @@ Coherence evolves. Instead of freezing ideas into a single manuscript, we keep a
 
 - Roots — Anchors and orientation (this page)
 - Branches — Major themes (e.g., Universal Mind, Alignment, Presence)
-- Leaves — Essays and elaborations tied to branches
-- Seeds — Project starters intended to grow downstream systems
-- Patterns — Reusable solutions (name, problem, forces, solution, consequences)
+- Leaves — Essays and elaborations tied to branches (COMING SOON)
 
 Each item declares type, parent, and sites for cross-tree publishing.
-
----
-### **The Tree (Current Branches)**
-
-- The Universal Mind (branch)
-- Death, Change, and the Nature of Reality (branch)
-- Coherence as Alignment (branch)
-- The Practice of Presence (branch)
-- Ethics and Action (branch)
-- Community and Culture (branch)
-- Technology and Emerging Intelligence (branch)
-- The Mystery of Being (branch)
-- Living Coherence (branch)
-
-See also: `coherenceism/leaves/primer-coherenceism.md`.
-
-For builders: Knowledge Tree spec lives at `context/documentation/cora/knowledge-tree.md`.
 
 ---
 ### **Micro-Practice: One‑Breath Orientation**

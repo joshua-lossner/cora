@@ -22,7 +22,7 @@ Schema (frontmatter)
 - tags: `[]` (optional)
 - depends_on: `[task-slug, ...]` (optional)
  - git_status: `none|in_branch|pr_open|merged` (optional)
- - branch: `feature/<slug>` or `bugfix/<slug>` (optional)
+- branch: `feature/<slug>`, `bugfix/<slug>`, or downstream `preview/<slug>` (optional)
  - pr_url: `https://…` (optional)
 
 Body Sections (recommended)

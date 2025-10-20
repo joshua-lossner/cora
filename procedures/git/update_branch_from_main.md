@@ -1,13 +1,15 @@
 ---
 kind: procedure
 title: Git — Update Branch from Main
-intent: Bring a feature/bugfix branch up to date with `main`
+intent: Bring a feature/bugfix/preview branch up to date with `main`
 status: active
-updated: 2025-10-04
+updated: 2025-10-18
 tags: [git, sync]
 ---
 
 # Procedure — Update Branch from Main
+
+Applies to any short-lived branch (`feature/`, `bugfix/`, or downstream `preview/`).
 
 Steps (safe fast-forward where possible)
 1) On your branch, fetch latest: `git fetch origin`
@@ -19,4 +21,3 @@ Steps (safe fast-forward where possible)
 
 Expected
 - Branch aligned with `main`; PR reflects latest base.
-

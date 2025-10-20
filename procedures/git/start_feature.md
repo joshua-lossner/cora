@@ -3,11 +3,13 @@ kind: procedure
 title: Git — Start Feature Branch
 intent: Create a short-lived feature branch synced with `main`
 status: active
-updated: 2025-10-04
+updated: 2025-10-18
 tags: [git, feature]
 ---
 
 # Procedure — Start Feature Branch
+
+Downstream repos use `procedures/git/start_preview_branch.md:1` instead; this procedure applies to work inside the CORA trunk.
 
 Steps
 1) Sync `main`:
@@ -22,4 +24,3 @@ Steps
 
 Expected
 - A new feature branch ready for focused work.
-

@@ -14,6 +14,11 @@ Purpose
 Repo
 - Downstream: `coherenceism-info` (local). See its `AGENTS.md` for Lean Load and ops.
 
+Branching
+- Start work from `preview/<short-slug>` using `procedures/git/start_preview_branch.md:1`.
+- When the change is stable, open a PR from the preview branch to `main` and run checks before merge.
+- Remove the preview branch locally/remotely after merge to keep the list tidy.
+
 Lean Load (downstream)
 - `COHERENCE.md` frontmatter lists minimal `init.files`:
   - `README.md`, `package.json`, `scripts/build.js`, `scripts/sync-content.js`
@@ -28,4 +33,3 @@ Run
 
 Next Small Move
 - Add a simple Leaves index page with featured items and links back to CORA.
-

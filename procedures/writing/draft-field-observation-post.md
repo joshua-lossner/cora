@@ -69,6 +69,12 @@ River: [river-name]
      - What does this mean for how we act?
      - One clear, resonant sentence at the end
 
+   - **Field Notes** (after horizontal rule)
+     - List 2-4 primary sources that informed the observation
+     - Format: `- [Title](URL) (Author/Source)`
+     - Keep sparse—credit provenance without breaking prose flow
+     - Draw from the "Evidence" section of the seed
+
    **Coherenceism application:**
    - Don't just mention principles—*apply* them
    - Show the pattern, don't just describe it
@@ -164,6 +170,11 @@ When the draft is approved for publication:
 - [ ] Excerpt is ≤220 chars
 - [ ] River assignment makes sense
 - [ ] Tags are relevant (not generic)
+
+**Attribution:**
+- [ ] Field Notes section present
+- [ ] 2-4 primary sources credited
+- [ ] Links match evidence from seed extraction
 
 ## Notes
 - This is a *draft*—human review expected before publishing

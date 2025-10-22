@@ -44,3 +44,12 @@ Which means: if we're going to build and use AI agents, we need to design around
 It also means being honest about the trade we're making. Convenience for risk. Automation for vulnerability. Speed for security. That's not inherently wrong, but it's a trade we should make consciously, not sleepwalk into.
 
 The boundary won't hold on its own. We have to decide what we're willing to put on the other side of it.
+
+---
+
+**Field Notes**
+
+This observation drew from:
+- [Unseeable prompt injections in screenshots: more vulnerabilities in Comet and other AI browsers](https://simonwillison.net/2025/Oct/21/unseeable-prompt-injections/) (Simon Willison)
+- [Introducing ChatGPT Atlas](https://simonwillison.net/2025/Oct/21/introducing-chatgpt-atlas/) (Simon Willison)
+- [Quoting Bruce Schneier and Barath Raghavan](https://simonwillison.net/2025/Oct/21/ooda-loop/) on prompt injection being unsolvable (Simon Willison)

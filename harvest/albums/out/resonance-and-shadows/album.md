@@ -3,7 +3,7 @@ kind: album
 title: "Resonance and Shadows — A Coherenceism Journey"
 slug: resonance-and-shadows
 created: 2025-10-22
-status: draft
+status: published
 language: "English"
 track_count: 5
 mood: [contemplative, mysterious, transformative, grounded, playful-dark]

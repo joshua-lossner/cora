@@ -13,7 +13,7 @@ mood:
   - brief-warmth
   - desperate
   - broken
-energy_bpm: 85–110 BPM (varies: slower in oppression, faster in rebellion, crawling at surrender)
+energy_bpm: "85–110 BPM (varies: slower in oppression, faster in rebellion, crawling at surrender)"
 instrumentation:
   - cold analog synths (mechanical drones, sirens)
   - distorted bass (heavy, grinding)

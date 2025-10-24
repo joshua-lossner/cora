@@ -3,7 +3,7 @@ kind: album
 title: 1984 — A Sound Journey Through Orwell's Dystopia
 slug: 1984-sound-journey
 created: 2025-10-20
-status: draft
+status: published
 language: English
 genre: Industrial post-punk / dark electronic / dystopian soundscape
 mood:

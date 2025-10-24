@@ -111,12 +111,38 @@ River: rest-rhythm
 **If approved:**
 - Change `status: draft` to `status: published` in the draft file
 - Move draft to `harvest/blog-posts/out/[YYYY-MM-DD]-[slug].md`
-- Blog auto-detects via symlink (coherenceism.blog reads from CORA `out/` directory)
-- No manual copying needed—CORA is single source of truth
+- CORA is single source of truth; blog consumes via git submodule
 
 **If needs revision:**
 - Edit the draft file directly
 - Re-run quality checks
+
+---
+
+### Step 6: Commit and Deploy to Blog
+
+**Operator action:** Git workflow to get posts into production.
+
+**Steps:**
+1. **Commit to current branch:**
+   - Add all workflow files: scan, extraction, drafts, published posts, log
+   - Commit with descriptive message
+   - Push branch
+
+2. **Create PR and merge:**
+   - Open PR to main branch
+   - Review and merge PR
+
+3. **Update blog submodule:**
+   - Navigate to `coherenceism-blog` repo
+   - Run: `git submodule update --remote cora` (pulls latest main)
+   - Commit the submodule update
+   - Push and deploy
+
+**Why this matters:**
+- Blog consumes CORA as a git submodule, not via filesystem symlink
+- Posts only appear in production after: commit → merge to main → submodule update → deploy
+- CORA stays canonical; blog renders what's in the submodule
 
 ---
 

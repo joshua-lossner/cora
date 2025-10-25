@@ -36,7 +36,9 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - [x] context/tasks/cora/session-checkpoint-procedure.md:1
 
 ## PRs (Log)
- - 2025-10-08 — feature/task-cleanup — Task cleanup: close obsolete CORA tasks and sync project summary — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/15
+- 2025-10-25 — feature/cellar-private-workspace — Add private workspace (cellar/) and consolidate personal content — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/27
+  - Summary: Adds cellar/ directory as private workspace for personal content, projects, and daily practice. Migrates public learning workflows to workflows/learning/. Consolidates previously scattered personal workspace under one CORA tree with clear public/private boundary.
+- 2025-10-08 — feature/task-cleanup — Task cleanup: close obsolete CORA tasks and sync project summary — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/15
 - 2025-10-05 — feature/branches-of-coherence-album — Add “Branches of Coherence” smooth‑jazz album and 9 Suno‑ready songs — Status: Merged — PR: n/a
   - Summary: Adds album overview and links; compiles 9 Suno‑ready track outputs (style prompts + instrumental cues); archives all inputs per workflow. Warm, reflective, late‑night suite with recurring resonance motif.
 - 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1

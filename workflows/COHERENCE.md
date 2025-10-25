@@ -12,6 +12,7 @@ index:
     - workflows/core/
     - workflows/writing/
     - workflows/music/
+    - workflows/learning/
 scope: directory
 ---
 
@@ -25,6 +26,7 @@ Define end-to-end workflows that chain agents, procedures, and methodologies to 
   - `core/` — session/load checks, validation, checkpoints
   - `writing/` — essays, chapters, books
   - `music/` — Suno song/album pipelines
+  - `learning/` — knowledge capture workflows (YouTube videos, articles, courses)
 - Root contains `COHERENCE.md` and `_templates/` only.
 - Template: `workflows/_templates/workflow.md`.
 - Keep workflows concise; link to personas, procedures, and methods.
@@ -32,6 +34,7 @@ Define end-to-end workflows that chain agents, procedures, and methodologies to 
 ## Available Workflows
 - Writing: see `workflows/writing/`
 - Music: see `workflows/music/`
+- Learning: see `workflows/learning/`
 - Core (coming soon): `workflows/core/`
 Downstream consumers define their own site- or tree-specific workflows in their repos.
 

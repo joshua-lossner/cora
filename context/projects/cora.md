@@ -2,7 +2,7 @@
 kind: project
 title: CORA — Trunk Evolution and Operations
 status: active
-updated: 2025-10-08
+updated: 2025-10-25
 tags: [cora, trunk, operations]
 ---
 
@@ -13,6 +13,8 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 
 ## Scope
 - Canon content and rails (ontology, philosophy, roles/procedures)
+- Public harvest (`harvest/`) for Coherenceism fruit (essays, music, albums, media)
+- Private cellar (`cellar/`) for personal content and daily practice
 - Onboarding and operator docs
 - Forest index shape and seed lineage
 - No downstream UI or code (lives in other repos)
@@ -34,7 +36,9 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 - [x] context/tasks/cora/session-checkpoint-procedure.md:1
 
 ## PRs (Log)
- - 2025-10-08 — feature/task-cleanup — Task cleanup: close obsolete CORA tasks and sync project summary — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/15
+- 2025-10-25 — feature/cellar-private-workspace — Add private workspace (cellar/) and consolidate personal content — Status: PR Open — PR: https://github.com/joshua-lossner/cora/pull/27
+  - Summary: Adds cellar/ directory as private workspace for personal content, projects, and daily practice. Migrates public learning workflows to workflows/learning/. Consolidates previously scattered personal workspace under one CORA tree with clear public/private boundary.
+- 2025-10-08 — feature/task-cleanup — Task cleanup: close obsolete CORA tasks and sync project summary — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/15
 - 2025-10-05 — feature/branches-of-coherence-album — Add “Branches of Coherence” smooth‑jazz album and 9 Suno‑ready songs — Status: Merged — PR: n/a
   - Summary: Adds album overview and links; compiles 9 Suno‑ready track outputs (style prompts + instrumental cues); archives all inputs per workflow. Warm, reflective, late‑night suite with recurring resonance motif.
 - 2025-10-04 — feature/roles-procedures-forest — Expand roles, procedures, and forest; onboarding polish — Status: Merged — PR: https://github.com/joshua-lossner/cora/pull/1
@@ -56,7 +60,16 @@ Evolve the CORA trunk (canon content, rails, roles, and procedures) and keep onb
 ## Notes
 - Retired projects: coherenceism-ai, coherenceism-org, and coherenceism-project were removed from CORA tracking on 2025-10-16. Any internal links mentioned in older PR summaries that pointed to their project/task files have been pruned. See context/logs/2025-10-16.md:12 for provenance.
 
+## Recent Changes (2025-10-25)
+- **Added cellar/**: Private workspace for personal content, projects, and daily practice
+  - Structure mirrors use cases: personal/, household/, learning/, professional/, projects/, tasks/, logs/, workflows/
+  - Git strategy: Check in COHERENCE.md and TEMPLATE.md files; ignore all actual content
+  - Philosophy: CORA is more than publishing—it's architecture for coherent human-AI collaboration
+- **Added workflows/learning/**: Public learning workflows (YouTube capture, note-taking)
+  - Migrated from personal repo: `youtube-to-learning-note.md`, `capture-learning-note.md`
+- **Consolidated personal workspace**: Unified previously scattered personal content under cellar/
+
 ## Next Small Moves
-- Open PR for current branch and log it above.
-- Run content validator and note any fixes.
-- Draft a minimal “Example PR” under `procedures/git/open_pull_request.md:1` if we find gaps.
+- Test cellar structure with real daily practice workflows
+- Consolidate presentation layers (one site for all harvest/ content)
+- Consider containerization as separate project (docker-compose with CORA as one container)

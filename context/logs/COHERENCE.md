@@ -49,3 +49,10 @@ Example
 
 Notes
 - Logs are for provenance; actionable work should live as tasks under `context/tasks/` and be referenced from entries when relevant.
+
+## Common Mistakes
+
+- ❌ Creating `logs/YYYY-MM-DD.md` at repo root
+- ❌ Creating `logs/YYYY/MM-DD.md` with year folders
+- ❌ Creating `core/logs/` or similar subdirectory paths
+- ✅ Only valid path: `context/logs/YYYY-MM-DD.md`

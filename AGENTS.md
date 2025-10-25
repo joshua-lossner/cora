@@ -88,10 +88,11 @@ Conventions
 
 ## Conventions for Agents
 
-- Use relative paths; avoid hard-coding.  
-- Propose chaining procedures where useful.  
-- Update incrementally; preserve style of nearby docs.  
-- Treat `procedures/` as permanent capabilities.  
+- Use relative paths; avoid hard-coding.
+- Propose chaining procedures where useful.
+- Update incrementally; preserve style of nearby docs.
+- Treat `procedures/` as permanent capabilities.
+- Path validation: before creating any file under a new directory, verify the location matches documented structure. Common mistake: creating `logs/` instead of `context/logs/`.
 - Log provenance: after any procedure/workflow or any change to `context/` or `harvest/`, append an entry via `procedures/core/update_log.md:1` (see `context/logs/COHERENCE.md:1`).  
  - Do this automatically without prompting when writes occur; skip read‑only scans. Batch micro‑edits within ~2 minutes into one entry to reduce noise. Set actor via `CORA_ACTOR` (default `ivy`).  
  - Types: `procedure | workflow | context-add | context-edit | content-add | content-edit`. Include relative paths and a one‑line summary.

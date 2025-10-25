@@ -3,7 +3,8 @@ kind: album
 title: 1984 — A Sound Journey Through Orwell's Dystopia
 slug: 1984-sound-journey
 created: 2025-10-20
-status: draft
+status: published
+cover_image: "https://cdn1.suno.ai/placeholder.jpg"
 language: English
 genre: Industrial post-punk / dark electronic / dystopian soundscape
 mood:
@@ -13,7 +14,7 @@ mood:
   - brief-warmth
   - desperate
   - broken
-energy_bpm: 85–110 BPM (varies: slower in oppression, faster in rebellion, crawling at surrender)
+energy_bpm: "85–110 BPM (varies: slower in oppression, faster in rebellion, crawling at surrender)"
 instrumentation:
   - cold analog synths (mechanical drones, sirens)
   - distorted bass (heavy, grinding)

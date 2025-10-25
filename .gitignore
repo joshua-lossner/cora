@@ -21,3 +21,12 @@ node_modules/
 
 # Local agent configs (untracked)
 .codex/
+
+# Private cellar content (local only)
+cellar/**
+!cellar/.gitkeep
+!cellar/COHERENCE.md
+!cellar/**/
+!cellar/**/COHERENCE.md
+!cellar/**/in/
+!cellar/**/in/TEMPLATE.md

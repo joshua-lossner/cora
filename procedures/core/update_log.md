@@ -13,6 +13,11 @@ Purpose
 - Keep a local, Markdown‑only provenance trail under `context/logs/`.
 - Standardize what gets recorded and where, with minimal friction.
 
+Path Convention
+- ONLY valid path: `context/logs/YYYY-MM-DD.md` (e.g., `context/logs/2025-10-25.md`)
+- DO NOT create: `logs/`, `core/logs/`, or any other location
+- Rationale: `context/` groups all working files; keeps repo root clean
+
 Inputs
 - actor (ivy | joshua | other)
 - type (procedure | workflow | context-add | context-edit | content-add | content-edit)
@@ -36,7 +41,8 @@ Operator Prompt
 """
 You are appending a log entry for today.
 
-1) Open or create `context/logs/<today>.md` using the daily template.
+1) Open or create `context/logs/YYYY-MM-DD.md` (e.g., context/logs/2025-10-25.md) using the daily template.
+   IMPORTANT: Path must be exactly `context/logs/YYYY-MM-DD.md` - do not create logs/ at repo root.
 2) Append an entry using `_templates/log-entry.md` with:
    - Actor, Type, Paths, Procedure/Workflow, Summary, Outcome, Follow-ups
 3) Keep it to ~5–8 lines; include the most relevant paths.

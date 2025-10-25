@@ -19,5 +19,9 @@ node_modules/
 .cache/
 *.log
 
+# Prevent logs outside canonical location
+/logs/
+/core/logs/
+
 # Local agent configs (untracked)
 .codex/
